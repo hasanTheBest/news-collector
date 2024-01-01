@@ -4,35 +4,30 @@ exports.bhorerkagoj = async function (page) {
 
   // Extract news articles
   const articles = await page.evaluate((leadArea) => {
-    const articlesData = [];
-    const selectors = [
-      Array.from(leadArea.querySelectorAll(".podan-small .podan-small-item")),
-    ];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector("h2")
         ? node.querySelector("h2").innerText.trim()
         : node.querySelector("h4").innerText.trim();
       const imgSrc = node.querySelector("img")?.src;
-      // const excerpt = node.querySelector(".intro")?.innerText.trim();
-
-      // const time = node.querySelector(".PublishTime")?.innerText.trim();
 
       return {
         title,
         link,
         imgSrc,
-        // excerpt,
-        // time,
       };
     }
 
-    articlesData.push(getNews(leadArea.querySelector(".padan-news-big")));
+    articlesData.push(getNews());
 
-    selectors.forEach((selector) =>
-      articlesData.push(...selector.map((node) => getNews(node)))
-    );
+    const selectors = [
+      leadArea.querySelector(".padan-news-big"),
+      ...Array.from(
+        leadArea.querySelectorAll(".podan-small .podan-small-item")
+      ),
+    ];
+
+    const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
   }, leadArea);

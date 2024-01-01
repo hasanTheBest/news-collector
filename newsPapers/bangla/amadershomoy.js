@@ -1,18 +1,8 @@
 exports.amadersomoy = async function (page) {
-  // Wait for the news articles to load
   const leadArea = await page.waitForSelector(".tc-tabs-content .sub-content");
 
   // Extract news articles
   const articles = await page.evaluate((leadArea) => {
-    const articlesData = [];
-
-    const selectors = [
-      Array.from(
-        leadArea.querySelectorAll(".tc-post-list-style2 > .row > div")
-      ),
-      Array.from(leadArea.lastElementChild.children), // starter div with all child div
-    ];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector(".lead-title")
@@ -29,11 +19,15 @@ exports.amadersomoy = async function (page) {
       };
     }
 
-    articlesData.push(getNews(leadArea.firstElementChild.firstElementChild));
+    const selectors = [
+      getNews(leadArea.firstElementChild.firstElementChild),
+      Array.from(
+        leadArea.querySelectorAll(".tc-post-list-style2 > .row > div")
+      ),
+      Array.from(leadArea.lastElementChild.children), // starter div with all child div
+    ];
 
-    selectors.forEach((selector) =>
-      articlesData.push(...selector.map((node) => getNews(node)))
-    );
+    const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
   }, leadArea);

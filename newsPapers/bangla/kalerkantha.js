@@ -1,22 +1,9 @@
 exports.kalerkantha = async function (page) {
-  // Navigate to Prothom Alo's website
-  await page.goto(url, {
-    waitUntil: "domcontentloaded",
-  });
-
   // Wait for the news articles to load
   const leadArea = await page.waitForSelector(".leadArea");
 
   // Extract news articles
   const articles = await page.evaluate((leadArea) => {
-    // grab first heading
-    const articlesData = [];
-    const selectors = [
-      Array.from(leadArea.querySelector(".highlight-news2").children),
-      Array.from(leadArea.querySelector(".highlight-img").children),
-      Array.from(document.querySelector(".leadNewsMoreDesktop").children),
-    ];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector("h1")
@@ -33,11 +20,14 @@ exports.kalerkantha = async function (page) {
       };
     }
 
-    articlesData.push(getNews(leadArea.querySelector(".leadAreaLeft")));
+    const selectors = [
+      leadArea.querySelector(".leadAreaLeft"),
+      ...Array.from(leadArea.querySelector(".highlight-news2").children),
+      ...Array.from(leadArea.querySelector(".highlight-img").children),
+      ...Array.from(document.querySelector(".leadNewsMoreDesktop").children),
+    ];
 
-    selectors.forEach((seletor) =>
-      articlesData.push(...seletor.map((node) => getNews(node)))
-    );
+    const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
   }, leadArea);

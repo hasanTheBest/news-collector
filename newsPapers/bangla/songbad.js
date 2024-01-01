@@ -4,8 +4,6 @@ exports.songbad = async function (page) {
 
   // Extract news articles
   const articles = await page.evaluate((leadArea) => {
-    // grab first heading
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector("a").innerText.trim();

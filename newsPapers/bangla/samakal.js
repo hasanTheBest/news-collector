@@ -4,9 +4,6 @@ exports.samakal = async function (page) {
 
   // Extract news articles
   const articles = await page.evaluate((DTopNewsSection) => {
-    const articlesData = [];
-    const selectors = [];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector("h3")
@@ -26,17 +23,13 @@ exports.samakal = async function (page) {
       };
     }
 
-    articlesData.push(getNews(DTopNewsSection.querySelector(".DHomeTopLead")));
+    const selectors = [
+      DTopNewsSection.querySelector(".DHomeTopLead"),
+      ...Array.from(DTopNewsSection.querySelectorAll(".DHomeLeadList3")),
+      ...Array.from(DTopNewsSection.querySelectorAll(".leadTop3-wrap")),
+    ];
 
-    selectors.push(
-      DTopNewsSection.querySelectorAll(".DHomeLeadList3"),
-      DTopNewsSection.querySelectorAll(".leadTop3-wrap")
-    );
-
-    selectors.forEach((selector) => {
-      const news = Array.from(selector).map((node) => getNews(node));
-      articlesData.push(...news);
-    });
+    const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
   }, DTopNewsSection);

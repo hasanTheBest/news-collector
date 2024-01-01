@@ -3,9 +3,6 @@ exports.bonikbarta = async function (page) {
 
   // Extract news articles
   const articles = await page.evaluate(() => {
-    // grab first heading
-    const articlesData = [];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector("h4").innerText.trim();
@@ -18,11 +15,9 @@ exports.bonikbarta = async function (page) {
       };
     }
 
-    articlesData.push(
-      ...Array.from(
-        document.querySelector(".lead_exclusive").parentElement.children
-      ).map((node) => getNews(node))
-    );
+    const articlesData = Array.from(
+      document.querySelector(".lead_exclusive").parentElement.children
+    ).map((node) => getNews(node));
 
     return articlesData;
   });

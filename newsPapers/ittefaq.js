@@ -10,14 +10,12 @@ exports.ittefaq = async function (page) {
       const link = node.querySelector("a").href;
       const imgSrc = node.querySelector("img")?.src;
       const excerpt = node.querySelector(".summery")?.innerText.trim();
-      // const time = node.querySelector(".date")?.innerText.trim();
 
       return {
         title,
         link,
         imgSrc,
         excerpt,
-        // time,
       };
     }
 

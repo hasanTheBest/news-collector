@@ -4,16 +4,6 @@ exports.jaijaidin = async function (page) {
 
   // Extract news articles
   const articles = await page.evaluate((leadArea) => {
-    const articlesData = [];
-    const selectors = [
-      Array.from(leadArea.nextElementSibling.children),
-      Array.from(
-        document.querySelectorAll(
-          "._container-fluid + div.row .common-lead-content"
-        )
-      ),
-    ];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector(".title").innerText.trim();
@@ -28,11 +18,17 @@ exports.jaijaidin = async function (page) {
       };
     }
 
-    articlesData.push(getNews(leadArea));
+    const selectors = [
+      leadArea,
+      ...Array.from(leadArea.nextElementSibling.children),
+      ...Array.from(
+        document.querySelectorAll(
+          "._container-fluid + div.row .common-lead-content"
+        )
+      ),
+    ];
 
-    selectors.forEach((selector) =>
-      articlesData.push(...selector.map((node) => getNews(node)))
-    );
+    const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
   }, leadArea);

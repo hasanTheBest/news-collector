@@ -3,8 +3,6 @@ exports.inqilab = async function (page) {
 
   // Extract news articles
   const articles = await page.evaluate((leadArea) => {
-    const articlesData = [];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector("h3")
@@ -24,11 +22,12 @@ exports.inqilab = async function (page) {
       };
     }
 
-    articlesData.push(getNews(leadArea.firstElementChild));
+    const selectors = [
+      leadArea.firstElementChild,
+      ...Array.from(leadArea.children[1].children),
+    ];
 
-    articlesData.push(
-      ...Array.from(leadArea.children[1].children).map((node) => getNews(node))
-    );
+    const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
   }, leadArea);

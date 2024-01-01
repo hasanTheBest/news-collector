@@ -3,19 +3,6 @@ exports.manabzamin = async function (page) {
 
   // Extract news articles
   const articles = await page.evaluate((leadArea) => {
-    // grab first heading
-    const articlesData = [];
-    const selectors = [
-      Array.from(
-        leadArea.firstElementChild.firstElementChild.firstElementChild
-          .children[1].children
-      ),
-      Array.from(
-        document.querySelector("section img").parentElement.parentElement
-          .children
-      ),
-    ];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector("a").innerText.trim();
@@ -28,16 +15,20 @@ exports.manabzamin = async function (page) {
       };
     }
 
-    articlesData.push(
-      getNews(
+    const selectors = [
+      leadArea.firstElementChild.firstElementChild.firstElementChild
+        .firstElementChild,
+      ...Array.from(
         leadArea.firstElementChild.firstElementChild.firstElementChild
-          .firstElementChild
-      )
-    );
+          .children[1].children
+      ),
+      ...Array.from(
+        document.querySelector("section img").parentElement.parentElement
+          .children
+      ),
+    ];
 
-    selectors.forEach((seletor) =>
-      articlesData.push(...seletor.map((node) => getNews(node)))
-    );
+    const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
   }, leadArea);

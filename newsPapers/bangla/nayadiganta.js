@@ -3,9 +3,6 @@ exports.nayaDiganta = async function (page) {
   await page.waitForSelector(".news-box");
 
   const articles = await page.evaluate(() => {
-    const articlesData = [];
-    const selectors = [];
-
     function getNews(node) {
       const link = node.querySelector("a").href;
       const title = node.querySelector("h2").innerText.trim();
@@ -16,17 +13,15 @@ exports.nayaDiganta = async function (page) {
       };
     }
 
-    articlesData.push(getNews(document.querySelector(".news-caption-lead")));
+    const selectors = [
+      document.querySelector(".news-caption-lead"),
+      ...Array.from(
+        document.querySelectorAll(".news-box .col-md-9 .col-md-8 .news-caption")
+      ),
+      ...Array.from(document.querySelectorAll(".lead-news-row .news-item")),
+    ];
 
-    selectors.push(
-      document.querySelectorAll(".news-box .col-md-9 .col-md-8 .news-caption"),
-      document.querySelectorAll(".lead-news-row .news-item")
-    );
-
-    selectors.forEach((selector) => {
-      const news = Array.from(selector).map((node) => getNews(node));
-      articlesData.push(news);
-    });
+    const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
   });
