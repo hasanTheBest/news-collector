@@ -13,69 +13,75 @@ app.get("/", (req, res) => {
 
 // scraping here
 app.get("/news", async (req, res) => {
-  try {
-    // const { urls } = req.body; // Assuming URLs are sent in the request body
-    const urls = [
-      // english
-      "https://thebangladeshtoday.com/",
-      "https://www.tbsnews.net/",
-      "https://www.observerbd.com/",
-      "https://www.daily-sun.com/",
-      "https://www.dhakatribune.com/",
-      "https://www.newagebd.net/",
-      "https://newnation.live/",
-      "https://www.thedailystar.net/",
+  // try {
+  // const { urls } = req.body; // Assuming URLs are sent in the request body
+  const urls = [
+    // english OKAY
+    // "https://thebangladeshtoday.com/",
+    // "https://www.tbsnews.net/",
+    // "https://www.observerbd.com/",
+    // "https://www.daily-sun.com/",
+    // "https://www.dhakatribune.com/",
+    // "https://www.newagebd.net/",
+    // "https://newnation.live/",
+    // "https://www.thedailystar.net/",
 
-      // bangla
-      // "https://www.thedailystar.net/",
-      // "https://www.ittefaq.com.bd/",
-      // "https://www.dhakatribune.com/",
-      // "https://www.dailynayadiganta.com/",
-      // "https://www.prothomalo.com/"
-    ];
+    // bangla
+    "https://www.dainikamadershomoy.com/", //  2. Waiting for selector `.tc-tabs-content .sub-content`
+    "https://www.bhorerkagoj.com/", // 2.  Waiting for selector `.padan-news`
+    "https://bonikbarta.net/", // 2.  Navigation timeout of 30000 ms exceeded
+    "https://dailyinqilab.com/", // 2.  Navigation timeout of 30000 ms exceeded
+    // "https://www.ittefaq.com.bd/",
+    // "https://www.jaijaidinbd.com/",
+    // "https://www.dailyjanakantha.com/",
+    // "https://www.jugantor.com/",
+    // "https://www.kalerkantho.com/",
+    // "https://mzamin.com/",
+    // "https://www.dailynayadiganta.com/",
+    // "https://www.prothomalo.com/",
+    // "https://samakal.com/",
+    // "https://sangbad.net.bd/",
+  ];
 
-    const browser = await puppeteer.launch({
-      defaultViewport: {
-        width: 1920,
-        height: 1080,
-      },
-      headless: false,
+  const browser = await puppeteer.launch({
+    defaultViewport: {
+      width: 1920,
+      height: 1080,
+    },
+    headless: false,
+  });
+
+  const page = await browser.newPage();
+
+  const scrapedData = [];
+
+  for (const url of urls) {
+    await page.goto(url, {
+      waitUntil: "domcontentloaded",
     });
-    const page = await browser.newPage();
 
-    const scrapedData = [];
+    const title = await page.title();
+    const news = await getNews(url, page);
 
-    for (const url of urls) {
-      await page.goto(url, {
-        waitUntil: "domcontentloaded",
-      });
-      // Perform scraping logic here and push the scraped data to the array
-      /**
-       * const data = await [name].bind(page)
-       */
-      // Example:
-      const title = await page.title();
-      const news = await getNews(url, page);
-      scrapedData.push({ title, url, news });
-    }
-
-    await browser.close();
-
-    // Save scraped data to MongoDB using Mongoose
-    // Assuming you have a MongoDB schema defined as 'ScrapedData' with fields 'url' and 'title'
-    // Configure Mongoose to connect to your MongoDB instance before this step
-
-    // const ScrapedData = require("./models/ScrapedData"); // Import Mongoose model
-
-    // await ScrapedData.insertMany(scrapedData);
-
-    res.status(200).json({
-      message: "Scraping 'and saving to MongoDB' successful",
-      data: scrapedData,
-    });
-  } catch (error) {
-    res.status(500).json({ error: "Internal Server Error", message: error });
+    scrapedData.push({ title, url, news });
   }
+
+  await browser.close();
+
+  res.status(200).json({
+    message: "Scraping 'and saving to MongoDB' successful",
+    data: scrapedData,
+  });
+  // } catch (error) {
+  //   res.status(500).json({ error: "Internal Server Error", message: error });
+  // }
+});
+
+// Start the server
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
 
 /**
@@ -124,11 +130,4 @@ app.get("/news", async (req, res) => {
   //   res.status(500).json({ error: "Internal Server Error", message: error });
   // }
 });
- * */ 
-
-
-// Start the server
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+ * */

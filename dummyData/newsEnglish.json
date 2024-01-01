@@ -1,0 +1,546 @@
+{
+  "message": "Scraping 'and saving to MongoDB' successful",
+  "data": [
+    {
+      "title": "The Bangladesh Today | Uniting people everyday",
+      "url": "https://thebangladeshtoday.com/",
+      "news": [
+        {
+          "title": "Army CGS, PSO call on President",
+          "link": "https://thebangladeshtoday.com/?p=58180",
+          "imgSrc": "https://thebangladeshtoday.com/wp-content/uploads/2024/01/President-army-570x264.jpg",
+          "excerpt": "Newly appointed Army Chief of General Staff (CGS) Lieutenant General Waker-Uz-Zaman and Principal Staff Officer (PSO) of the Armed Forces Division (AFD) Lt Gen Mizanur Rahman Shamim..."
+        },
+        {
+          "title": "Polls violence isn’t acceptable anyhow as it creates panic: CEC",
+          "link": "https://thebangladeshtoday.com/?p=58176",
+          "imgSrc": "https://thebangladeshtoday.com/wp-content/uploads/2024/01/CEC-375x211.jpg"
+        },
+        {
+          "title": "Dr Yunus gets 6-month jail for violating labour law",
+          "link": "https://thebangladeshtoday.com/?p=58173",
+          "imgSrc": "https://thebangladeshtoday.com/wp-content/uploads/2024/01/Dr.-Yunus-360x211.jpg"
+        },
+        {
+          "title": "New textbooks are PM’s New Year gift for kids: Zakir",
+          "link": "https://thebangladeshtoday.com/?p=58170",
+          "imgSrc": "https://thebangladeshtoday.com/wp-content/uploads/2024/01/zakir-375x211.jpg"
+        },
+        {
+          "title": "Major Japan quake triggers tsunami waves, residents told to run",
+          "link": "https://thebangladeshtoday.com/?p=58166",
+          "imgSrc": "https://thebangladeshtoday.com/wp-content/uploads/2024/01/japan-earth-quak-375x211.jpg"
+        }
+      ]
+    },
+    {
+      "title": "The Business Standard | BENEATH THE SURFACE",
+      "url": "https://www.tbsnews.net/",
+      "news": [
+        {
+          "title": "Dr Yunus gets 6-month jail, but avoids prison as court grants 1-month bail",
+          "link": "https://www.tbsnews.net/bangladesh/dr-yunus-gets-6-months-jail-labour-law-violation-case-767758",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_3/public/images/2023/09/05/yunus_0.jpeg",
+          "excerpt": "Also, the court granted a month's Dr Yunus bail, on condition of filing an appeal against the verdict in the labour law violation case",
+          "time": "6h | Bangladesh"
+        },
+        {
+          "title": "Verdict on Yunus won't affect relations with US: Foreign Secretary",
+          "link": "https://www.tbsnews.net/bangladesh/verdict-yunus-wont-affect-relations-us-foreign-secretary-767978",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2024/01/01/foreignsecretary.png",
+          "time": "30m | Bangladesh"
+        },
+        {
+          "title": "We are being punished for a crime we did not commit: Dr Yunus on labour court verdict",
+          "link": "https://www.tbsnews.net/bangladesh/we-are-being-punished-crime-we-did-not-commit-dr-yunus-labour-court-verdict-767782",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/06/21/muhammad_yunus.jpg",
+          "time": "5h | Bangladesh"
+        },
+        {
+          "title": "Cast votes on 7 Jan as reply to BNP-Jamaat arsonists: PM",
+          "link": "https://www.tbsnews.net/bangladesh/politics/pm-addressing-al-campaign-rally-kalabagan-767806",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2024/01/01/pm_0.jpg",
+          "time": "4h | Politics"
+        },
+        {
+          "title": "Can't confirm if we'll stick with election until final day: GM Quader",
+          "link": "https://www.tbsnews.net/bangladesh/politics/cant-confirm-if-well-stick-election-until-final-day-gm-quader-767858",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2021/01/14/gm-quader_3.jpg",
+          "time": "3h | Politics"
+        },
+        {
+          "title": "Verdict against Yunus is stage-managed: Rizvi",
+          "link": "https://www.tbsnews.net/bangladesh/politics/verdict-against-yunus-stage-managed-rizvi-767938",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/11/04/rizvi.jpg",
+          "time": "1h | Politics"
+        },
+        {
+          "title": "IRI, NDI technical assessment team meets EC for updates on polls preparation",
+          "link": "https://www.tbsnews.net/bangladesh/iri-ndi-technical-assessment-team-meets-ec-updates-polls-preparation-767946",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/uploads/2023/12/24/election_commission_3.jpg",
+          "time": "1h | Bangladesh"
+        },
+        {
+          "title": "EC orders sending polls results of remote areas thru verified WhatsApp",
+          "link": "https://www.tbsnews.net/bangladesh/politics/ec-orders-sending-polls-results-remote-areas-thru-verified-whatsapp-767882",
+          "imgSrc": "",
+          "time": "2h | Politics"
+        },
+        {
+          "title": "Fire-breathing stunt accident leaves 3 injured in Dhaka's Kamrangirchar",
+          "link": "https://www.tbsnews.net/bangladesh/fire-breathing-stunt-accident-leaves-3-injured-dhakas-kamrangirchar-767954",
+          "imgSrc": "",
+          "time": "1h | Bangladesh"
+        },
+        {
+          "title": "CMP launches robust patrolling to ensure security ahead of polls",
+          "link": "https://www.tbsnews.net/bangladesh/cmp-launches-robust-patrolling-ensure-security-ahead-polls-767974",
+          "imgSrc": "",
+          "time": "40m | Bangladesh"
+        },
+        {
+          "title": "Massive earthquake slams Japan, residents flee some coastal areas",
+          "link": "https://www.tbsnews.net/world/japan-warns-another-7-magnitude-earthquake-tsunami-hits-shore-767778",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2024/01/01/japan-quake_0.jpg",
+          "time": "5h | World+Biz"
+        },
+        {
+          "title": "Sirajganj-5: BNP expels 5 leaders for taking part in election campaign of independent candidates",
+          "link": "https://www.tbsnews.net/bangladesh/politics/sirajganj-5-bnp-expels-5-leaders-taking-part-election-campaign-independent",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2024/01/01/bnp_leaders_0.jpg",
+          "time": "15m | Politics"
+        },
+        {
+          "title": "AL rally creates traffic gridlock in Dhanmondi",
+          "link": "https://www.tbsnews.net/bangladesh/al-rally-creates-traffic-gridlock-dhanmondi-767842",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2024/01/01/dhanmondi_2_0.jpg",
+          "time": "3h | Bangladesh"
+        },
+        {
+          "title": "BNP to observe mass campaign, leaflet distribution till 4 Jan",
+          "link": "https://www.tbsnews.net/bangladesh/politics/bnp-observe-mass-campaign-leaflet-distribution-till-4-jan-767822",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2023/10/23/bnp_logo.png",
+          "time": "3h | Politics"
+        },
+        {
+          "title": "Man sentenced to 10-year imprisonment for assaulting father",
+          "link": "https://www.tbsnews.net/bangladesh/court/man-sentenced-10-years-imprisonment-assaulting-father-767970",
+          "imgSrc": "https://www.tbsnews.net/sites/default/files/styles/big_2/public/images/2020/05/21/background-close-up-court-1415558.jpg",
+          "time": "45m | Court"
+        }
+      ]
+    },
+    {
+      "title": "Daily Observer || Daily Newspaper in Bangladesh",
+      "url": "https://www.observerbd.com/",
+      "news": [
+        {
+          "title": "I've been punished for a crime I didn’t commit: Dr Yunus",
+          "link": "https://www.observerbd.com/news.php?id=453344",
+          "imgSrc": "https://www.observerbd.com/2024/01/02/ob_1704122567.jpg"
+        },
+        {
+          "title": "Cast votes on Jan 7 to foil BNP-Jamaat arsonists: Hasina tells people",
+          "link": "https://www.observerbd.com/news.php?id=453336",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704119961.jpg"
+        },
+        {
+          "title": "Say farewell to BNP forever by showing red card on Jan 7: Quader",
+          "link": "https://www.observerbd.com/news.php?id=453333",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704114009.jpg"
+        },
+        {
+          "title": "BNP to hold mass contact, leaflet distribution till Jan 4",
+          "link": "https://www.observerbd.com/news.php?id=453329",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704111769.jpg"
+        },
+        {
+          "title": "Students excited getting new books",
+          "link": "https://www.observerbd.com/news.php?id=453310",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704099037.jpg"
+        },
+        {
+          "title": "Dr Yunus sued for not paying workers’ dues: Hasan",
+          "link": "https://www.observerbd.com/news.php?id=453338",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704116949_th.jpg"
+        },
+        {
+          "title": "Hasina to address election rally in Faridpur Tuesday",
+          "link": "https://www.observerbd.com/news.php?id=453328",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704110614_th.jpg"
+        },
+        {
+          "title": "Actions will be taken if anyone obstructs voters: IGP",
+          "link": "https://www.observerbd.com/news.php?id=453324",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704108140_th.jpg"
+        },
+        {
+          "title": "School teacher show-caused over polls code violation in Pabna-3",
+          "link": "https://www.observerbd.com/news.php?id=453343",
+          "imgSrc": "https://www.observerbd.com/2024/01/02/ob_1704121820_th.jpg"
+        },
+        {
+          "title": "Year begins with zero dengue death",
+          "link": "https://www.observerbd.com/news.php?id=453342",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704119720_th.jpg"
+        },
+        {
+          "title": "25 injured in police, Chhatra Dal clash in Habiganj",
+          "link": "https://www.observerbd.com/news.php?id=453337",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704115489_th.jpg"
+        },
+        {
+          "title": "Dr Yunus granted conditional bail",
+          "link": "https://www.observerbd.com/news.php?id=453335",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704114491_th.jpg"
+        },
+        {
+          "title": "DU gets 15 new departments in 15 years",
+          "link": "https://www.observerbd.com/news.php?id=453334",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704114297_th.jpg"
+        },
+        {
+          "title": "Teen killed in Sunamganj clash, 6 arrested",
+          "link": "https://www.observerbd.com/news.php?id=453331",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704112583_th.jpg"
+        },
+        {
+          "title": "Can weight loss help in treating psoriasis?",
+          "link": "https://www.observerbd.com/news.php?id=453330",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704111840_th.jpg"
+        },
+        {
+          "title": "Busiest year awaits for Bangladesh in Test cricket",
+          "link": "https://www.observerbd.com/news.php?id=453327",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704110498_th.jpg"
+        },
+        {
+          "title": "Japan warns of another 7 magnitude earthquake as tsunami hits shore",
+          "link": "https://www.observerbd.com/news.php?id=453325",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704108412_th.jpg"
+        },
+        {
+          "title": "BCB announces squad for U-19 World Cup",
+          "link": "https://www.observerbd.com/news.php?id=453323",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704108092_th.jpg"
+        },
+        {
+          "title": "Teen electrocuted celebrating 31st night",
+          "link": "https://www.observerbd.com/news.php?id=453322",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704107811_th.jpg"
+        },
+        {
+          "title": "18 BNP men jailed in sabotage case",
+          "link": "https://www.observerbd.com/news.php?id=453320",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704106233_th.jpg"
+        },
+        {
+          "title": "Two killed in Jhenaidah road crash",
+          "link": "https://www.observerbd.com/news.php?id=453319",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704105574_th.jpg"
+        },
+        {
+          "title": "EC to brief nation about election preparations January 6",
+          "link": "https://www.observerbd.com/news.php?id=453314",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704103151_th.jpg"
+        },
+        {
+          "title": "Palli Kabi Jasimuddin’s 121st birth anniv today",
+          "link": "https://www.observerbd.com/news.php?id=453306",
+          "imgSrc": "https://www.observerbd.com/2024/01/01/ob_1704099511_th.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Daily Sun | Twenty-Four Hour News",
+      "url": "https://www.daily-sun.com/",
+      "news": [
+        {
+          "title": "Verdict against Yunus won’t affect Bangladesh-US relations",
+          "link": "https://www.daily-sun.com/post/728504",
+          "imgSrc": "/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704115148-484df51282f8523cb876d5bac4258e59.jpg&w=828&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704115148-484df51282f8523cb876d5bac4258e59.jpg&w=1920&q=100 2x",
+          "excerpt": "Says Foreign Secretary Momen at a press conference on Monday."
+        },
+        {
+          "title": "“I was punished in a crime I did not commit”: Yunus",
+          "link": "https://www.daily-sun.com/post/728500",
+          "imgSrc": "/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704112352-97ce45b8652969bcb227883780433fdc.jpg&w=828&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704112352-97ce45b8652969bcb227883780433fdc.jpg&w=1920&q=100 2x",
+          "excerpt": "",
+          "time": "2 hours ago"
+        },
+        {
+          "title": "Coastal vigilance persists as Japan eases highest Tsunami alert amid quake aftermath",
+          "link": "https://www.daily-sun.com/post/728507",
+          "imgSrc": "/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704119464-95eb431d64cff9514ea5d58a19f8576e.jpg&w=828&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704119464-95eb431d64cff9514ea5d58a19f8576e.jpg&w=1920&q=100 2x",
+          "excerpt": "",
+          "time": "1 hour ago"
+        },
+        {
+          "title": "Labour law violation: Dr Yunus jailed for six months",
+          "link": "https://www.daily-sun.com/post/728492",
+          "imgSrc": "/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704108486-497da2347b48ce9426862d4a599f301d.jpg&w=828&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704108486-497da2347b48ce9426862d4a599f301d.jpg&w=1920&q=100 2x",
+          "time": "2 hours ago"
+        },
+        {
+          "title": "BNP extends mass contact programme till 4 January",
+          "link": "https://www.daily-sun.com/post/728499",
+          "imgSrc": "/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704109877-7411515f41c8a337ed0ac9ace3c9b0f3.jpg&w=828&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704109877-7411515f41c8a337ed0ac9ace3c9b0f3.jpg&w=1920&q=100 2x",
+          "time": "3 hours ago"
+        },
+        {
+          "title": "Half of polling centres in Dhaka risky: DMP",
+          "link": "https://www.daily-sun.com/post/728489",
+          "imgSrc": "/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704097632-b826871aedd8217aa90893d34b0d4fba.jpg&w=828&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704097632-b826871aedd8217aa90893d34b0d4fba.jpg&w=1920&q=100 2x",
+          "time": "7 hours ago"
+        },
+        {
+          "title": "Dirty sides of clean electric vehicles uncovered",
+          "link": "https://www.daily-sun.com/post/728508",
+          "imgSrc": "/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704119640-a838b52f7bda965ae4ba3420148503cc.jpg&w=828&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704119640-a838b52f7bda965ae4ba3420148503cc.jpg&w=1920&q=100 2x",
+          "time": "51 minutes ago"
+        },
+        {
+          "title": "Cast vote for Boat: PM urges new voters",
+          "link": "https://www.daily-sun.com/post/728506",
+          "imgSrc": "/_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704116773-cf4a054559aa7dbf7a21d1b0d7ed426a.jpg&w=828&q=100 1x, /_next/image?url=https%3A%2F%2Fcdn.daily-sun.com%2Fpublic%2Fnews_images%2F2024%2F01%2F01%2Fthumbnails%2F1704116773-cf4a054559aa7dbf7a21d1b0d7ed426a.jpg&w=1920&q=100 2x",
+          "excerpt": "",
+          "time": "51 minutes ago"
+        }
+      ]
+    },
+    {
+      "title": "Dhaka Tribune - Current & Breaking News Bangladesh & World",
+      "url": "https://www.dhakatribune.com/",
+      "news": [
+        {
+          "title": "PM Hasina: Cast votes on Jan 7 to foil BNP-Jamaat arsonists",
+          "link": "https://www.dhakatribune.com/bangladesh/election/335527/pm-hasina-cast-votes-on-jan-7-to-foil-bnp-jamaat",
+          "excerpt": "‘BNP, Jamaat want to snatch your votes’ Urges voters to go to polling stations PM asks the people of Bangladesh to stay vigilant"
+        },
+        {
+          "title": "Quader: Say farewell to BNP forever by showing red card on January 7",
+          "link": "https://www.dhakatribune.com/bangladesh/politics/335531/quader-say-farewell-to-bnp-forever-by-showing-red"
+        },
+        {
+          "title": "DMP: Half of Dhaka’s polling centres risky",
+          "link": "https://www.dhakatribune.com/bangladesh/election/335499/dmp-half-of-dhaka%E2%80%99s-polling-centres-risky"
+        },
+        {
+          "title": "Dr Yunus sentenced to 6 months in jail",
+          "link": "https://www.dhakatribune.com/bangladesh/court/335501/dr-yunus-sentenced-to-6-months-in-jail"
+        },
+        {
+          "title": "BNP’s leaflet distribution, mass contact extended till Thursday",
+          "link": "https://www.dhakatribune.com/bangladesh/politics/335515/bnp%E2%80%99s-leaflet-distribution-mass-contact-extended"
+        },
+        {
+          "title": "GM Quader criticizes candidates' withdrawal announcement",
+          "link": "https://www.dhakatribune.com/bangladesh/election/335528/gm-quader-criticizes-candidates-withdrawal"
+        },
+        {
+          "title": "Sino-Bangladesh normalization",
+          "link": "https://www.dhakatribune.com/opinion/op-ed/335484/sino-bangladesh-normalization"
+        },
+        {
+          "title": "Moyeen: Democracy will be 'restored' peacefully in 2024",
+          "link": "https://www.dhakatribune.com/bangladesh/politics/335530/moyeen-democracy-will-be-restored-peacefully-in"
+        },
+        {
+          "title": "Dr Yunus on labour court verdict: Being punished for crime we did not commit",
+          "link": "https://www.dhakatribune.com/bangladesh/court/335514/dr-yunus-decries-labour-court-verdict"
+        },
+        {
+          "title": "Parjatak Express: BR decides on name for new Dhaka-Cox's Bazar train",
+          "link": "https://www.dhakatribune.com/bangladesh/335511/parjatak-express-br-decides-on-name-for-new"
+        },
+        {
+          "title": "Evening Brief",
+          "link": "https://www.dhakatribune.com/brief/evening-brief/335533/evening-brief"
+        },
+        {
+          "title": "Will the world see more wars or unrest in 2024?",
+          "link": "https://www.dhakatribune.com/world/335500/will-the-world-see-more-wars-or-unrest-in-2024"
+        },
+        {
+          "title": "FS: Dr Yunus sentencing won’t affect state ties",
+          "link": "https://www.dhakatribune.com/bangladesh/335537/fs-dr-yunus-sentencing-won%E2%80%99t-affect-state-ties"
+        },
+        {
+          "title": "CEC stresses taking electoral process seriously",
+          "link": "https://www.dhakatribune.com/bangladesh/election/335495/cec-stresses-taking-election-process-seriously"
+        },
+        {
+          "title": "CPD urges political parties to ensure energy transition to renewables",
+          "link": "https://www.dhakatribune.com/business/335526/cpd-urges-political-parties-to-ensure-energy"
+        },
+        {
+          "title": "Denmark's Queen Margrethe II announces surprise abdication",
+          "link": "https://www.dhakatribune.com/world/europe/335507/denmark-s-queen-margrethe-ii-to-abdicate-after-52"
+        },
+        {
+          "title": "PM Hasina to address election rally in Faridpur Tuesday",
+          "link": "https://www.dhakatribune.com/bangladesh/election/335510/pm-hasina-to-address-election-rally-in-faridpur"
+        },
+        {
+          "title": "971 noise complaints made during New Year celebrations",
+          "link": "https://www.dhakatribune.com/bangladesh/335497/971-noise-complaints-made-during-new-year"
+        },
+        {
+          "title": "An abject surrender",
+          "link": "https://www.dhakatribune.com/opinion/op-ed/335482/an-abject-surrender"
+        }
+      ]
+    },
+    {
+      "title": "New Age | The Most Popular Outspoken English Daily in Bangladesh",
+      "url": "https://www.newagebd.net/",
+      "news": [
+        {
+          "title": "PM urges new voters to cast vote for ‘boat’",
+          "link": "https://www.newagebd.net/article/221708/pm-urges-new-voters-to-cast-vote-for-boat",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221708_111.jpg"
+        },
+        {
+          "title": "Railway / New ‘Tourist Express’ trains on Dhaka-Cox’s Bazar route from Jan 10",
+          "link": "https://www.newagebd.net/article/221710/new-tourist-express-trains-on-dhaka-coxs-bazar-route-from-jan-10",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221710_345.png"
+        },
+        {
+          "title": "Corruption / ACC sues RCC councillor, wife for amassing wealth illegally",
+          "link": "https://www.newagebd.net/article/221709/acc-sues-rcc-councillor-wife-for-amassing-wealth-illegally",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221709_319.jpg"
+        },
+        {
+          "title": "Politics / 18 BNP leaders, activists jailed in sabotage case",
+          "link": "https://www.newagebd.net/article/221706/18-bnp-leaders-activists-jailed-in-sabotage-case",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221706_226.jpg"
+        },
+        {
+          "title": "Yunus trial / Bangladesh court jails Nobel laureate Dr Yunus for labour law...",
+          "link": "https://www.newagebd.net/article/221699/bangladesh-court-jails-nobel-laureate-dr-yunus-for-labour-law-violation",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221699_262.png"
+        },
+        {
+          "title": "Politics / 15 injured as police charge baton on JCD procession in...",
+          "link": "https://www.newagebd.net/article/221705/15-injured-as-police-charge-baton-on-jcd-procession-in-pabna",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221705_223.JPG"
+        },
+        {
+          "title": "Army / Army CGS, PSO call on president Shahabuddin",
+          "link": "https://www.newagebd.net/article/221704/army-cgs-pso-call-on-president-shahabuddin",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221704_278.JPG"
+        },
+        {
+          "title": "Electrocution / Teenage electrocuted while playing sound box to celebrate New Year",
+          "link": "https://www.newagebd.net/article/221707/teenage-electrocuted-while-playing-sound-box-to-celebrate-new-year",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221707_258.jpg"
+        },
+        {
+          "title": "Asia / Major Japan quake triggers tsunami waves, residents asked to run",
+          "link": "https://www.newagebd.net/article/221702/major-japan-quake-triggers-tsunami-waves-residents-asked-to-run",
+          "imgSrc": "https://www.newagebd.com/files/records/news/202401/221702_212.JPG"
+        }
+      ]
+    },
+    {
+      "title": "The New Nation – Breaking News, International News & Multimedia",
+      "url": "https://newnation.live/",
+      "news": [
+        {
+          "title": "Nobel laureate Dr Yunus gets six months jail in labour law violation case",
+          "link": "https://newnation.live/nobel-laureate-dr-yunus-gets-six-months-jail-in-labour-law-violation-case/",
+          "imgSrc": "https://newnation.live/wp-content/uploads/2024/01/sefgre-839x453.jpg"
+        },
+        {
+          "title": "Fireworks explode over the Sydney Harbour Bridge and Sydney Opera House during New Year’s Eve celebrations in Sydney on January 1, 2024.",
+          "link": "https://newnation.live/fireworks-explode-over-the-sydney-harbour-bridge-and-sydney-opera-house-during-new-years-eve-celebrations-in-sydney-on-january-1-2024/",
+          "imgSrc": "https://newnation.live/wp-content/uploads/2023/12/f1-25-839x529.jpg"
+        },
+        {
+          "title": "Police thwart a procession of Islami Andolon Bangladesh at Dainik Bangla intersection in the capital on Sunday, demanding end to holding one-sided election, dissolution of parliament and revocation of new education curriculum.",
+          "link": "https://newnation.live/police-thwart-a-procession-of-islami-andolon-bangladesh-at-dainik-bangla-intersection-in-the-capital-on-sunday-demanding-end-to-holding-one-sided-election-dissolution-of-parliament-and-revocation-of/",
+          "imgSrc": "https://newnation.live/wp-content/uploads/2023/12/b1-6-362x362.jpg"
+        },
+        {
+          "title": "Changes in edn initiated to keep pace with world Says PM",
+          "link": "https://newnation.live/changes-in-edn-initiated-to-keep-pace-with-world-says-pm/",
+          "imgSrc": "https://newnation.live/wp-content/uploads/2023/12/f2-26-362x362.jpg"
+        },
+        {
+          "title": "Adv Khandker Mahbub Hossain’s first death anniv observed",
+          "link": "https://newnation.live/adv-khandker-mahbub-hossains-first-death-anniv-observed/",
+          "imgSrc": "https://newnation.live/wp-content/uploads/2024/01/b6-362x362.jpg"
+        },
+        {
+          "title": "US urges court to reject Trump immunity claim",
+          "link": "https://newnation.live/us-urges-court-to-reject-trump-immunity-claim/",
+          "imgSrc": "https://newnation.live/wp-content/uploads/2023/12/b5-2-362x340.jpg"
+        },
+        {
+          "title": "BNP calls for boycotting polls",
+          "link": "https://newnation.live/bnp-calls-for-boycotting-polls/",
+          "imgSrc": "https://newnation.live/wp-content/uploads/2023/12/b3-2-362x362.jpg"
+        }
+      ]
+    },
+    {
+      "title": "The Daily Star – Leading English Daily among Bangladesh Newspapers",
+      "url": "https://www.thedailystar.net/",
+      "news": [
+        {
+          "title": "Punished for a crime I didn't commit: Prof Yunus",
+          "link": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/punished-crime-i-didnt-commit-prof-yunus-3508281",
+          "imgSrc": "https://tds-images.thedailystar.net/sites/default/files/styles/big_201/public/images/2024/01/01/web_0.jpg",
+          "excerpt": "Nobel Laureate Prof Muhammad Yunus, in his first reaction to the court verdict against him, said he was handed over a sentence for a crime he hadn't committed",
+          "time": "1h ago"
+        },
+        {
+          "title": "Yunus sentenced to six months' jail in labour law violation case",
+          "link": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/yunus-sentenced-six-months-jail-labour-law-violation-case-3508051",
+          "excerpt": "Three other top Grameen Telecom officials handed same sentence; all four granted bail",
+          "time": "7h ago"
+        },
+        {
+          "title": "JU entry tests start on Feb 22",
+          "link": "https://www.thedailystar.net/campus/education/news/ju-entry-tests-start-feb-22-3508311",
+          "excerpt": "The first year honours admission test at Jahangirnagar University (JU) for the academic year 2023-24 will begin on February 22 and will continue till February 29",
+          "time": "38m ago"
+        },
+        {
+          "title": "Yunus sued for not paying workers’ dues: Hasan",
+          "link": "https://www.thedailystar.net/news/bangladesh/crime-justice/news/yunus-sued-not-paying-workers-dues-hasan-3508306",
+          "time": "48m ago"
+        },
+        {
+          "title": "Nation ashamed by Gono Bhaban's 'dictated verdict' against Yunus: Rizvi",
+          "link": "https://www.thedailystar.net/news/bangladesh/politics/news/nation-ashamed-gono-bhabans-dictated-verdict-against-yunus-rizvi-3508326",
+          "time": "30m ago"
+        },
+        {
+          "title": "Tale of a baby bird and a heart of gold",
+          "link": "https://www.thedailystar.net/top-news/news/tale-baby-bird-and-heart-gold-3508226",
+          "imgSrc": "https://tds-images.thedailystar.net/sites/default/files/styles/medium_202/public/media/api_images/2024/01/01/Leon%20story.jpg",
+          "time": "2h ago"
+        },
+        {
+          "title": "US not seeking wider conflict in Middle East",
+          "link": "https://www.thedailystar.net/star-multimedia/news-multimedia/news/us-not-seeking-wider-conflict-middle-east-3508336",
+          "imgSrc": "https://tds-images.thedailystar.net/sites/default/files/styles/medium_202/public/images/2024/01/01/newsbyte_web.jpg",
+          "time": "22m ago"
+        },
+        {
+          "title": "EC has no jurisdiction to defer election: CEC",
+          "link": "https://www.thedailystar.net/news/bangladesh/national-election-2024/news/ec-has-no-jurisdiction-defer-election-cec-3508266",
+          "excerpt": "Chief Election Commissioner (CEC) Kazi Habibul Awal today said that the EC has no jurisdiction to defer the election",
+          "time": "1h ago"
+        },
+        {
+          "title": "Non-resident voters / Many reluctant to leave Dhaka during polls",
+          "link": "https://www.thedailystar.net/news/bangladesh/national-election-2024/news/many-reluctant-leave-dhaka-during-polls-3508146",
+          "excerpt": "Some of them are rickshaw-pullers, some ply auto-rickshaws on Dhaka roads while others are shopkeepers, house-helps, bus drivers, private employees, and so on",
+          "time": "3h ago"
+        }
+      ]
+    }
+  ]
+}

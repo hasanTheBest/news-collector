@@ -1,12 +1,21 @@
 exports.nayaDiganta = async function (page) {
   // Wait for the news articles to load
-  await page.waitForSelector(".news-box");
+  const newsBox = await page.waitForSelector(".news-box");
 
-  const articles = await page.evaluate(() => {
+  const articles = await page.evaluate((newsBox) => {
     function getNews(node) {
-      const link = node.querySelector("a").href;
-      const title = node.querySelector("h2").innerText.trim();
+      let title;
 
+      if (node.querySelector("h2"))
+        title = node.querySelector("h2").innerText.trim();
+      else if (node.querySelector("h3"))
+        title = node.querySelector("h3").innerText.trim();
+      else
+        title = node
+          .querySelector(".column-no-left-padding > a")
+          .innerText.trim();
+
+      const link = node.querySelector("a").href;
       return {
         title,
         link,
@@ -14,17 +23,20 @@ exports.nayaDiganta = async function (page) {
     }
 
     const selectors = [
-      document.querySelector(".news-caption-lead"),
+      newsBox.querySelector(".news-caption-lead"),
       ...Array.from(
-        document.querySelectorAll(".news-box .col-md-9 .col-md-8 .news-caption")
+        newsBox.querySelectorAll(".col-md-9 .col-md-8 .news-caption")
       ),
       ...Array.from(document.querySelectorAll(".lead-news-row .news-item")),
+      ...Array.from(
+        newsBox.querySelectorAll(".col-md-9 .col-md-4 .sub-lead-list")
+      ),
     ];
 
     const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
-  });
+  }, newsBox);
 
   return articles;
 };
