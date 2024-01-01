@@ -15,11 +15,11 @@ app.get("/news", async (req, res) => {
   // try {
   // const { urls } = req.body; // Assuming URLs are sent in the request body
   const urls = [
-    "https://www.thedailystar.net/",
+    // "https://www.thedailystar.net/",
     "https://www.ittefaq.com.bd/",
-    // "https://www.dhakatribune.com/",
+    "https://www.dhakatribune.com/",
     // "https://www.dailynayadiganta.com/",
-    // "https://www.prothomalo.com/"
+    "https://www.prothomalo.com/"
   ];
 
   const browser = await puppeteer.launch({
@@ -42,8 +42,10 @@ app.get("/news", async (req, res) => {
      * const data = await [name].bind(page)
      */
     // Example:
-    const title = await getNews(url, page);
-    scrapedData.push({ url, title });
+    const title = await page.title()
+    // const icon = await page.evaluate((page) => page.querySelector('link[rel="icon"]')?.href, page)
+    const news = await getNews(url, page);
+    scrapedData.push({ title, url, news });
   }
 
   await browser.close();
