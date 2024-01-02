@@ -20,11 +20,11 @@ exports.amadersomoy = async function (page) {
     }
 
     const selectors = [
-      getNews(leadArea.firstElementChild.firstElementChild),
-      Array.from(
+      leadArea.firstElementChild.firstElementChild,
+      ...Array.from(
         leadArea.querySelectorAll(".tc-post-list-style2 > .row > div")
       ),
-      Array.from(leadArea.lastElementChild.children), // starter div with all child div
+      ...Array.from(leadArea.lastElementChild.children), // starter div with all child div
     ];
 
     const articlesData = selectors.map((node) => getNews(node));

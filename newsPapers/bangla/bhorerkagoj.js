@@ -1,3 +1,5 @@
+// Website reconstructing
+
 exports.bhorerkagoj = async function (page) {
   // Wait for the news articles to load
   const leadArea = await page.waitForSelector(".padan-news");
@@ -17,8 +19,6 @@ exports.bhorerkagoj = async function (page) {
         imgSrc,
       };
     }
-
-    articlesData.push(getNews());
 
     const selectors = [
       leadArea.querySelector(".padan-news-big"),
