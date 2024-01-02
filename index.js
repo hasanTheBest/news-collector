@@ -25,20 +25,21 @@ app.get("/news", async (req, res) => {
     // "https://www.newagebd.net/",
     // "https://newnation.live/",
     // "https://www.thedailystar.net/",
-
     // bangla
     // "https://www.dainikamadershomoy.com/",
     // "https://www.bd-pratidin.com/",
     // "https://www.bhorerkagoj.com/", // 2.  website reconstructing
     // "https://bonikbarta.net/",
+    "https://www.deshrupantor.com/",
     // "https://dailyinqilab.com/",
     // "https://www.ittefaq.com.bd/",
     // "https://www.jaijaidinbd.com/",
     // "https://www.dailyjanakantha.com/",
     // "https://www.jugantor.com/",
+    // "https://www.kalbela.com/", // Navigation timeout of 30000 ms exceeded
     // "https://www.kalerkantho.com/",
     // "https://mzamin.com/",
-    "https://www.manobkantha.com.bd/",
+    // "https://www.manobkantha.com.bd/",
     // "https://www.dailynayadiganta.com/",
     // "https://www.prothomalo.com/",
     // "https://samakal.com/",

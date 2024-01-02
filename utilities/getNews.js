@@ -4,11 +4,13 @@ const {
 } = require("../newsPapers/bangla/bangladeshPratidin");
 const { bhorerkagoj } = require("../newsPapers/bangla/bhorerkagoj");
 const { bonikbarta } = require("../newsPapers/bangla/bonikbarta");
+const { deshrupantor } = require("../newsPapers/bangla/deshrupantor");
 const { inqilab } = require("../newsPapers/bangla/inqilab");
 const { ittefaq } = require("../newsPapers/bangla/ittefaq");
 const { jaijaidin } = require("../newsPapers/bangla/jaijaidin");
 const { janakantha } = require("../newsPapers/bangla/janakantha");
 const { jugantor } = require("../newsPapers/bangla/jugantor");
+const { kalbela } = require("../newsPapers/bangla/kalbela");
 const { kalerkantha } = require("../newsPapers/bangla/kalerkantha");
 const { manabzamin } = require("../newsPapers/bangla/manabzamin");
 const { manobkantha } = require("../newsPapers/bangla/manobkantha");
@@ -84,6 +86,10 @@ exports.getNews = async function (url, page) {
       data = await bonikbarta(page);
       break;
 
+    case "https://www.deshrupantor.com/":
+      data = await deshrupantor(page);
+      break;
+
     case "https://dailyinqilab.com/":
       data = await inqilab(page);
       break;
@@ -102,6 +108,10 @@ exports.getNews = async function (url, page) {
 
     case "https://www.jugantor.com/":
       data = await jugantor(page);
+      break;
+
+    case "https://www.kalbela.com/":
+      data = await kalbela(page);
       break;
 
     case "https://www.kalerkantho.com/":
