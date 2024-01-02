@@ -28,9 +28,10 @@ app.get("/news", async (req, res) => {
 
     // bangla
     // "https://www.dainikamadershomoy.com/",
+    "https://www.bd-pratidin.com/",
     // "https://www.bhorerkagoj.com/", // 2.  website reconstructing
-    // "https://bonikbarta.net/", 
-    // "https://dailyinqilab.com/", 
+    // "https://bonikbarta.net/",
+    // "https://dailyinqilab.com/",
     // "https://www.ittefaq.com.bd/",
     // "https://www.jaijaidinbd.com/",
     // "https://www.dailyjanakantha.com/",
@@ -40,7 +41,7 @@ app.get("/news", async (req, res) => {
     // "https://www.dailynayadiganta.com/",
     // "https://www.prothomalo.com/",
     // "https://samakal.com/",
-    "https://dailysangram.com/",
+    // "https://dailysangram.com/",
     // "https://sangbad.net.bd/",
   ];
 
