@@ -11,6 +11,7 @@ const { manabzamin } = require("../newsPapers/bangla/manabzamin");
 const { nayaDiganta } = require("../newsPapers/bangla/nayadiganta");
 const { prothomAlo } = require("../newsPapers/bangla/prothomAlo");
 const { samakal } = require("../newsPapers/bangla/samakal");
+const { sangram } = require("../newsPapers/bangla/sangram");
 const { songbad } = require("../newsPapers/bangla/songbad");
 
 // English newspapers
@@ -113,6 +114,10 @@ exports.getNews = async function (url, page) {
 
     case "https://samakal.com/":
       data = await samakal(page);
+      break;
+
+    case "https://dailysangram.com/":
+      data = await sangram(page);
       break;
 
     case "https://sangbad.net.bd/":

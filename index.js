@@ -27,20 +27,21 @@ app.get("/news", async (req, res) => {
     // "https://www.thedailystar.net/",
 
     // bangla
-    "https://www.dainikamadershomoy.com/",
+    // "https://www.dainikamadershomoy.com/",
     // "https://www.bhorerkagoj.com/", // 2.  website reconstructing
-    "https://bonikbarta.net/", 
-    "https://dailyinqilab.com/", 
-    "https://www.ittefaq.com.bd/",
-    "https://www.jaijaidinbd.com/",
-    "https://www.dailyjanakantha.com/",
-    "https://www.jugantor.com/",
-    "https://www.kalerkantho.com/",
-    "https://mzamin.com/",
-    "https://www.dailynayadiganta.com/",
-    "https://www.prothomalo.com/",
-    "https://samakal.com/",
-    "https://sangbad.net.bd/",
+    // "https://bonikbarta.net/", 
+    // "https://dailyinqilab.com/", 
+    // "https://www.ittefaq.com.bd/",
+    // "https://www.jaijaidinbd.com/",
+    // "https://www.dailyjanakantha.com/",
+    // "https://www.jugantor.com/",
+    // "https://www.kalerkantho.com/",
+    // "https://mzamin.com/",
+    // "https://www.dailynayadiganta.com/",
+    // "https://www.prothomalo.com/",
+    // "https://samakal.com/",
+    "https://dailysangram.com/",
+    // "https://sangbad.net.bd/",
   ];
 
   const browser = await puppeteer.launch({
