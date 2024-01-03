@@ -1,5 +1,5 @@
 const { alokitobangladesh } = require("../newsPapers/bangla/alokitobangladesh");
-const { amadersomoy } = require("../newsPapers/bangla/amadershomoy"); 
+const { amadersomoy } = require("../newsPapers/bangla/amadershomoy");
 const { amarbarta } = require("../newsPapers/bangla/amarbarta");
 const {
   bangladeshPratidin,
@@ -7,6 +7,7 @@ const {
 const { bhorerkagoj } = require("../newsPapers/bangla/bhorerkagoj");
 const { bonikbarta } = require("../newsPapers/bangla/bonikbarta");
 const { deshrupantor } = require("../newsPapers/bangla/deshrupantor");
+const { dhakatimes24 } = require("../newsPapers/bangla/dhakatimes24");
 const { inqilab } = require("../newsPapers/bangla/inqilab");
 const { ittefaq } = require("../newsPapers/bangla/ittefaq");
 const { jaijaidin } = require("../newsPapers/bangla/jaijaidin");
@@ -102,6 +103,10 @@ exports.getNews = async function (url, page) {
       data = await deshrupantor(page);
       break;
 
+    case "https://www.dhakatimes24.com/":
+      data = await dhakatimes24(page);
+      break;
+
     case "https://dailyinqilab.com/":
       data = await inqilab(page);
       break;
@@ -157,7 +162,7 @@ exports.getNews = async function (url, page) {
     case "https://dailysangram.com/":
       data = await sangram(page);
       break;
-      
+
     case "https://www.shomoyeralo.com/":
       data = await shomoyeralo(page);
       break;

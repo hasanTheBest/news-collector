@@ -2,29 +2,33 @@
 
 exports.bhorerkagoj = async function (page) {
   // Wait for the news articles to load
-  const leadArea = await page.waitForSelector(".padan-news");
+  const leadArea = await page.waitForSelector(".container .col-md-9");
 
-  // Extract news articles
   const articles = await page.evaluate((leadArea) => {
+    // helper function for extract news
     function getNews(node) {
       const link = node.querySelector("a").href;
-      const title = node.querySelector("h2")
-        ? node.querySelector("h2").innerText.trim()
-        : node.querySelector("h4").innerText.trim();
+      const title = node.querySelector("h1")
+        ? node.querySelector("h1").innerText.trim()
+        : node.querySelector("h3").innerText.trim();
+
       const imgSrc = node.querySelector("img")?.src;
+      const excerpt = node.querySelector(".desktopSummary")?.innerText.trim();
 
       return {
         title,
         link,
         imgSrc,
+        excerpt,
       };
     }
 
     const selectors = [
-      leadArea.querySelector(".padan-news-big"),
-      ...Array.from(
-        leadArea.querySelectorAll(".podan-small .podan-small-item")
+      ...Array.from(leadArea.querySelectorAll(".desktopSectionLead")).slice(
+        0,
+        10
       ),
+      ...Array.from(leadArea.querySelectorAll(".topNews .media")), // 2
     ];
 
     const articlesData = selectors.map((node) => getNews(node));
