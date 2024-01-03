@@ -27,6 +27,7 @@ app.get("/news", async (req, res) => {
     // "https://www.thedailystar.net/",
     // bangla
     // "https://www.dainikamadershomoy.com/",
+    "https://www.amarbarta.com/",
     // "https://www.bd-pratidin.com/",
     // "https://www.bhorerkagoj.com/", // 2.  website reconstructing
     // "https://bonikbarta.net/",
@@ -44,7 +45,7 @@ app.get("/news", async (req, res) => {
     // "https://www.prothomalo.com/",
     // "https://samakal.com/",
     // "https://dailysangram.com/",
-    "https://www.shomoyeralo.com/",
+    // "https://www.shomoyeralo.com/",
     // "https://sangbad.net.bd/",
   ];
 
