@@ -26,8 +26,9 @@ app.get("/news", async (req, res) => {
     // "https://newnation.live/",
     // "https://www.thedailystar.net/",
     // bangla
+    "https://www.alokitobangladesh.com/",
     // "https://www.dainikamadershomoy.com/",
-    "https://www.amarbarta.com/",
+    // "https://www.amarbarta.com/",
     // "https://www.bd-pratidin.com/",
     // "https://www.bhorerkagoj.com/", // 2.  website reconstructing
     // "https://bonikbarta.net/",

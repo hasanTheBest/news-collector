@@ -1,3 +1,4 @@
+const { alokitobangladesh } = require("../newsPapers/bangla/alokitobangladesh");
 const { amadersomoy } = require("../newsPapers/bangla/amadershomoy"); 
 const { amarbarta } = require("../newsPapers/bangla/amarbarta");
 const {
@@ -72,6 +73,10 @@ exports.getNews = async function (url, page) {
     /**
      * Bangla Newspaper links
      * */
+    case "https://www.alokitobangladesh.com/":
+      data = await alokitobangladesh(page);
+      break;
+
     case "https://www.dainikamadershomoy.com/":
       data = await amadersomoy(page);
       break;
