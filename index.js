@@ -26,7 +26,7 @@ app.get("/news", async (req, res) => {
     // "https://newnation.live/",
     // "https://www.thedailystar.net/",
     // bangla
-    "https://www.alokitobangladesh.com/",
+    // "https://www.alokitobangladesh.com/",
     // "https://www.dainikamadershomoy.com/",
     // "https://www.amarbarta.com/",
     // "https://www.bd-pratidin.com/",
@@ -44,6 +44,7 @@ app.get("/news", async (req, res) => {
     // "https://www.manobkantha.com.bd/",
     // "https://www.dailynayadiganta.com/",
     // "https://www.prothomalo.com/",
+    "https://www.protidinersangbad.com/",
     // "https://samakal.com/",
     // "https://dailysangram.com/",
     // "https://www.shomoyeralo.com/",

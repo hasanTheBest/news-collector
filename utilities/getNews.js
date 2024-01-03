@@ -18,6 +18,7 @@ const { manabzamin } = require("../newsPapers/bangla/manabzamin");
 const { manobkantha } = require("../newsPapers/bangla/manobkantha");
 const { nayaDiganta } = require("../newsPapers/bangla/nayadiganta");
 const { prothomAlo } = require("../newsPapers/bangla/prothomAlo");
+const { protidinersangbad } = require("../newsPapers/bangla/protidinersangbad");
 const { samakal } = require("../newsPapers/bangla/samakal");
 const { sangram } = require("../newsPapers/bangla/sangram");
 const { shomoyeralo } = require("../newsPapers/bangla/shomoyeralo");
@@ -143,6 +144,10 @@ exports.getNews = async function (url, page) {
 
     case "https://www.prothomalo.com/":
       data = await prothomAlo(page);
+      break;
+
+    case "https://www.protidinersangbad.com/":
+      data = await protidinersangbad(page);
       break;
 
     case "https://samakal.com/":
