@@ -30,7 +30,7 @@ app.get("/news", async (req, res) => {
     // "https://www.bd-pratidin.com/",
     // "https://www.bhorerkagoj.com/", // 2.  website reconstructing
     // "https://bonikbarta.net/",
-    "https://www.deshrupantor.com/",
+    // "https://www.deshrupantor.com/",
     // "https://dailyinqilab.com/",
     // "https://www.ittefaq.com.bd/",
     // "https://www.jaijaidinbd.com/",
@@ -44,6 +44,7 @@ app.get("/news", async (req, res) => {
     // "https://www.prothomalo.com/",
     // "https://samakal.com/",
     // "https://dailysangram.com/",
+    "https://www.shomoyeralo.com/",
     // "https://sangbad.net.bd/",
   ];
 
