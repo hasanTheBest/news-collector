@@ -15,42 +15,44 @@ app.get("/", (req, res) => {
 app.get("/news", async (req, res) => {
   // try {
   // const { urls } = req.body; // Assuming URLs are sent in the request body
-  const urls = [
-    // english OKAY
-    // "https://thebangladeshtoday.com/",
-    // "https://www.tbsnews.net/",
-    // "https://www.observerbd.com/",
-    // "https://www.daily-sun.com/",
-    // "https://www.dhakatribune.com/",
-    // "https://www.newagebd.net/",
-    // "https://newnation.live/",
-    // "https://www.thedailystar.net/",
-    // bangla
-    // "https://www.alokitobangladesh.com/",
-    // "https://www.dainikamadershomoy.com/",
-    // "https://www.amarbarta.com/",
-    // "https://www.bd-pratidin.com/",
-    // "https://www.bhorerkagoj.com/", // e Navigation timeout of 30000 ms exceeded
-    // "https://bonikbarta.net/",
-    // "https://www.dhakatimes24.com/", // Navigation timeout of 30000 ms exceeded
-    // "https://www.deshrupantor.com/",
-    // "https://dailyinqilab.com/",
-    // "https://www.ittefaq.com.bd/",
-    // "https://www.jaijaidinbd.com/",
-    // "https://www.dailyjanakantha.com/",
-    // "https://www.jugantor.com/",
-    "https://www.kalbela.com/", // Navigation timeout of 30000 ms exceeded
-    // "https://www.kalerkantho.com/",
-    // "https://mzamin.com/",
-    // "https://www.manobkantha.com.bd/",
-    // "https://www.dailynayadiganta.com/",
-    // "https://www.prothomalo.com/",
-    // "https://www.protidinersangbad.com/",
-    // "https://samakal.com/",
-    // "https://dailysangram.com/",
-    // "https://www.shomoyeralo.com/",
-    // "https://sangbad.net.bd/",
-  ];
+  // const urls = [
+  //   // english OKAY
+  //   // "https://thebangladeshtoday.com/",
+  //   // "https://www.tbsnews.net/",
+  //   // "https://www.observerbd.com/",
+  //   // "https://www.daily-sun.com/",
+  //   // "https://www.dhakatribune.com/",
+  //   // "https://www.newagebd.net/",
+  //   // "https://newnation.live/",
+  //   // "https://www.thedailystar.net/",
+  //   // bangla
+  //   // "https://www.alokitobangladesh.com/",
+  //   // "https://www.dainikamadershomoy.com/",
+  //   // "https://www.amarbarta.com/",
+  //   // "https://www.bd-pratidin.com/",
+  //   // "https://www.bhorerkagoj.com/", // e Navigation timeout of 30000 ms exceeded
+  //   // "https://bonikbarta.net/",
+  //   // "https://www.dhakatimes24.com/", // Navigation timeout of 30000 ms exceeded
+  //   // "https://www.deshrupantor.com/",
+  //   // "https://dailyinqilab.com/",
+  //   // "https://www.ittefaq.com.bd/",
+  //   // "https://www.jaijaidinbd.com/",
+  //   // "https://www.dailyjanakantha.com/",
+  //   // "https://www.jugantor.com/",
+  //   "https://www.kalbela.com/",
+  //   // "https://www.kalerkantho.com/",
+  //   // "https://mzamin.com/",
+  //   // "https://www.manobkantha.com.bd/",
+  //   // "https://www.dailynayadiganta.com/",
+  //   // "https://www.prothomalo.com/",
+  //   // "https://www.protidinersangbad.com/",
+  //   // "https://samakal.com/",
+  //   // "https://dailysangram.com/",
+  //   // "https://www.shomoyeralo.com/",
+  //   // "https://sangbad.net.bd/",
+  // ];
+
+  const { urls } = req.query; // text format
 
   const browser = await puppeteer.launch({
     defaultViewport: {
@@ -64,7 +66,7 @@ app.get("/news", async (req, res) => {
 
   const scrapedData = [];
 
-  for (const url of urls) {
+  for (const url of urls.split(",")) {
     await page.goto(url, {
       waitUntil: "domcontentloaded",
     });
