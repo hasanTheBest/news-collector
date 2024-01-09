@@ -1,11 +1,20 @@
 const express = require("express");
 const puppeteer = require("puppeteer");
+const cors=require("cors");
 const { getNews } = require("./utilities/getNews");
 
 const app = express();
 
 // Define middleware to parse incoming requests as JSON
 app.use(express.json());
+
+const corsOptions ={
+  origin:'*', 
+  credentials:true,            //access-control-allow-credentials:true
+  optionSuccessStatus:200,
+}
+
+app.use(cors(corsOptions)) 
 
 app.get("/", (req, res) => {
   res.send("app is running smooth.");
