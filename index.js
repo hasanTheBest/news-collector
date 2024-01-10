@@ -1,104 +1,31 @@
 const express = require("express");
 const puppeteer = require("puppeteer");
-const cors=require("cors");
+const cors = require("cors");
 const { getNews } = require("./utilities/getNews");
+const { news, newsRoute } = require("./routes/news.route");
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 // Define middleware to parse incoming requests as JSON
 app.use(express.json());
 
-const corsOptions ={
-  origin:'*', 
-  credentials:true,            //access-control-allow-credentials:true
-  optionSuccessStatus:200,
-}
+// cor issue addressed
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+    optionSuccessStatus: 200,
+  })
+);
 
-app.use(cors(corsOptions)) 
+// scraping here
+app.get("/news", newsRoute);
 
+// default response from the api
 app.get("/", (req, res) => {
   res.send("app is running smooth.");
 });
-
-// scraping here
-app.get("/news", async (req, res) => {
-  // try {
-  // const { urls } = req.body; // Assuming URLs are sent in the request body
-  // const urls = [
-  //   // english OKAY
-  //   // "https://thebangladeshtoday.com/",
-  //   // "https://www.tbsnews.net/",
-  //   // "https://www.observerbd.com/",
-  //   // "https://www.daily-sun.com/",
-  //   // "https://www.dhakatribune.com/",
-  //   // "https://www.newagebd.net/",
-  //   // "https://newnation.live/",
-  //   // "https://www.thedailystar.net/",
-  //   // bangla
-  //   // "https://www.alokitobangladesh.com/",
-  //   // "https://www.dainikamadershomoy.com/",
-  //   // "https://www.amarbarta.com/",
-  //   // "https://www.bd-pratidin.com/",
-  //   // "https://www.bhorerkagoj.com/", // e Navigation timeout of 30000 ms exceeded
-  //   // "https://bonikbarta.net/",
-  //   // "https://www.dhakatimes24.com/", // Navigation timeout of 30000 ms exceeded
-  //   // "https://www.deshrupantor.com/",
-  //   // "https://dailyinqilab.com/",
-  //   // "https://www.ittefaq.com.bd/",
-  //   // "https://www.jaijaidinbd.com/",
-  //   // "https://www.dailyjanakantha.com/",
-  //   // "https://www.jugantor.com/",
-  //   "https://www.kalbela.com/",
-  //   // "https://www.kalerkantho.com/",
-  //   // "https://mzamin.com/",
-  //   // "https://www.manobkantha.com.bd/",
-  //   // "https://www.dailynayadiganta.com/",
-  //   // "https://www.prothomalo.com/",
-  //   // "https://www.protidinersangbad.com/",
-  //   // "https://samakal.com/",
-  //   // "https://dailysangram.com/",
-  //   // "https://www.shomoyeralo.com/",
-  //   // "https://sangbad.net.bd/",
-  // ];
-
-  const { urls } = req.query; // text format
-
-  const browser = await puppeteer.launch({
-    defaultViewport: {
-      width: 1920,
-      height: 1080,
-    },
-    headless: false,
-  });
-
-  const page = await browser.newPage();
-
-  const scrapedData = [];
-
-  for (const url of urls.split(",")) {
-    await page.goto(url, {
-      waitUntil: "domcontentloaded",
-    });
-
-    const title = await page.title();
-    const news = await getNews(url, page);
-
-    scrapedData.push({ title, url, news });
-  }
-
-  await browser.close();
-
-  res.status(200).json({
-    message: "Scraping 'and saving to MongoDB' successful",
-    data: scrapedData,
-  });
-  // } catch (error) {
-  //   res.status(500).json({ error: "Internal Server Error", message: error });
-  // }
-});
-
-// Start the server
-const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
