@@ -1,7 +1,4 @@
-const puppeteer = require("puppeteer");
-
 exports.bangladeshToday = async function (page) {
-  
   const leadContent = await page.waitForSelector(".leadBox");
 
   // Extract news articles
