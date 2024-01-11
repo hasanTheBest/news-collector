@@ -4,6 +4,7 @@ const { getNews } = require("../utilities/getNews");
 const { newspaperConfig } = require("../utilities/newspaperConfig");
 
 const newspaperNames = Object.keys(newspaperConfig);
+const newsCat = "leading";
 
 exports.newsRoute = async (req, res) => {
   try {
@@ -12,8 +13,8 @@ exports.newsRoute = async (req, res) => {
         width: 1920,
         height: 1080,
       },
-      headless: "new",
-      // headless: false,
+      // headless: "new",
+      headless: false,
     });
 
     const page = await browser.newPage();
@@ -23,16 +24,20 @@ exports.newsRoute = async (req, res) => {
 
     for (const name of newspaperNames) {
       // Log the current active scrapping url
-      const url = newspaperConfig[name];
-      console.log("\nActive\t", name);
+      const url = newspaperConfig[name][newsCat];
+      console.log("\nActive\t", name + ": " + url);
 
       try {
+        if (!url) {
+          throw new Error(`Url is not defined for ${newsCat} of ${name}`);
+        }
+
         await page.goto(url, {
           waitUntil: "domcontentloaded",
         });
 
         const title = await page.title();
-        const news = await getNews(name, page);
+        const news = await getNews(name, page, newsCat);
 
         scrapedData.push({ title, url, news });
       } catch (error) {

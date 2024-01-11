@@ -1,6 +1,11 @@
 exports.newspaperConfig = {
-  theBangladeshToday: "https://thebangladeshtoday.com/",
-  tbsNews: "https://www.tbsnews.net/",
+  theBangladeshToday: {
+    leading: "https://thebangladeshtoday.com/",
+  },
+  tbsNews: {
+    leading: "https://www.tbsnews.net/",
+  },
+  // tbsNews: "https://www.tbsnews.net/",
   // observerBD: "https://www.observerbd.com/",
   // dailySun: "https://www.daily-sun.com/",
   // dhakaTribune: "https://www.dhakatribune.com/",

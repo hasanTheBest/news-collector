@@ -1,9 +1,9 @@
 const { newspaperConfig } = require("./newspaperConfig");
 const { scrapingFunctions } = require("./scrapingFunctions");
 
-exports.getNews = async function (name, page) {
+exports.getNews = async function (name, page, newsCat) {
   try {
-    const scrapeFunction = scrapingFunctions[name];
+    const scrapeFunction = scrapingFunctions(newsCat)[name];
 
     if (!scrapeFunction) {
       throw new Error("Scraping function not found for the given URL");
