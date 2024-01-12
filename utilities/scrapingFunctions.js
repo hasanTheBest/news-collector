@@ -39,19 +39,8 @@ exports.scrapingFunctions = function (newsCat) {
   return {
     async theBangladeshToday(page) {
       // Scraping logic for The Bangladesh Today
-      // return await bangladeshToday(page);
       return await bangladeshToday[newsCat](page);
     },
-    // theBangladeshToday: {
-    //   // leading: async (page) => await tbsNews(page)
-    //   // async leading (page) {
-    //   //   return "tbs news cat"
-    //   // },
-    //   [newsCat] : async function (page)  {
-    //   // async function(page) {
-    //     return await bangladeshToday[newsCat](page);
-    //   },
-    // },
 
     async tbsNews(page) {
       // Scraping logic for TBS News

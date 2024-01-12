@@ -1,18 +1,31 @@
 exports.newspaperConfig = {
-  theBangladeshToday: {
-    leading: "https://thebangladeshtoday.com/",
-    national: "https://thebangladeshtoday.com/?cat=29",
-    international: "https://thebangladeshtoday.com/?cat=2",
-    politics: "https://thebangladeshtoday.com/?cat=28",
-    business: "https://thebangladeshtoday.com/?cat=30",
-    sports: "https://thebangladeshtoday.com/?cat=5",
-    entertainment: "https://thebangladeshtoday.com/?cat=4",
-    feature: "https://thebangladeshtoday.com/?cat=6",
-  },
-  // tbsNews: {
-  //   leading: "https://www.tbsnews.net/",
+  // theBangladeshToday: {
+  //   leading: "https://thebangladeshtoday.com/",
+  //   national: "https://thebangladeshtoday.com/?cat=29",
+  //   international: "https://thebangladeshtoday.com/?cat=2",
+  //   politics: "https://thebangladeshtoday.com/?cat=28",
+  //   business: "https://thebangladeshtoday.com/?cat=30",
+  //   sports: "https://thebangladeshtoday.com/?cat=5",
+  //   entertainment: "https://thebangladeshtoday.com/?cat=4",
+  //   feature: "https://thebangladeshtoday.com/?cat=6",
   // },
-  // tbsNews: "https://www.tbsnews.net/",
+
+  tbsNews: {
+    leading: "https://www.tbsnews.net/",
+    national: "https://www.tbsnews.net/bangladesh",
+    international: "https://www.tbsnews.net/world",
+    politics: "https://www.tbsnews.net/bangladesh/politics",
+    business: "https://www.tbsnews.net/economy",
+    sports: "https://www.tbsnews.net/sports",
+    feature: "https://www.tbsnews.net/features",
+    entertainment: "https://www.tbsnews.net/splash",
+
+    opinion: "https://www.tbsnews.net/thoughts",
+    tech: "https://www.tbsnews.net/tech",
+    health: "https://www.tbsnews.net/bangladesh/health",
+    crime: "https://www.tbsnews.net/bangladesh/crime",
+  },
+
   // observerBD: "https://www.observerbd.com/",
   // dailySun: "https://www.daily-sun.com/",
   // dhakaTribune: "https://www.dhakatribune.com/",

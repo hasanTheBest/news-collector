@@ -1,3 +1,7 @@
+const {
+  businessStandardCat,
+} = require("./businessStandard/businessStandardCat");
+
 exports.businessStandard = {
   leading: async function (page) {
     const leadContent = await page.waitForSelector(".pane-top-news-v4");
@@ -38,5 +42,50 @@ exports.businessStandard = {
     }, leadContent);
 
     return articles;
+  },
+
+  national: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  international: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  politics: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  business: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  sports: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  feature: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  // layout is different but works
+  entertainment: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  opinion: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  tech: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  health: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
+  },
+
+  crime: async function (page) {
+    return await businessStandardCat(".view-content.row", page);
   },
 };
