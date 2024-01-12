@@ -54,19 +54,35 @@ exports.newspaperConfig = {
   //   health: "https://www.daily-sun.com/online/health",
   // },
 
-  dhakaTribune: {
-    leading: "https://www.dhakatribune.com/",
-    national: "https://www.dhakatribune.com/bangladesh",
-    international: "https://www.dhakatribune.com/world",
-    business: "https://www.dhakatribune.com/business",
-    sports: "https://www.dhakatribune.com/sport",
-    entertainment: "https://www.dhakatribune.com/showtime",
-    tech: "https://www.dhakatribune.com/science-technology-environment",
+  // dhakaTribune: {
+  //   leading: "https://www.dhakatribune.com/",
+  //   national: "https://www.dhakatribune.com/bangladesh",
+  //   international: "https://www.dhakatribune.com/world",
+  //   business: "https://www.dhakatribune.com/business",
+  //   sports: "https://www.dhakatribune.com/sport",
+  //   entertainment: "https://www.dhakatribune.com/showtime",
+  //   tech: "https://www.dhakatribune.com/science-technology-environment",
 
-    opinion: "https://www.dhakatribune.com/opinion",
-    education: "https://www.dhakatribune.com/bangladesh/education",
-    politics: "https://www.dhakatribune.com/bangladesh/politics",
-    crime: "https://www.dhakatribune.com/bangladesh/crime",
+  //   opinion: "https://www.dhakatribune.com/opinion",
+  //   education: "https://www.dhakatribune.com/bangladesh/education",
+  //   politics: "https://www.dhakatribune.com/bangladesh/politics",
+  //   crime: "https://www.dhakatribune.com/bangladesh/crime",
+  // },
+
+  newAgeBD: {
+    leading: "https://www.newagebd.net/",
+    national: "https://www.newagebd.net/articlelist/302/Bangladesh",
+    international: "https://www.newagebd.net/articlelist/295/World",
+    business: "https://www.newagebd.net/articlelist/293/Business",
+    sports: "https://www.newagebd.net/articlelist/291/Sports",
+    entertainment: "https://www.newagebd.net/articlelist/297/Entertainment",
+    tech: "https://www.newagebd.net/articlelist/294/Tech",
+
+    opinion: "https://www.newagebd.net/articlelist/298/Opinion",
+    education: "https://www.newagebd.net/articlelist/382/Science",
+    politics: "https://www.newagebd.net/articlelist/304/Politics",
+    health: "https://www.newagebd.net/articlelist/378/Health",
+    countryside: "https://www.newagebd.net/articlelist/305/Country",
   },
 
   // newAgeBD: "https://www.newagebd.net/",

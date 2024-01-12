@@ -10,7 +10,7 @@ const newspaperNames = Object.keys(newspaperConfig);
 // const newsCat = "international";
 // const newsCat = "national";
 // const newsCat = "business";
-// const newsCat = "politics";
+const newsCat = "politics";
 // const newsCat = "entertainment";
 // const newsCat = "sports";
 // const newsCat = "feature";
@@ -18,7 +18,8 @@ const newspaperNames = Object.keys(newspaperConfig);
 // const newsCat = "crime";
 // const newsCat = "education";
 // const newsCat = "lifestyle";
-const newsCat = "tech";
+// const newsCat = "tech";
+// const newsCat = "health";
 
 exports.newsRoute = async (req, res) => {
   try {
