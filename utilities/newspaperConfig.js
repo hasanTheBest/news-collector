@@ -1,10 +1,17 @@
 exports.newspaperConfig = {
   theBangladeshToday: {
     leading: "https://thebangladeshtoday.com/",
+    national: "https://thebangladeshtoday.com/?cat=29",
+    international: "https://thebangladeshtoday.com/?cat=2",
+    politics: "https://thebangladeshtoday.com/?cat=28",
+    business: "https://thebangladeshtoday.com/?cat=30",
+    sports: "https://thebangladeshtoday.com/?cat=5",
+    entertainment: "https://thebangladeshtoday.com/?cat=4",
+    feature: "https://thebangladeshtoday.com/?cat=6",
   },
-  tbsNews: {
-    leading: "https://www.tbsnews.net/",
-  },
+  // tbsNews: {
+  //   leading: "https://www.tbsnews.net/",
+  // },
   // tbsNews: "https://www.tbsnews.net/",
   // observerBD: "https://www.observerbd.com/",
   // dailySun: "https://www.daily-sun.com/",

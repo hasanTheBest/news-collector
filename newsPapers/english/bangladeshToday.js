@@ -1,39 +1,45 @@
-exports.bangladeshToday = async function (page) {
-  const leadContent = await page.waitForSelector(".leadBox");
+const {
+  bangladeshTodayCat,
+} = require("./theBangladeshToday/bangladeshTodayCat");
 
-  // Extract news articles
-  const articles = await page.evaluate((leadContent) => {
-    // grab first heading
-    const articlesData = [];
+exports.bangladeshToday = {
+  leading: async function (page) {
+    return bangladeshTodayCat({
+      selector: ".leadBox",
+      page: page,
+    });
+  },
 
-    function getNews(node) {
-      const title = node.querySelector("h3").innerText.trim();
-      const link = node.querySelector("a").href;
-      const imgSrc = node.querySelector("img")?.src;
-      const excerpt = node.querySelector("p")?.innerText.trim();
-      // const time = node.querySelector("time")?.innerText.trim();
+  national: async function (page) {
+    return await bangladeshTodayCat({ selector: ".main-content", page: page });
+  },
 
-      return {
-        title,
-        link,
-        imgSrc,
-        excerpt,
-        // time,
-      };
-    }
+  international: async function (page) {
+    return bangladeshTodayCat({
+      selector: ".main-content",
+      page: page,
+    });
+  },
 
-    articlesData.push(getNews(leadContent.querySelector(".mainLead")));
+  politics: async function (page) {
+    return bangladeshTodayCat({ selector: ".main-content", page: page });
+  },
 
-    articlesData.push(
-      ...Array.from(
-        leadContent.firstElementChild.firstElementChild.lastElementChild.querySelectorAll(
-          ".single-block"
-        )
-      ).map((node) => getNews(node))
-    );
+  business: async function (page) {
+    return bangladeshTodayCat({ selector: ".main-content", page: page });
+  },
 
-    return articlesData;
-  }, leadContent);
+  entertainment: async function (page) {
+    return bangladeshTodayCat({
+      selector: ".main-content",
+      page: page,
+    });
+  },
 
-  return articles;
+  sports: async function (page) {
+    return bangladeshTodayCat({ selector: ".main-content", page: page });
+  },
+  feature: async function (page) {
+    return bangladeshTodayCat({ selector: ".main-content", page: page });
+  },
 };

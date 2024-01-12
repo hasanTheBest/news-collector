@@ -4,7 +4,16 @@ const { getNews } = require("../utilities/getNews");
 const { newspaperConfig } = require("../utilities/newspaperConfig");
 
 const newspaperNames = Object.keys(newspaperConfig);
+
+// News categories
 const newsCat = "leading";
+// const newsCat = "international";
+// const newsCat = "national";
+// const newsCat = "business";
+// const newsCat = "politics";
+// const newsCat = "entertainment";
+// const newsCat = "sports";
+// const newsCat = "feature";
 
 exports.newsRoute = async (req, res) => {
   try {
@@ -13,8 +22,8 @@ exports.newsRoute = async (req, res) => {
         width: 1920,
         height: 1080,
       },
-      // headless: "new",
-      headless: false,
+      headless: "new",
+      // headless: false,
     });
 
     const page = await browser.newPage();
