@@ -1,49 +1,43 @@
-exports.dailysun = async function (page) {
+const dailysunCat = require("./dailysun/dailysunCat");
+const dailysunCatLeading = require("./dailysun/dailysunCatLeading");
 
-  const leadContent = await page.waitForSelector("section .container .row");
+exports.dailysun = {
+  leading: async function (page) {
+    return await dailysunCatLeading(page);
+  },
+  national: async function (page) {
+    return await dailysunCat(page);
+  },
 
-  // Extract news articles
-  const articles = await page.evaluate((leadContent) => {
-    // grab first heading
-    const articlesData = [];
+  international: async function (page) {
+    return await dailysunCat(page);
+  },
 
-    function getNews(node) {
-      let title;
-      const link =
-        node.tagName === "A" ? node.href : node.querySelector("a").href;
-      const imgSrc = node.querySelector("img")?.srcset;
-      const excerpt = node.querySelector("p")?.innerText.trim();
-      const time = node.querySelector("time")?.innerText.trim();
+  business: async function (page) {
+    return await dailysunCat(page);
+  },
 
-      if (node.querySelector("h1"))
-        title = node.querySelector("h1").innerText.trim();
-      else if (node.querySelector("h2"))
-        title = node.querySelector("h2").innerText.trim();
-      else title = node.querySelector("h5").innerText.trim();
+  sports: async function (page) {
+    return await dailysunCat(page);
+  },
 
-      return {
-        title,
-        link,
-        imgSrc,
-        excerpt,
-        time,
-      };
-    }
+  feature: async function (page) {
+    return await dailysunCat(page);
+  },
 
-    articlesData.push(
-      getNews(leadContent.querySelector(".leadArea_timeLineLead__hBWyl"))
-    );
-    articlesData.push(
-      ...Array.from(
-        leadContent.querySelectorAll(".leadArea_leadMoreList__Zj4XU")
-      ).map((node) => getNews(node))
-    );
-    articlesData.push(
-      getNews(leadContent.querySelector(".leadArea_focus_news__TgrND"))
-    );
+  entertainment: async function (page) {
+    return await dailysunCat(page);
+  },
 
-    return articlesData;
-  }, leadContent);
+  tech: async function (page) {
+    return await dailysunCat(page);
+  },
 
-  return articles;
+  opinion: async function (page) {
+    return await dailysunCat(page);
+  },
+
+  health: async function (page) {
+    return await dailysunCat(page);
+  },
 };
