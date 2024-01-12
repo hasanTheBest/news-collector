@@ -59,7 +59,8 @@ exports.scrapingFunctions = function (newsCat) {
 
     async dhakaTribune(page) {
       // Scraping logic for Dhaka Tribune
-      return await dhakaTribune[newsCat](page);
+      // return await dhakaTribune[newsCat](page);
+      return await dhakaTribune(page, newsCat);
     },
 
     async newAgeBD(page) {

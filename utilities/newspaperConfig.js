@@ -40,21 +40,35 @@ exports.newspaperConfig = {
   //   lifestyle: "https://www.observerbd.com/cat.php?cd=204",
   // },
 
-  dailySun: {
-    leading: "https://www.daily-sun.com/",
-    national: "https://www.daily-sun.com/online/national",
-    international: "https://www.daily-sun.com/online/world",
-    business: "https://www.daily-sun.com/online/economy",
-    sports: "https://www.daily-sun.com/online/sports",
-    feature: "https://www.daily-sun.com/online/feature",
-    entertainment: "https://www.daily-sun.com/online/entertainment",
-    tech: "https://www.daily-sun.com/online/sci-tech",
+  // dailySun: {
+  //   leading: "https://www.daily-sun.com/",
+  //   national: "https://www.daily-sun.com/online/national",
+  //   international: "https://www.daily-sun.com/online/world",
+  //   business: "https://www.daily-sun.com/online/economy",
+  //   sports: "https://www.daily-sun.com/online/sports",
+  //   feature: "https://www.daily-sun.com/online/feature",
+  //   entertainment: "https://www.daily-sun.com/online/entertainment",
+  //   tech: "https://www.daily-sun.com/online/sci-tech",
 
-    opinion: "https://www.daily-sun.com/online/opinion",
-    health: "https://www.daily-sun.com/online/health",
+  //   opinion: "https://www.daily-sun.com/online/opinion",
+  //   health: "https://www.daily-sun.com/online/health",
+  // },
+
+  dhakaTribune: {
+    leading: "https://www.dhakatribune.com/",
+    national: "https://www.dhakatribune.com/bangladesh",
+    international: "https://www.dhakatribune.com/world",
+    business: "https://www.dhakatribune.com/business",
+    sports: "https://www.dhakatribune.com/sport",
+    entertainment: "https://www.dhakatribune.com/showtime",
+    tech: "https://www.dhakatribune.com/science-technology-environment",
+
+    opinion: "https://www.dhakatribune.com/opinion",
+    education: "https://www.dhakatribune.com/bangladesh/education",
+    politics: "https://www.dhakatribune.com/bangladesh/politics",
+    crime: "https://www.dhakatribune.com/bangladesh/crime",
   },
 
-  // dhakaTribune: "https://www.dhakatribune.com/",
   // newAgeBD: "https://www.newagebd.net/",
   // newNation: "https://newnation.live/",
   // theDailyStar: "https://www.thedailystar.net/",
