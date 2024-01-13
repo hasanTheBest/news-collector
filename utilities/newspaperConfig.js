@@ -112,10 +112,10 @@ exports.newspaperConfig = {
   //   tech: "https://www.thedailystar.net/tech-startup",
   // },
 
-  // theDailyStar: "https://www.thedailystar.net/",
   // alokitoBangladesh: "https://www.alokitobangladesh.com/",
   // amadershomoy: "https://www.dainikamadershomoy.com/",
   // amarBarta: "https://www.amarbarta.com/",
+
   // bdPratidin: "https://www.bd-pratidin.com/",
   // bhorerKagoj: "https://www.bhorerkagoj.com/",
   // bonikBarta: "https://bonikbarta.net/",
@@ -130,25 +130,42 @@ exports.newspaperConfig = {
   // kalerKantho: "https://www.kalerkantho.com/",
   // manabZamin: "https://mzamin.com/",
   // manobKantha: "https://www.manobkantha.com.bd/",
+
+  dailyNayaDiganta: {
+    leading: "https://www.dailynayadiganta.com/",
+    national: "https://www.dailynayadiganta.com/national/1",
+    international: "https://www.dailynayadiganta.com/international/8",
+    business: "https://www.dailynayadiganta.com/economics/3",
+    sports: "https://www.dailynayadiganta.com/sports/11",
+    entertainment: "https://www.dailynayadiganta.com/entertainment/16",
+
+    opinion: "https://www.dailynayadiganta.com/sub-editorial/9",
+    feature: "https://www.dailynayadiganta.com/feature/12",
+    lifestyle: "https://www.dailynayadiganta.com/lifestyle/15", // layout is different
+    politics: "https://www.dailynayadiganta.com/politics/2",
+    countryside: "https://www.dailynayadiganta.com/country/7",
+    education: "https://www.dailynayadiganta.com/education/22",
+  },
+
   // dailyNayaDiganta: "https://www.dailynayadiganta.com/",
 
-  prothomAlo: {
-    leading: "https://www.prothomalo.com/",
-    national: "https://www.prothomalo.com/bangladesh",
-    international: "https://www.prothomalo.com/world",
-    business: "https://www.prothomalo.com/business",
-    sports: "https://www.prothomalo.com/sports",
-    entertainment: "https://www.prothomalo.com/entertainment",
+  // prothomAlo: {
+  //   leading: "https://www.prothomalo.com/",
+  //   national: "https://www.prothomalo.com/bangladesh",
+  //   international: "https://www.prothomalo.com/world",
+  //   business: "https://www.prothomalo.com/business",
+  //   sports: "https://www.prothomalo.com/sports",
+  //   entertainment: "https://www.prothomalo.com/entertainment",
 
-    opinion: "https://www.prothomalo.com/opinion",
-    feature: "",
-    lifestyle: "https://www.prothomalo.com/lifestyle",
-    tech: "https://www.prothomalo.com/technology",
-    job: "https://www.prothomalo.com/chakri",
-    politics: "https://www.prothomalo.com/politics",
-    crime: "https://www.prothomalo.com/bangladesh/crime",
-    education: "https://www.prothomalo.com/education",
-  },
+  //   opinion: "https://www.prothomalo.com/opinion",
+  //   feature: "",
+  //   lifestyle: "https://www.prothomalo.com/lifestyle",
+  //   tech: "https://www.prothomalo.com/technology",
+  //   job: "https://www.prothomalo.com/chakri",
+  //   politics: "https://www.prothomalo.com/politics",
+  //   crime: "https://www.prothomalo.com/bangladesh/crime",
+  //   education: "https://www.prothomalo.com/education",
+  // },
 
   // prothomAlo: "https://www.prothomalo.com/",
   // protidinerSangbad: "https://www.protidinersangbad.com/",
