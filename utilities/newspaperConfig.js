@@ -116,6 +116,22 @@ exports.newspaperConfig = {
   // amadershomoy: "https://www.dainikamadershomoy.com/",
   // amarBarta: "https://www.amarbarta.com/",
 
+  bdPratidin: {
+    leading: "https://www.bd-pratidin.com/",
+    national: "https://www.bd-pratidin.com/national",
+    international: "https://www.bd-pratidin.com/international-news",
+    business: "https://www.bd-pratidin.com/economy",
+    sports: "https://www.bd-pratidin.com/sports",
+    entertainment: "https://www.bd-pratidin.com/entertainment",
+
+    opinion: "https://www.bd-pratidin.com/editorial",
+    lifestyle: "https://www.bd-pratidin.com/life",
+    countryside: "https://www.bd-pratidin.com/country",
+    education: "https://www.bd-pratidin.com/science",
+    religion: "https://www.bd-pratidin.com/islam",
+    corporate: "https://www.bd-pratidin.com/corporate-corner",
+  },
+
   // bdPratidin: "https://www.bd-pratidin.com/",
   // bhorerKagoj: "https://www.bhorerkagoj.com/",
   // bonikBarta: "https://bonikbarta.net/",
@@ -131,21 +147,21 @@ exports.newspaperConfig = {
   // manabZamin: "https://mzamin.com/",
   // manobKantha: "https://www.manobkantha.com.bd/",
 
-  dailyNayaDiganta: {
-    leading: "https://www.dailynayadiganta.com/",
-    national: "https://www.dailynayadiganta.com/national/1",
-    international: "https://www.dailynayadiganta.com/international/8",
-    business: "https://www.dailynayadiganta.com/economics/3",
-    sports: "https://www.dailynayadiganta.com/sports/11",
-    entertainment: "https://www.dailynayadiganta.com/entertainment/16",
+  // dailyNayaDiganta: {
+  //   leading: "https://www.dailynayadiganta.com/",
+  //   national: "https://www.dailynayadiganta.com/national/1",
+  //   international: "https://www.dailynayadiganta.com/international/8",
+  //   business: "https://www.dailynayadiganta.com/economics/3",
+  //   sports: "https://www.dailynayadiganta.com/sports/11",
+  //   entertainment: "https://www.dailynayadiganta.com/entertainment/16",
 
-    opinion: "https://www.dailynayadiganta.com/sub-editorial/9",
-    feature: "https://www.dailynayadiganta.com/feature/12",
-    lifestyle: "https://www.dailynayadiganta.com/lifestyle/15", // layout is different
-    politics: "https://www.dailynayadiganta.com/politics/2",
-    countryside: "https://www.dailynayadiganta.com/country/7",
-    education: "https://www.dailynayadiganta.com/education/22",
-  },
+  //   opinion: "https://www.dailynayadiganta.com/sub-editorial/9",
+  //   feature: "https://www.dailynayadiganta.com/feature/12",
+  //   lifestyle: "https://www.dailynayadiganta.com/lifestyle/15", // layout is different
+  //   politics: "https://www.dailynayadiganta.com/politics/2",
+  //   countryside: "https://www.dailynayadiganta.com/country/7",
+  //   education: "https://www.dailynayadiganta.com/education/22",
+  // },
 
   // dailyNayaDiganta: "https://www.dailynayadiganta.com/",
 
