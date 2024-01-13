@@ -116,23 +116,22 @@ exports.newspaperConfig = {
   // amadershomoy: "https://www.dainikamadershomoy.com/",
   // amarBarta: "https://www.amarbarta.com/",
 
-  bdPratidin: {
-    leading: "https://www.bd-pratidin.com/",
-    national: "https://www.bd-pratidin.com/national",
-    international: "https://www.bd-pratidin.com/international-news",
-    business: "https://www.bd-pratidin.com/economy",
-    sports: "https://www.bd-pratidin.com/sports",
-    entertainment: "https://www.bd-pratidin.com/entertainment",
+  // bdPratidin: {
+  //   leading: "https://www.bd-pratidin.com/",
+  //   national: "https://www.bd-pratidin.com/national",
+  //   international: "https://www.bd-pratidin.com/international-news",
+  //   business: "https://www.bd-pratidin.com/economy",
+  //   sports: "https://www.bd-pratidin.com/sports",
+  //   entertainment: "https://www.bd-pratidin.com/entertainment",
 
-    opinion: "https://www.bd-pratidin.com/editorial",
-    lifestyle: "https://www.bd-pratidin.com/life",
-    countryside: "https://www.bd-pratidin.com/country",
-    education: "https://www.bd-pratidin.com/science",
-    religion: "https://www.bd-pratidin.com/islam",
-    corporate: "https://www.bd-pratidin.com/corporate-corner",
-  },
+  //   opinion: "https://www.bd-pratidin.com/editorial",
+  //   lifestyle: "https://www.bd-pratidin.com/life",
+  //   countryside: "https://www.bd-pratidin.com/country",
+  //   education: "https://www.bd-pratidin.com/science",
+  //   religion: "https://www.bd-pratidin.com/islam",
+  //   corporate: "https://www.bd-pratidin.com/corporate-corner",
+  // },
 
-  // bdPratidin: "https://www.bd-pratidin.com/",
   // bhorerKagoj: "https://www.bhorerkagoj.com/",
   // bonikBarta: "https://bonikbarta.net/",
   // dhakaTimes24: "https://www.dhakatimes24.com/",
@@ -144,6 +143,21 @@ exports.newspaperConfig = {
   // jugantor: "https://www.jugantor.com/",
   // kalbela: "https://www.kalbela.com/",
   // kalerKantho: "https://www.kalerkantho.com/",
+
+  manabZamin: {
+    leading: "https://mzamin.com/",
+    national: "https://mzamin.com/category.php?cat=8",
+    international: "https://mzamin.com/category.php?cat=5",
+    business: "https://mzamin.com/category.php?cat=11",
+    sports: "https://mzamin.com/category.php?cat=4",
+    entertainment: "https://mzamin.com/category.php?cat=6",
+    tech: "https://mzamin.com/category.php?cat=15",
+    opinion: "https://mzamin.com/category.php?cat=14",
+    health: "https://mzamin.com/category.php?cat=16",
+    education: "https://mzamin.com/category.php?cat=10",
+    politics: "https://mzamin.com/category.php?cat=24",
+  },
+
   // manabZamin: "https://mzamin.com/",
   // manobKantha: "https://www.manobkantha.com.bd/",
 
@@ -163,8 +177,6 @@ exports.newspaperConfig = {
   //   education: "https://www.dailynayadiganta.com/education/22",
   // },
 
-  // dailyNayaDiganta: "https://www.dailynayadiganta.com/",
-
   // prothomAlo: {
   //   leading: "https://www.prothomalo.com/",
   //   national: "https://www.prothomalo.com/bangladesh",
@@ -183,7 +195,6 @@ exports.newspaperConfig = {
   //   education: "https://www.prothomalo.com/education",
   // },
 
-  // prothomAlo: "https://www.prothomalo.com/",
   // protidinerSangbad: "https://www.protidinersangbad.com/",
   // samakal: "https://samakal.com/",
   // dailySangram: "https://dailysangram.com/",
