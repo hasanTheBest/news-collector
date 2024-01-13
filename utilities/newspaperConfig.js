@@ -85,20 +85,33 @@ exports.newspaperConfig = {
   //   countryside: "https://www.newagebd.net/articlelist/305/Country",
   // },
 
-  newNation: {
-    leading: "https://newnation.live/",
-    national: "https://newnation.live/national/",
-    international: "https://newnation.live/international/",
-    business: "https://newnation.live/business/",
-    sports: "https://newnation.live/sports/",
-    entertainment: "https://newnation.live/category/entertainment/",
+  // newNation: {
+  //   leading: "https://newnation.live/",
+  //   national: "https://newnation.live/national/",
+  //   international: "https://newnation.live/international/",
+  //   business: "https://newnation.live/business/",
+  //   sports: "https://newnation.live/sports/",
+  //   entertainment: "https://newnation.live/category/entertainment/",
 
-    opinion: "https://newnation.live/editorial/",
-    education: "https://newnation.live/life/",
-    health: "https://newnation.live/health/",
+  //   opinion: "https://newnation.live/editorial/",
+  //   education: "https://newnation.live/life/",
+  //   health: "https://newnation.live/health/",
+  // },
+
+  theDailyStar: {
+    leading: "https://www.thedailystar.net/",
+    national: "https://www.thedailystar.net/news/bangladesh",
+    international: "https://www.thedailystar.net/news/world",
+    business: "https://www.thedailystar.net/business",
+    sports: "https://www.thedailystar.net/sports",
+    entertainment: "https://www.thedailystar.net/entertainment",
+
+    opinion: "https://www.thedailystar.net/opinion",
+    feature: "https://www.thedailystar.net/feature",
+    lifestyle: "https://www.thedailystar.net/life-living",
+    tech: "https://www.thedailystar.net/tech-startup",
   },
 
-  // newNation: "https://newnation.live/",
   // theDailyStar: "https://www.thedailystar.net/",
   // alokitoBangladesh: "https://www.alokitobangladesh.com/",
   // amadershomoy: "https://www.dainikamadershomoy.com/",

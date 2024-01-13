@@ -1,35 +1,10 @@
-exports.thedailystar = async function (page) {
+const thedailystarCat = require("./thedailystar/thedailystarCat");
+const thedailystarCatLeading = require("./thedailystar/thedailystarCatLeading");
 
-  await page.waitForSelector(".pane-home-top-v5");
+exports.thedailystar = async function (page, newsCat) {
+  if (newsCat === "leading") {
+    return await thedailystarCatLeading(page);
+  }
 
-  // Extract news articles
-  const articles = await page.evaluate(() => {
-    // grab first heading
-    const articlesData = [];
-
-    function getNews(node) {
-      const link = node.querySelector("a").href;
-      const title = node.querySelector(".title").innerText.trim();
-      const imgSrc = node.querySelector("img")?.srcset;
-      const excerpt = node.querySelector(".intro")?.innerText.trim();
-      const time = node.querySelector(".interval")?.innerText.trim();
-
-      return {
-        title,
-        link,
-        imgSrc,
-        excerpt,
-        time,
-      };
-    }
-
-    articlesData.push(
-      ...Array.from(document.querySelectorAll(".pane-home-top-v5 .card")).map(
-        (node) => getNews(node)
-      )
-    );
-
-    return articlesData;
-  });
-  return articles;
+  return await thedailystarCat(page);
 };
