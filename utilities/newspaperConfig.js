@@ -98,19 +98,19 @@ exports.newspaperConfig = {
   //   health: "https://newnation.live/health/",
   // },
 
-  theDailyStar: {
-    leading: "https://www.thedailystar.net/",
-    national: "https://www.thedailystar.net/news/bangladesh",
-    international: "https://www.thedailystar.net/news/world",
-    business: "https://www.thedailystar.net/business",
-    sports: "https://www.thedailystar.net/sports",
-    entertainment: "https://www.thedailystar.net/entertainment",
+  // theDailyStar: {
+  //   leading: "https://www.thedailystar.net/",
+  //   national: "https://www.thedailystar.net/news/bangladesh",
+  //   international: "https://www.thedailystar.net/news/world",
+  //   business: "https://www.thedailystar.net/business",
+  //   sports: "https://www.thedailystar.net/sports",
+  //   entertainment: "https://www.thedailystar.net/entertainment",
 
-    opinion: "https://www.thedailystar.net/opinion",
-    feature: "https://www.thedailystar.net/feature",
-    lifestyle: "https://www.thedailystar.net/life-living",
-    tech: "https://www.thedailystar.net/tech-startup",
-  },
+  //   opinion: "https://www.thedailystar.net/opinion",
+  //   feature: "https://www.thedailystar.net/feature",
+  //   lifestyle: "https://www.thedailystar.net/life-living",
+  //   tech: "https://www.thedailystar.net/tech-startup",
+  // },
 
   // theDailyStar: "https://www.thedailystar.net/",
   // alokitoBangladesh: "https://www.alokitobangladesh.com/",
@@ -131,6 +131,25 @@ exports.newspaperConfig = {
   // manabZamin: "https://mzamin.com/",
   // manobKantha: "https://www.manobkantha.com.bd/",
   // dailyNayaDiganta: "https://www.dailynayadiganta.com/",
+
+  prothomAlo: {
+    leading: "https://www.prothomalo.com/",
+    national: "https://www.prothomalo.com/bangladesh",
+    international: "https://www.prothomalo.com/world",
+    business: "https://www.prothomalo.com/business",
+    sports: "https://www.prothomalo.com/sports",
+    entertainment: "https://www.prothomalo.com/entertainment",
+
+    opinion: "https://www.prothomalo.com/opinion",
+    feature: "",
+    lifestyle: "https://www.prothomalo.com/lifestyle",
+    tech: "https://www.prothomalo.com/technology",
+    job: "https://www.prothomalo.com/chakri",
+    politics: "https://www.prothomalo.com/politics",
+    crime: "https://www.prothomalo.com/bangladesh/crime",
+    education: "https://www.prothomalo.com/education",
+  },
+
   // prothomAlo: "https://www.prothomalo.com/",
   // protidinerSangbad: "https://www.protidinersangbad.com/",
   // samakal: "https://samakal.com/",

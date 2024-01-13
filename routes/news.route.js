@@ -16,11 +16,12 @@ const newspaperNames = Object.keys(newspaperConfig);
 // const newsCat = "feature";
 // const newsCat = "countryside";
 // const newsCat = "crime";
-// const newsCat = "education";
+const newsCat = "education";
 // const newsCat = "lifestyle";
-const newsCat = "tech";
+// const newsCat = "tech";
 // const newsCat = "health";
 // const newsCat = "opinion";
+// const newsCat = "job";
 
 exports.newsRoute = async (req, res) => {
   try {
