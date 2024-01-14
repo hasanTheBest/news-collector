@@ -1,14 +1,12 @@
-module.exports = async function jugantorCat(page){
+module.exports = async function jugantorCat(page) {
   // Wait for the news articles to load
-  const leadArea = await page.waitForSelector("#lead-news");
+  await page.waitForSelector(".top_lead_card");
 
   // Extract news articles
-  const articles = await page.evaluate((leadArea) => {
+  const articles = await page.evaluate(() => {
     function getNews(node) {
       const link = node.querySelector("a").href;
-      const title = node.querySelector("h2")
-        ? node.querySelector("h2").innerText.trim()
-        : node.querySelector("figcaption").innerText.trim();
+      const title = node.querySelector("a").innerText.trim();
       const imgSrc = node.querySelector("img")?.src;
 
       return {
@@ -18,19 +16,23 @@ module.exports = async function jugantorCat(page){
       };
     }
 
+    const subLeadNews = [];
+    Array.from(document.querySelectorAll("#show-news.d-xl-block")).forEach(
+      (section) =>
+        subLeadNews.push(...Array.from(section.firstElementChild.children))
+    );
+
     const selectors = [
-      document.querySelector("#lead-news #desktop-cat-lead"),
       ...Array.from(
-        leadArea.firstElementChild.firstElementChild.lastElementChild
-          .firstElementChild.children
+        document.querySelectorAll(".top_lead_card:not(.d-xl-none)")
       ),
-      ...Array.from(document.querySelector("#show-news").children),
+      ...subLeadNews,
     ];
 
     const articlesData = selectors.map((node) => getNews(node));
 
     return articlesData;
-  }, leadArea);
+  });
 
   return articles;
-}
+};
