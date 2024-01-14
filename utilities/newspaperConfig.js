@@ -112,6 +112,9 @@ exports.newspaperConfig = {
   //   tech: "https://www.thedailystar.net/tech-startup",
   // },
 
+  /** ------------------------
+   * BANGLA NEWSPAPERS
+   * ------------------------*/
   // alokitoBangladesh: "https://www.alokitobangladesh.com/",
   // amadershomoy: "https://www.dainikamadershomoy.com/",
   // amarBarta: "https://www.amarbarta.com/",
@@ -136,26 +139,40 @@ exports.newspaperConfig = {
   // bonikBarta: "https://bonikbarta.net/",
   // dhakaTimes24: "https://www.dhakatimes24.com/",
   // deshRupantor: "https://www.deshrupantor.com/",
-  // dailyInqilab: "https://dailyinqilab.com/",
 
-  ittefaq: {
-    leading: "https://www.ittefaq.com.bd/",
-    national: "https://www.ittefaq.com.bd/national",
-    international: "https://www.ittefaq.com.bd/world-news",
-    business: "https://www.ittefaq.com.bd/business",
-    sports: "https://www.ittefaq.com.bd/sports",
-    entertainment: "https://www.ittefaq.com.bd/entertainment",
-    tech: "https://www.ittefaq.com.bd/tech",
-    opinion: "https://www.ittefaq.com.bd/editorial",
-    lifestyle: "https://www.ittefaq.com.bd/lifestyle",
-    job: "https://www.ittefaq.com.bd/jobs",
-    politics: "https://www.ittefaq.com.bd/politics",
-    countryside: "https://www.ittefaq.com.bd/country",
-    health: "https://www.ittefaq.com.bd/health",
-    campus: "https://www.ittefaq.com.bd/campus",
+  dailyInqilab: {
+    leading: "https://dailyinqilab.com/",
+    national: "https://dailyinqilab.com/national",
+    international: "https://dailyinqilab.com/international",
+    business: "https://dailyinqilab.com/economy",
+    sports: "https://dailyinqilab.com/sports",
+    entertainment: "https://dailyinqilab.com/entertainment",
+    tech: "https://dailyinqilab.com/ict-and-career",
+    opinion: "https://dailyinqilab.com/editorial",
+    lifestyle: "https://dailyinqilab.com/lifestyle",
+    politics: "https://dailyinqilab.com/politics",
+    countryside: "https://dailyinqilab.com/bangladesh",
+    health: "https://dailyinqilab.com/health",
+    literature: "https://dailyinqilab.com/literature",
   },
 
-  // ittefaq: "https://www.ittefaq.com.bd/",
+  // ittefaq: {
+  //   leading: "https://www.ittefaq.com.bd/",
+  //   national: "https://www.ittefaq.com.bd/national",
+  //   international: "https://www.ittefaq.com.bd/world-news",
+  //   business: "https://www.ittefaq.com.bd/business",
+  //   sports: "https://www.ittefaq.com.bd/sports",
+  //   entertainment: "https://www.ittefaq.com.bd/entertainment",
+  //   tech: "https://www.ittefaq.com.bd/tech",
+  //   opinion: "https://www.ittefaq.com.bd/editorial",
+  //   lifestyle: "https://www.ittefaq.com.bd/lifestyle",
+  //   job: "https://www.ittefaq.com.bd/jobs",
+  //   politics: "https://www.ittefaq.com.bd/politics",
+  //   countryside: "https://www.ittefaq.com.bd/country",
+  //   health: "https://www.ittefaq.com.bd/health",
+  //   campus: "https://www.ittefaq.com.bd/campus",
+  // },
+
   // jaiJaiDin: "https://www.jaijaidinbd.com/",
   // dailyJanakantha: {
   //   leading: "https://www.dailyjanakantha.com/",
@@ -191,7 +208,6 @@ exports.newspaperConfig = {
   //   education: "https://www.jugantor.com/campus",
   // },
 
-  // jugantor: "https://www.jugantor.com/",
   // kalbela: "https://www.kalbela.com/",
 
   // kalerKantho: {

@@ -17,13 +17,14 @@ const newspaperNames = Object.keys(newspaperConfig);
 // const newsCat = "countryside";
 // const newsCat = "crime";
 // const newsCat = "education";
-const newsCat = "lifestyle";
+// const newsCat = "lifestyle";
 // const newsCat = "tech";
 // const newsCat = "health";
 // const newsCat = "opinion";
 // const newsCat = "job";
 // const newsCat = "religion";
 // const newsCat = "campus";
+const newsCat = "literature";
 
 exports.newsRoute = async (req, res) => {
   try {
