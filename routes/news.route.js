@@ -6,7 +6,7 @@ const { newspaperConfig } = require("../utilities/newspaperConfig");
 const newspaperNames = Object.keys(newspaperConfig);
 
 // News categories
-// const newsCat = "leading";
+const newsCat = "leading";
 // const newsCat = "international";
 // const newsCat = "national";
 // const newsCat = "business";
@@ -24,7 +24,7 @@ const newspaperNames = Object.keys(newspaperConfig);
 // const newsCat = "job";
 // const newsCat = "religion";
 // const newsCat = "campus";
-const newsCat = "literature";
+// const newsCat = "literature";
 
 exports.newsRoute = async (req, res) => {
   try {

@@ -140,21 +140,21 @@ exports.newspaperConfig = {
   // dhakaTimes24: "https://www.dhakatimes24.com/",
   // deshRupantor: "https://www.deshrupantor.com/",
 
-  dailyInqilab: {
-    leading: "https://dailyinqilab.com/",
-    national: "https://dailyinqilab.com/national",
-    international: "https://dailyinqilab.com/international",
-    business: "https://dailyinqilab.com/economy",
-    sports: "https://dailyinqilab.com/sports",
-    entertainment: "https://dailyinqilab.com/entertainment",
-    tech: "https://dailyinqilab.com/ict-and-career",
-    opinion: "https://dailyinqilab.com/editorial",
-    lifestyle: "https://dailyinqilab.com/lifestyle",
-    politics: "https://dailyinqilab.com/politics",
-    countryside: "https://dailyinqilab.com/bangladesh",
-    health: "https://dailyinqilab.com/health",
-    literature: "https://dailyinqilab.com/literature",
-  },
+  // dailyInqilab: {
+  //   leading: "https://dailyinqilab.com/",
+  //   national: "https://dailyinqilab.com/national",
+  //   international: "https://dailyinqilab.com/international",
+  //   business: "https://dailyinqilab.com/economy",
+  //   sports: "https://dailyinqilab.com/sports",
+  //   entertainment: "https://dailyinqilab.com/entertainment",
+  //   tech: "https://dailyinqilab.com/ict-and-career",
+  //   opinion: "https://dailyinqilab.com/editorial",
+  //   lifestyle: "https://dailyinqilab.com/lifestyle",
+  //   politics: "https://dailyinqilab.com/politics",
+  //   countryside: "https://dailyinqilab.com/bangladesh",
+  //   health: "https://dailyinqilab.com/health",
+  //   literature: "https://dailyinqilab.com/literature",
+  // },
 
   // ittefaq: {
   //   leading: "https://www.ittefaq.com.bd/",
@@ -277,6 +277,26 @@ exports.newspaperConfig = {
   // },
 
   // protidinerSangbad: "https://www.protidinersangbad.com/",
+
+  // samakal is not working. showing- Timeouterror
+  // samakal: {
+  //   leading: "https://samakal.com/",
+  //   national: "https://samakal.com/bangladesh",
+  //   international: "https://samakal.com/international",
+  //   business: "https://samakal.com/economics",
+  //   sports: "https://samakal.com/sports",
+  //   entertainment: "https://samakal.com/entertainment",
+  //   tech: "https://samakal.com/technology",
+  //   opinion: "https://samakal.com/opinion",
+  //   lifestyle: "https://samakal.com/lifestyle",
+  //   politics: "https://samakal.com/politics",
+  //   countryside: "https://samakal.com/whole-country",
+  //   crime: "https://samakal.com/crime",
+  //   literature: "https://samakal.com/sahitto-o-sangskriti",
+  //   education: "https://samakal.com/sub/education",
+  //   job: "https://samakal.com/chakri"
+  // },
+
   // samakal: "https://samakal.com/",
   // dailySangram: "https://dailysangram.com/",
   // shomoyEralo: "https://www.shomoyeralo.com/",
