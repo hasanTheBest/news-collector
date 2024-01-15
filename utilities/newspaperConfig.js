@@ -116,7 +116,25 @@ exports.newspaperConfig = {
    * BANGLA NEWSPAPERS
    * ------------------------*/
   // alokitoBangladesh: "https://www.alokitobangladesh.com/",
-  // amadershomoy: "https://www.dainikamadershomoy.com/",
+
+  amadershomoy: {
+    leading: "https://www.dainikamadershomoy.com/",
+    national: "https://www.dainikamadershomoy.com/category/national",
+    international: "https://www.dainikamadershomoy.com/category/international",
+    business: "https://www.dainikamadershomoy.com/category/economy",
+    sports: "https://www.dainikamadershomoy.com/category/sports",
+    entertainment: "https://www.dainikamadershomoy.com/category/entertainment",
+    tech: "https://www.dainikamadershomoy.com/category/technology",
+    opinion: "https://www.dainikamadershomoy.com/category/shompadiokiyo",
+    lifestyle: "https://www.dainikamadershomoy.com/category/lifestyle",
+    politics: "https://www.dainikamadershomoy.com/category/all/rajneeti",
+    countryside: "https://www.dainikamadershomoy.com/category/sarades",
+    feature: "https://www.dainikamadershomoy.com/category/feature",
+    education: "https://www.dainikamadershomoy.com/category/education",
+    job: "https://www.dainikamadershomoy.com/category/career",
+    religion: "https://www.dainikamadershomoy.com/category/religion"
+  },
+
   // amarBarta: "https://www.amarbarta.com/",
 
   // bdPratidin: {
