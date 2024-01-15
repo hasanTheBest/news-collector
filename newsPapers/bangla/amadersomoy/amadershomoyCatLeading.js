@@ -1,6 +1,8 @@
-module.exports = async function amadershomoyCat(page) {
+module.exports = async function amadershomoyCatLeading(page) {
   try {
-    await page.waitForSelector(".tc-tabs-content .sub-content");
+    const leadArea = await page.waitForSelector(
+      ".tc-tabs-content .sub-content"
+    );
 
     // Extract news articles
     const articles = await page.evaluate(() => {
@@ -11,7 +13,7 @@ module.exports = async function amadershomoyCat(page) {
           : node.querySelector(".title").innerText.trim();
         const imgSrc = node.querySelector("img")?.src;
         const excerpt = node.querySelector(".intro")?.innerText.trim();
-  
+
         return {
           title,
           link,
@@ -19,7 +21,7 @@ module.exports = async function amadershomoyCat(page) {
           excerpt,
         };
       }
-  
+
       const selectors = [
         leadArea.firstElementChild.firstElementChild,
         ...Array.from(
@@ -27,12 +29,12 @@ module.exports = async function amadershomoyCat(page) {
         ),
         ...Array.from(leadArea.lastElementChild.children), // starter div with all child div
       ];
-  
+
       const articlesData = selectors.map((node) => getNews(node));
-  
+
       return articlesData;
     });
-  
+
     return articles;
   } catch (error) {
     console.error("Error in amadershomoyCat:", error);

@@ -132,7 +132,7 @@ exports.newspaperConfig = {
     feature: "https://www.dainikamadershomoy.com/category/feature",
     education: "https://www.dainikamadershomoy.com/category/education",
     job: "https://www.dainikamadershomoy.com/category/career",
-    religion: "https://www.dainikamadershomoy.com/category/religion"
+    religion: "https://www.dainikamadershomoy.com/category/religion",
   },
 
   // amarBarta: "https://www.amarbarta.com/",

@@ -6,7 +6,7 @@ const { newspaperConfig } = require("../utilities/newspaperConfig");
 const newspaperNames = Object.keys(newspaperConfig);
 
 // News categories
-const newsCat = "leading";
+// const newsCat = "leading";
 // const newsCat = "international";
 // const newsCat = "national";
 // const newsCat = "business";
@@ -21,7 +21,7 @@ const newsCat = "leading";
 // const newsCat = "tech";
 // const newsCat = "health";
 // const newsCat = "opinion";
-// const newsCat = "job";
+const newsCat = "job";
 // const newsCat = "religion";
 // const newsCat = "campus";
 // const newsCat = "literature";

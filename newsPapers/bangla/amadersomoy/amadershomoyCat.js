@@ -1,6 +1,6 @@
-module.exports = async function amadershomoyCatLeading(page) {
+module.exports = async function amadershomoyCat(page) {
   try {
-    await page.waitForSelector(".tc-tabs-content .sub-content");
+    await page.waitForSelector(".tc-post-grid-default");
 
     // Extract news articles
     const articles = await page.evaluate(() => {
@@ -10,29 +10,28 @@ module.exports = async function amadershomoyCatLeading(page) {
           ? node.querySelector(".lead-title").innerText.trim()
           : node.querySelector(".title").innerText.trim();
         const imgSrc = node.querySelector("img")?.src;
-        const excerpt = node.querySelector(".intro")?.innerText.trim();
-  
+        const excerpt = node.querySelector(".clamp-lines-3")?.innerText.trim();
+        const time = node.querySelector(".meta-bot")?.innerText.trim();
+
         return {
           title,
           link,
           imgSrc,
           excerpt,
+          time,
         };
       }
-  
+
       const selectors = [
-        leadArea.firstElementChild.firstElementChild,
-        ...Array.from(
-          leadArea.querySelectorAll(".tc-post-list-style2 > .row > div")
-        ),
-        ...Array.from(leadArea.lastElementChild.children), // starter div with all child div
+        ...Array.from(document.querySelectorAll(".tc-post-grid-default")),
+        ...Array.from(document.querySelectorAll(".item.py-2")), // starter div with all child div
       ];
-  
+
       const articlesData = selectors.map((node) => getNews(node));
-  
+
       return articlesData;
     });
-  
+
     return articles;
   } catch (error) {
     console.error("Error in amadershomoyCat:", error);

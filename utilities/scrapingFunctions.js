@@ -1,5 +1,5 @@
 const { alokitobangladesh } = require("../newsPapers/bangla/alokitobangladesh");
-const { amadersomoy } = require("../newsPapers/bangla/amadershomoy");
+const { amadersomoy } = require("../newsPapers/bangla/amadersomoy");
 const { amarbarta } = require("../newsPapers/bangla/amarbarta");
 const {
   bangladeshPratidin,
