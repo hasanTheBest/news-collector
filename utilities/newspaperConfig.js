@@ -352,22 +352,38 @@ exports.newspaperConfig = {
   //   job: "https://samakal.com/chakri"
   // },
 
-  dailySangram: {
-    leading: "https://dailysangram.com/",
-    national: "https://dailysangram.com/section/bangladesh",
-    international: "https://dailysangram.com/section/international",
-    business: "https://dailysangram.com/section/economics",
-    sports: "https://dailysangram.com/section/sports",
-    tech: "https://dailysangram.com/section/science-technology",
-    opinion: "https://dailysangram.com/section/opinion",
-    lifestyle: "https://dailysangram.com/section/life-style",
-    crime: "https://dailysangram.com/section/bangladesh/crime",
-    politics: "https://dailysangram.com/section/bangladesh/politics",
-    literature: "https://dailysangram.com/section/literature",
-    countryside: "https://dailysangram.com/section/bangladesh/country",
+  // dailySangram: {
+  //   leading: "https://dailysangram.com/",
+  //   national: "https://dailysangram.com/section/bangladesh",
+  //   international: "https://dailysangram.com/section/international",
+  //   business: "https://dailysangram.com/section/economics",
+  //   sports: "https://dailysangram.com/section/sports",
+  //   tech: "https://dailysangram.com/section/science-technology",
+  //   opinion: "https://dailysangram.com/section/opinion",
+  //   lifestyle: "https://dailysangram.com/section/life-style",
+  //   crime: "https://dailysangram.com/section/bangladesh/crime",
+  //   politics: "https://dailysangram.com/section/bangladesh/politics",
+  //   literature: "https://dailysangram.com/section/literature",
+  //   countryside: "https://dailysangram.com/section/bangladesh/country",
+  // },
+
+  // shomoyEralo: "https://www.shomoyeralo.com/",
+
+  sangbad: {
+    leading: "https://sangbad.net.bd/",
+    national: "https://sangbad.net.bd/news/national/",
+    international: "https://sangbad.net.bd/news/international/",
+    business: "https://sangbad.net.bd/news/business/",
+    sports: "https://sangbad.net.bd/news/sports/",
+    entertainment: "https://sangbad.net.bd/news/entertainment/",
+    tech: "https://sangbad.net.bd/news/it/",
+    opinion: "https://sangbad.net.bd/opinion/editorial/",
+    campus: "https://sangbad.net.bd/news/campus/",
+    crime: "https://sangbad.net.bd/news/crime-corruption/",
+    politics: "https://sangbad.net.bd/news/politics/",
+    literature: "https://sangbad.net.bd/news/culture/",
+    countryside: "https://sangbad.net.bd/news/bangladesh/",
   },
 
-  // dailySangram: "https://dailysangram.com/",
-  // shomoyEralo: "https://www.shomoyeralo.com/",
   // sangbad: "https://sangbad.net.bd/",
 };
