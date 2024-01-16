@@ -153,27 +153,26 @@ exports.newspaperConfig = {
   //   corporate: "https://www.bd-pratidin.com/corporate-corner",
   // },
 
-  bhorerKagoj: {
-    leading: "https://www.bhorerkagoj.com/",
-    national: "https://www.bhorerkagoj.com/national",
-    international: "https://www.bhorerkagoj.com/international",
-    business: "https://www.bhorerkagoj.com/economics",
-    sports: "https://www.bhorerkagoj.com/sports",
-    entertainment: "https://www.bhorerkagoj.com/entertainment",
-    tech: "https://www.bhorerkagoj.com/tech",
-    opinion: "https://www.bhorerkagoj.com/opinion",
-    lifestyle: "https://www.bhorerkagoj.com/lifestyle",
-    countryside: "https://www.bhorerkagoj.com/country",
-    feature: "https://www.bhorerkagoj.com/feature",
-    education: "https://www.bhorerkagoj.com/education",
-    job: "https://www.bhorerkagoj.com/career",
-    religion: "https://www.bhorerkagoj.com/religion",
-    politics: "https://www.bhorerkagoj.com/politics",
-    literature: "https://www.bhorerkagoj.com/literature",
-    health: "https://www.bhorerkagoj.com/health"
-  },
+  // bhorerKagoj: {
+  //   leading: "https://www.bhorerkagoj.com/",
+  //   national: "https://www.bhorerkagoj.com/national",
+  //   international: "https://www.bhorerkagoj.com/international",
+  //   business: "https://www.bhorerkagoj.com/economics",
+  //   sports: "https://www.bhorerkagoj.com/sports",
+  //   entertainment: "https://www.bhorerkagoj.com/entertainment",
+  //   tech: "https://www.bhorerkagoj.com/tech",
+  //   opinion: "https://www.bhorerkagoj.com/opinion",
+  //   lifestyle: "https://www.bhorerkagoj.com/lifestyle",
+  //   countryside: "https://www.bhorerkagoj.com/country",
+  //   feature: "https://www.bhorerkagoj.com/feature",
+  //   education: "https://www.bhorerkagoj.com/education",
+  //   job: "https://www.bhorerkagoj.com/career",
+  //   religion: "https://www.bhorerkagoj.com/religion",
+  //   politics: "https://www.bhorerkagoj.com/politics",
+  //   literature: "https://www.bhorerkagoj.com/literature",
+  //   health: "https://www.bhorerkagoj.com/health"
+  // },
 
-  // bhorerKagoj: "https://www.bhorerkagoj.com/",
   // bonikBarta: "https://bonikbarta.net/",
   // dhakaTimes24: "https://www.dhakatimes24.com/",
   // deshRupantor: "https://www.deshrupantor.com/",
@@ -210,6 +209,25 @@ exports.newspaperConfig = {
   //   health: "https://www.ittefaq.com.bd/health",
   //   campus: "https://www.ittefaq.com.bd/campus",
   // },
+
+
+  jaiJaiDin: {
+    leading: "https://www.jaijaidinbd.com/",
+    national: "https://www.jaijaidinbd.com/national",
+    international: "https://www.jaijaidinbd.com/international",
+    business: "https://www.jaijaidinbd.com/economics",
+    sports: "https://www.jaijaidinbd.com/sports",
+    entertainment: "https://www.jaijaidinbd.com/entertainment",
+    tech: "https://www.jaijaidinbd.com/information-technology",
+    opinion: "https://www.jaijaidinbd.com/open-opinion",
+    lifestyle: "https://www.jaijaidinbd.com/life-style",
+    crime: "https://www.jaijaidinbd.com/crime",
+    politics: "https://www.jaijaidinbd.com/politics",
+    countryside: "https://www.jaijaidinbd.com/wholecountry",
+    health: "https://www.jaijaidinbd.com/health-",
+    literature: "https://www.jaijaidinbd.com/art-and-literature",
+    religion: "https://www.jaijaidinbd.com/islam-and-religion"
+  },
 
   // jaiJaiDin: "https://www.jaijaidinbd.com/",
   // dailyJanakantha: {
