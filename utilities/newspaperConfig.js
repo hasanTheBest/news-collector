@@ -210,24 +210,23 @@ exports.newspaperConfig = {
   //   campus: "https://www.ittefaq.com.bd/campus",
   // },
 
-
-  jaiJaiDin: {
-    leading: "https://www.jaijaidinbd.com/",
-    national: "https://www.jaijaidinbd.com/national",
-    international: "https://www.jaijaidinbd.com/international",
-    business: "https://www.jaijaidinbd.com/economics",
-    sports: "https://www.jaijaidinbd.com/sports",
-    entertainment: "https://www.jaijaidinbd.com/entertainment",
-    tech: "https://www.jaijaidinbd.com/information-technology",
-    opinion: "https://www.jaijaidinbd.com/open-opinion",
-    lifestyle: "https://www.jaijaidinbd.com/life-style",
-    crime: "https://www.jaijaidinbd.com/crime",
-    politics: "https://www.jaijaidinbd.com/politics",
-    countryside: "https://www.jaijaidinbd.com/wholecountry",
-    health: "https://www.jaijaidinbd.com/health-",
-    literature: "https://www.jaijaidinbd.com/art-and-literature",
-    religion: "https://www.jaijaidinbd.com/islam-and-religion"
-  },
+  // jaiJaiDin: {
+  //   leading: "https://www.jaijaidinbd.com/",
+  //   national: "https://www.jaijaidinbd.com/national",
+  //   international: "https://www.jaijaidinbd.com/international",
+  //   business: "https://www.jaijaidinbd.com/economics",
+  //   sports: "https://www.jaijaidinbd.com/sports",
+  //   entertainment: "https://www.jaijaidinbd.com/entertainment",
+  //   tech: "https://www.jaijaidinbd.com/information-technology",
+  //   opinion: "https://www.jaijaidinbd.com/open-opinion",
+  //   lifestyle: "https://www.jaijaidinbd.com/life-style",
+  //   crime: "https://www.jaijaidinbd.com/crime",
+  //   politics: "https://www.jaijaidinbd.com/politics",
+  //   countryside: "https://www.jaijaidinbd.com/wholecountry",
+  //   health: "https://www.jaijaidinbd.com/health-",
+  //   literature: "https://www.jaijaidinbd.com/art-and-literature",
+  //   religion: "https://www.jaijaidinbd.com/islam-and-religion"
+  // },
 
   // jaiJaiDin: "https://www.jaijaidinbd.com/",
   // dailyJanakantha: {
@@ -353,7 +352,21 @@ exports.newspaperConfig = {
   //   job: "https://samakal.com/chakri"
   // },
 
-  // samakal: "https://samakal.com/",
+  dailySangram: {
+    leading: "https://dailysangram.com/",
+    national: "https://dailysangram.com/section/bangladesh",
+    international: "https://dailysangram.com/section/international",
+    business: "https://dailysangram.com/section/economics",
+    sports: "https://dailysangram.com/section/sports",
+    tech: "https://dailysangram.com/section/science-technology",
+    opinion: "https://dailysangram.com/section/opinion",
+    lifestyle: "https://dailysangram.com/section/life-style",
+    crime: "https://dailysangram.com/section/bangladesh/crime",
+    politics: "https://dailysangram.com/section/bangladesh/politics",
+    literature: "https://dailysangram.com/section/literature",
+    countryside: "https://dailysangram.com/section/bangladesh/country",
+  },
+
   // dailySangram: "https://dailysangram.com/",
   // shomoyEralo: "https://www.shomoyeralo.com/",
   // sangbad: "https://sangbad.net.bd/",
