@@ -1,4 +1,8 @@
 exports.newspaperConfig = {
+  /** -------------------------
+   * ENGLISH DAILY NEWSPAPER
+   * ------------------------- */ 
+
   // theBangladeshToday: {
   //   leading: "https://thebangladeshtoday.com/",
   //   national: "https://thebangladeshtoday.com/?cat=29",
@@ -98,8 +102,9 @@ exports.newspaperConfig = {
   //   lifestyle: "https://www.thedailystar.net/life-living",
   //   tech: "https://www.thedailystar.net/tech-startup",
   // },
+
   /** ------------------------
-   * BANGLA NEWSPAPERS
+   * BANGLA DAILY NEWSPAPERS
    * ------------------------*/
 
   // ajkerPatrika: {
@@ -251,21 +256,21 @@ exports.newspaperConfig = {
   //   religion: "https://www.jaijaidinbd.com/islam-and-religion"
   // },
 
-  dainikAzadi: {
-    leading: "https://dainikazadi.net/",
-    national: "https://dainikazadi.net/category/nation/",
-    international: "https://dainikazadi.net/category/today-newspaper/international/",
-    business: "https://dainikazadi.net/category/today-newspaper/echonomy/",
-    sports: "https://dainikazadi.net/category/sports/",
-    entertainment: "https://dainikazadi.net/category/today-newspaper/%e0%a6%ac%e0%a6%bf%e0%a6%a8%e0%a7%8b%e0%a6%a6%e0%a6%a8/",
-    opinion: "https://dainikazadi.net/sub-editorial/",
-    education: "https://dainikazadi.net/category/education/",
-    health: "https://dainikazadi.net/category/feature/health/",
-    // lifestyle: "https://dainikazadi.net/category/feature/life-style/", // only one items
-    feature: "https://dainikazadi.net/feature/",
-    countryside: "https://dainikazadi.net/category/today-newspaper/on-village/",
-    editorial: "https://dainikazadi.net/category/today-newspaper/editorial/",
-  },
+  // dainikAzadi: {
+  //   leading: "https://dainikazadi.net/",
+  //   national: "https://dainikazadi.net/category/nation/",
+  //   international: "https://dainikazadi.net/category/today-newspaper/international/",
+  //   business: "https://dainikazadi.net/category/today-newspaper/echonomy/",
+  //   sports: "https://dainikazadi.net/category/sports/",
+  //   entertainment: "https://dainikazadi.net/category/today-newspaper/%e0%a6%ac%e0%a6%bf%e0%a6%a8%e0%a7%8b%e0%a6%a6%e0%a6%a8/",
+  //   opinion: "https://dainikazadi.net/sub-editorial/",
+  //   education: "https://dainikazadi.net/category/education/",
+  //   health: "https://dainikazadi.net/category/feature/health/",
+  //   // lifestyle: "https://dainikazadi.net/category/feature/life-style/", // only one items
+  //   feature: "https://dainikazadi.net/feature/",
+  //   countryside: "https://dainikazadi.net/category/today-newspaper/on-village/",
+  //   editorial: "https://dainikazadi.net/category/today-newspaper/editorial/",
+  // },
 
   // dailyJanakantha: {
   //   leading: "https://www.dailyjanakantha.com/",
@@ -283,6 +288,7 @@ exports.newspaperConfig = {
   //   health: "https://www.dailyjanakantha.com/health/",
   //   education: "https://www.dailyjanakantha.com/education/",
   // },
+
   // jugantor: {
   //   leading: "https://www.jugantor.com/",
   //   national: "https://www.jugantor.com/national",
@@ -299,7 +305,9 @@ exports.newspaperConfig = {
   //   religion: "https://www.jugantor.com/islam-life",
   //   education: "https://www.jugantor.com/campus",
   // },
+
   // kalbela: "https://www.kalbela.com/",
+
   // kalerKantho: {
   //   leading: "https://www.kalerkantho.com/",
   //   national: "https://www.kalerkantho.com/online/national",
@@ -315,6 +323,7 @@ exports.newspaperConfig = {
   //   countryside: "https://www.kalerkantho.com/online/country-news",
   //   religion: "https://www.kalerkantho.com/online/Islamic-lifestylie",
   // },
+
   // manabZamin: {
   //   leading: "https://mzamin.com/",
   //   national: "https://mzamin.com/category.php?cat=8",
@@ -328,7 +337,9 @@ exports.newspaperConfig = {
   //   education: "https://mzamin.com/category.php?cat=10",
   //   politics: "https://mzamin.com/category.php?cat=24",
   // },
+
   // manobKantha: "https://www.manobkantha.com.bd/",
+
   // dailyNayaDiganta: {
   //   leading: "https://www.dailynayadiganta.com/",
   //   national: "https://www.dailynayadiganta.com/national/1",
@@ -343,6 +354,7 @@ exports.newspaperConfig = {
   //   countryside: "https://www.dailynayadiganta.com/country/7",
   //   education: "https://www.dailynayadiganta.com/education/22",
   // },
+
   // prothomAlo: {
   //   leading: "https://www.prothomalo.com/",
   //   national: "https://www.prothomalo.com/bangladesh",
@@ -397,6 +409,7 @@ exports.newspaperConfig = {
   //   education: "https://samakal.com/sub/education",
   //   job: "https://samakal.com/chakri"
   // },
+
   // dailySangram: {
   //   leading: "https://dailysangram.com/",
   //   national: "https://dailysangram.com/section/bangladesh",
@@ -411,7 +424,9 @@ exports.newspaperConfig = {
   //   literature: "https://dailysangram.com/section/literature",
   //   countryside: "https://dailysangram.com/section/bangladesh/country",
   // },
+
   // shomoyEralo: "https://www.shomoyeralo.com/",
+  
   // sangbad: {
   //   leading: "https://sangbad.net.bd/",
   //   national: "https://sangbad.net.bd/news/national/",
