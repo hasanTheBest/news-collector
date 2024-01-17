@@ -36,6 +36,7 @@ const { dailysun } = require("../newsPapers/english/dailysun");
 const { dhakaTribune } = require("../newsPapers/english/dhakaTribune");
 const { newage } = require("../newsPapers/english/newage");
 const { newnation } = require("../newsPapers/english/newnation");
+const theFinancialExpress = require("../newsPapers/english/theFinancialExpress");
 const { thedailystar } = require("../newsPapers/english/thedailystar");
 
 exports.scrapingFunctions = function (newsCat) {
@@ -46,7 +47,6 @@ exports.scrapingFunctions = function (newsCat) {
     },
 
     async tbsNews(page) {
-      // Scraping logic for TBS News
       return await businessStandard[newsCat](page);
     },
 
@@ -74,6 +74,10 @@ exports.scrapingFunctions = function (newsCat) {
     async newNation(page) {
       // Scraping logic for New Nation
       return await newnation(page, newsCat);
+    },
+
+    async theFinancialExpress(page) {
+      return await theFinancialExpress(page, newsCat);
     },
 
     async theDailyStar(page) {
@@ -214,10 +218,9 @@ exports.scrapingFunctions = function (newsCat) {
 
     /** ------------------
      * ONLINE NEWSPAPERS
-     * ------------------- */ 
+     * ------------------- */
     async bbcBangla(page) {
       return await bbcBangla(page, newsCat);
     },
-    
   };
 };

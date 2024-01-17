@@ -26,6 +26,9 @@ const newsCat = "leading";
 // const newsCat = "campus";
 // const newsCat = "literature";
 // const newsCat = "video";
+// const newsCat = "environment";
+// const newsCat = "stock";
+// const newsCat = "trade";
 
 exports.newsRoute = async (req, res) => {
   try {

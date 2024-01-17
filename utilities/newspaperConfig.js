@@ -1,7 +1,7 @@
 exports.newspaperConfig = {
   /** -------------------------
    * ENGLISH DAILY NEWSPAPER
-   * ------------------------- */ 
+   * ------------------------- */
 
   // theBangladeshToday: {
   //   leading: "https://thebangladeshtoday.com/",
@@ -102,6 +102,25 @@ exports.newspaperConfig = {
   //   lifestyle: "https://www.thedailystar.net/life-living",
   //   tech: "https://www.thedailystar.net/tech-startup",
   // },
+  theFinancialExpress: {
+    leading: "https://thefinancialexpress.com.bd/",
+    national: "https://thefinancialexpress.com.bd/national",
+    international: "https://thefinancialexpress.com.bd/world",
+    business: "https://thefinancialexpress.com.bd/economy",
+    sports: "https://thefinancialexpress.com.bd/sports",
+    opinion: "https://thefinancialexpress.com.bd/views",
+    tech: "https://thefinancialexpress.com.bd/sci-tech",
+    lifestyle: "https://thefinancialexpress.com.bd/lifestyle",
+    environment: "https://thefinancialexpress.com.bd/environment",
+    health: "https://thefinancialexpress.com.bd/health",
+    education: "https://thefinancialexpress.com.bd/education",
+    editorial: "https://thefinancialexpress.com.bd/editorial",
+    countryside: "https://thefinancialexpress.com.bd/page/national/country",
+    politics: "https://thefinancialexpress.com.bd/page/national/politics",
+    job: "https://thefinancialexpress.com.bd/jobs-and-opportunities",
+    stock: "https://thefinancialexpress.com.bd/stock",
+    trade: "https://thefinancialexpress.com.bd/trade",
+  },
 
   /** ------------------------
    * BANGLA DAILY NEWSPAPERS
@@ -426,7 +445,7 @@ exports.newspaperConfig = {
   // },
 
   // shomoyEralo: "https://www.shomoyeralo.com/",
-  
+
   // sangbad: {
   //   leading: "https://sangbad.net.bd/",
   //   national: "https://sangbad.net.bd/news/national/",
@@ -445,16 +464,16 @@ exports.newspaperConfig = {
 
   /** --------------
    * ONLINE NEWSPAPERS
-   * --------------- */ 
-  bbcBangla: {
-    leading: "https://www.bbc.com/bengali",
-    national: "https://www.bbc.com/bengali/topics/c2dwq2nd40xt",
-    international: "https://www.bbc.com/bengali/topics/c907347rezkt",
-    business: "https://www.bbc.com/bengali/topics/cjgn7233zk5t",
-    sports: "https://www.bbc.com/bengali/topics/cdr56g57y01t",
-    tech: "https://www.bbc.com/bengali/topics/c8y94k95v52t",
-    politics: "https://www.bbc.com/bengali/topics/cqywj91rkg6t",
-    health: "https://www.bbc.com/bengali/topics/cg7265yyxn1t",
-    video: "https://www.bbc.com/bengali/topics/cxy7jg418e7t",
-  },
+   * --------------- */
+  // bbcBangla: {
+  //   leading: "https://www.bbc.com/bengali",
+  //   national: "https://www.bbc.com/bengali/topics/c2dwq2nd40xt",
+  //   international: "https://www.bbc.com/bengali/topics/c907347rezkt",
+  //   business: "https://www.bbc.com/bengali/topics/cjgn7233zk5t",
+  //   sports: "https://www.bbc.com/bengali/topics/cdr56g57y01t",
+  //   tech: "https://www.bbc.com/bengali/topics/c8y94k95v52t",
+  //   politics: "https://www.bbc.com/bengali/topics/cqywj91rkg6t",
+  //   health: "https://www.bbc.com/bengali/topics/cg7265yyxn1t",
+  //   video: "https://www.bbc.com/bengali/topics/cxy7jg418e7t",
+  // },
 };
