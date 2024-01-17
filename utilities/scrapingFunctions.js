@@ -1,3 +1,4 @@
+const ajkerPatrika = require("../newsPapers/bangla/ajkerPatrika");
 const { alokitobangladesh } = require("../newsPapers/bangla/alokitobangladesh");
 const { amadersomoy } = require("../newsPapers/bangla/amadersomoy");
 const { amarbarta } = require("../newsPapers/bangla/amarbarta");
@@ -81,6 +82,11 @@ exports.scrapingFunctions = function (newsCat) {
     /**
      *  BANGLA NEWSPAPERS
      * */
+    async ajkerPatrika(page) {
+      // Scraping logic for Alokito Bangladesh
+      return await ajkerPatrika(page, newsCat);
+    },
+
     async alokitoBangladesh(page) {
       // Scraping logic for Alokito Bangladesh
       return await alokitobangladesh(page, newsCat);

@@ -102,6 +102,25 @@ exports.newspaperConfig = {
    * BANGLA NEWSPAPERS
    * ------------------------*/
 
+  ajkerPatrika: {
+    leading: "https://www.ajkerpatrika.com/",
+    national: "https://www.ajkerpatrika.com/national",
+    international: "https://www.ajkerpatrika.com/international",
+    business: "https://www.ajkerpatrika.com/business",
+    sports: "https://www.ajkerpatrika.com/sports",
+    entertainment: "https://www.ajkerpatrika.com/entertainment",
+    tech: "https://www.ajkerpatrika.com/technology",
+    opinion: "https://www.ajkerpatrika.com/op-ed",
+    education: "https://www.ajkerpatrika.com/education",
+    health: "https://www.ajkerpatrika.com/health",
+    lifestyle: "https://www.ajkerpatrika.com/lifestyle",
+    politics: "https://www.ajkerpatrika.com/politics",
+    countryside: "https://www.ajkerpatrika.com/bangladesh",
+    job: "https://www.ajkerpatrika.com/job",
+    editorial: "https://www.ajkerpatrika.com/editorial",
+    corporate: "https://www.ajkerpatrika.com/corporate"
+  },
+
   // alokitoBangladesh: {
   //   leading: "https://www.alokitobangladesh.com/",
   //   national: "https://www.alokitobangladesh.com/national",
@@ -122,7 +141,6 @@ exports.newspaperConfig = {
   //   feature: "https://www.alokitobangladesh.com/feature",
   // },
 
-  // alokitoBangladesh: "https://www.alokitobangladesh.com/",
   // amadershomoy: {
   //   leading: "https://www.dainikamadershomoy.com/",
   //   national: "https://www.dainikamadershomoy.com/category/national",
@@ -318,27 +336,25 @@ exports.newspaperConfig = {
   //   education: "https://www.prothomalo.com/education",
   // },
 
-  protidinerSangbad: {
-    leading: "https://www.protidinersangbad.com/",
-    national: "https://www.protidinersangbad.com/national",
-    international: "https://www.protidinersangbad.com/international",
-    business: "https://www.protidinersangbad.com/trade",
-    sports: "https://www.protidinersangbad.com/sports",
-    entertainment: "https://www.protidinersangbad.com/entertainment",
-    tech: "https://www.protidinersangbad.com/science-technology",
-    opinion: "https://www.protidinersangbad.com/editorial",
-    campus: "https://www.protidinersangbad.com/education-premises",
-    health: "https://www.protidinersangbad.com/life-style/health",
-    lifestyle: "https://www.protidinersangbad.com/life-style",
-    politics: "https://www.protidinersangbad.com/politics",
-    literature: "https://www.protidinersangbad.com/art-literature",
-    countryside: "https://www.protidinersangbad.com/whole-country",
-    corporate: "https://www.protidinersangbad.com/corporate-news",
-    job: "https://www.protidinersangbad.com/jobs",
-    crime: "https://www.protidinersangbad.com/crime",
-  },
-
-  // protidinerSangbad: "https://www.protidinersangbad.com/",
+  // protidinerSangbad: {
+  //   leading: "https://www.protidinersangbad.com/",
+  //   national: "https://www.protidinersangbad.com/national",
+  //   international: "https://www.protidinersangbad.com/international",
+  //   business: "https://www.protidinersangbad.com/trade",
+  //   sports: "https://www.protidinersangbad.com/sports",
+  //   entertainment: "https://www.protidinersangbad.com/entertainment",
+  //   tech: "https://www.protidinersangbad.com/science-technology",
+  //   opinion: "https://www.protidinersangbad.com/editorial",
+  //   campus: "https://www.protidinersangbad.com/education-premises",
+  //   health: "https://www.protidinersangbad.com/life-style/health",
+  //   lifestyle: "https://www.protidinersangbad.com/life-style",
+  //   politics: "https://www.protidinersangbad.com/politics",
+  //   literature: "https://www.protidinersangbad.com/art-literature",
+  //   countryside: "https://www.protidinersangbad.com/whole-country",
+  //   corporate: "https://www.protidinersangbad.com/corporate-news",
+  //   job: "https://www.protidinersangbad.com/jobs",
+  //   crime: "https://www.protidinersangbad.com/crime",
+  // },
 
   // samakal: { // samakal is not working. showing- Timeouterror
   //   leading: "https://samakal.com/",

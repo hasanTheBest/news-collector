@@ -1,7 +1,7 @@
-module.exports = async function ittefaqCat(page) {
+module.exports = async function ajkerPatrikaCatLeading(page, newsCat){
   try {
     await page.waitForSelector(".content_type_news");
-
+    
     // Extract news articles
     const articles = await page.evaluate(() => {
       function getNews(node) {
@@ -9,27 +9,27 @@ module.exports = async function ittefaqCat(page) {
         const link = node.querySelector("a").href;
         const imgSrc = node.querySelector("img")?.src;
         const excerpt = node.querySelector(".summery")?.innerText.trim();
-        const time = node.querySelector(".time")?.innerText.trim();
 
         return {
           title,
-          link,
+          articleLink,
           imgSrc,
           excerpt,
-          time,
         };
       }
 
-      const articlesData = Array.from(
-        document.querySelectorAll(".content_type_news")
-      ).map((news) => getNews(news));
+      const newsBoxes = [
+        ...Array.from(document.querySelector('.p_d._col').querySelectorAll(".content_type_news")),
+        ...Array.from(document.querySelectorAll('.p_c._col')).splice(0, 9)
+      ];
+
+      const articlesData = newsBoxes.map((news) => getNews(news));
 
       return articlesData;
     });
 
-    return articles;
+    return articles;   
   } catch (error) {
-    console.error("Error in ittefaqCat:", error);
-    // throw error; // add error handling logic here
+    console.error('ajkerPatrikaCat', error)
   }
-};
+  }

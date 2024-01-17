@@ -5,14 +5,14 @@ module.exports = async function ittefaqCatLeading(page) {
     // Extract news articles
     const articles = await page.evaluate((leadContent) => {
       function getNews(node) {
-        const articleTitle = node.querySelector(".title").innerText.trim();
-        const articleLink = node.querySelector("a").href;
+        const title = node.querySelector(".title").innerText.trim();
+        const link = node.querySelector("a").href;
         const imgSrc = node.querySelector("img")?.src;
         const excerpt = node.querySelector(".summery")?.innerText.trim();
 
         return {
-          articleTitle,
-          articleLink,
+          title,
+          link,
           imgSrc,
           excerpt,
         };
