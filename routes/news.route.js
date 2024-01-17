@@ -25,6 +25,7 @@ const newsCat = "leading";
 // const newsCat = "religion";
 // const newsCat = "campus";
 // const newsCat = "literature";
+// const newsCat = "video";
 
 exports.newsRoute = async (req, res) => {
   try {

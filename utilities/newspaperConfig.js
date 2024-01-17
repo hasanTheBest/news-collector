@@ -442,4 +442,19 @@ exports.newspaperConfig = {
   //   literature: "https://sangbad.net.bd/news/culture/",
   //   countryside: "https://sangbad.net.bd/news/bangladesh/",
   // },
+
+  /** --------------
+   * ONLINE NEWSPAPERS
+   * --------------- */ 
+  bbcBangla: {
+    leading: "https://www.bbc.com/bengali",
+    national: "https://www.bbc.com/bengali/topics/c2dwq2nd40xt",
+    international: "https://www.bbc.com/bengali/topics/c907347rezkt",
+    business: "https://www.bbc.com/bengali/topics/cjgn7233zk5t",
+    sports: "https://www.bbc.com/bengali/topics/cdr56g57y01t",
+    tech: "https://www.bbc.com/bengali/topics/c8y94k95v52t",
+    politics: "https://www.bbc.com/bengali/topics/cqywj91rkg6t",
+    health: "https://www.bbc.com/bengali/topics/cg7265yyxn1t",
+    video: "https://www.bbc.com/bengali/topics/cxy7jg418e7t",
+  },
 };

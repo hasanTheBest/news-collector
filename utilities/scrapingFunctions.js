@@ -5,6 +5,7 @@ const { amarbarta } = require("../newsPapers/bangla/amarbarta");
 const {
   bangladeshPratidin,
 } = require("../newsPapers/bangla/bangladeshPratidin");
+const bbcBangla = require("../newsPapers/bangla/bbcBangla");
 const { bhorerkagoj } = require("../newsPapers/bangla/bhorerkagoj");
 const { bonikbarta } = require("../newsPapers/bangla/bonikbarta");
 const dainikAzadi = require("../newsPapers/bangla/dainikAzadi");
@@ -210,5 +211,13 @@ exports.scrapingFunctions = function (newsCat) {
       // Scraping logic for Sangbad
       return await songbad(page, newsCat);
     },
+
+    /** ------------------
+     * ONLINE NEWSPAPERS
+     * ------------------- */ 
+    async bbcBangla(page) {
+      return await bbcBangla(page, newsCat);
+    },
+    
   };
 };

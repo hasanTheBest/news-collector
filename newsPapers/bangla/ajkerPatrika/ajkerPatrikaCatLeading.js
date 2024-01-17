@@ -12,7 +12,7 @@ module.exports = async function ajkerPatrikaCatLeading(page, newsCat){
 
         return {
           title,
-          articleLink,
+          link,
           imgSrc,
           excerpt,
         };
