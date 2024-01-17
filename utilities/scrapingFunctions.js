@@ -7,6 +7,7 @@ const {
 } = require("../newsPapers/bangla/bangladeshPratidin");
 const { bhorerkagoj } = require("../newsPapers/bangla/bhorerkagoj");
 const { bonikbarta } = require("../newsPapers/bangla/bonikbarta");
+const dainikAzadi = require("../newsPapers/bangla/dainikAzadi");
 const { deshrupantor } = require("../newsPapers/bangla/deshrupantor");
 const { dhakatimes24 } = require("../newsPapers/bangla/dhakatimes24");
 const { inqilab } = require("../newsPapers/bangla/inqilab");
@@ -114,6 +115,10 @@ exports.scrapingFunctions = function (newsCat) {
     async bonikBarta(page) {
       // Scraping logic for Bonik Barta
       return await bonikbarta(page, newsCat);
+    },
+
+    async dainikAzadi(page) {
+      return await dainikAzadi(page, newsCat);
     },
 
     async dhakaTimes24(page) {
