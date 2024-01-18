@@ -2,6 +2,7 @@ const ajkerPatrika = require("../newsPapers/bangla/ajkerPatrika");
 const { alokitobangladesh } = require("../newsPapers/bangla/alokitobangladesh");
 const { amadersomoy } = require("../newsPapers/bangla/amadersomoy");
 const { amarbarta } = require("../newsPapers/bangla/amarbarta");
+const banglaNews24 = require("../newsPapers/bangla/banglaNews24");
 const {
   bangladeshPratidin,
 } = require("../newsPapers/bangla/bangladeshPratidin");
@@ -221,6 +222,9 @@ exports.scrapingFunctions = function (newsCat) {
      * ------------------- */
     async bbcBangla(page) {
       return await bbcBangla(page, newsCat);
+    },
+    async banglaNews24(page) {
+      return await banglaNews24(page, newsCat);
     },
   };
 };
