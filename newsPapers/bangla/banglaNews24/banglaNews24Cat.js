@@ -31,13 +31,6 @@ module.exports = async function banglaNews24Cat(page, newsCat) {
         };
       }
 
-      // const newsBox = [
-      //   document.querySelector(".lead-news"),
-      //   ...Array.from(document.querySelector(".lead-2nd-news").children),
-      //   ...Array.from(document.querySelectorAll(".lead-3nd-news")),
-      //   ...Array.from(document.querySelectorAll(".category-area")),
-      // ];
-
       let selectors = [
         document.querySelector(".lead-news"),
         ...Array.from(document.querySelector(".lead-2nd-news").children),
