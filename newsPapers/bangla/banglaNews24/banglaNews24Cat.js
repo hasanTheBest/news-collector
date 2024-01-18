@@ -1,14 +1,17 @@
 module.exports = async function banglaNews24Cat(page){
   try {
-    await page.waitForSelector(".bbc-bjn8wh");
+    await page.waitForSelector(".category-area");
 
     // Extract news articles
     const articles = await page.evaluate(() => {
       function getNews(node) {
-        const title = node.querySelector("h2") ? node.querySelector("h2").innerText.trim() : node.querySelector("h3").innerText.trim();
-        const link = node.querySelector("a").href;
+        const title =
+        node.tagName === "A"
+          ? node.innerText.trim()
+          : node.querySelector("strong").innerText.trim();
+        const link = node.tagName  === 'A' ? node.href : node.querySelector("a").href;
         const imgSrc = node.querySelector("img")?.src;
-        const excerpt = node.querySelector(".promo-paragraph")?.innerText.trim();
+        const excerpt = node.querySelector("a p")?.innerText.trim();
         const time = node.querySelector("time")?.innerText.trim();
 
         return {
@@ -16,21 +19,24 @@ module.exports = async function banglaNews24Cat(page){
           link,
           imgSrc,
           excerpt,
+          time
         };
       }
 
       const newsBox = [
-        ...Array.from(document.querySelectorAll('.bbc-bjn8wh')).splice(1, 19),
-        ...document.querySelectorAll('#অন্যান্য-খবর + div ul li')
+        document.querySelector('.lead-news'),
+        ...Array.from(document.querySelector('.lead-2nd-news').children),
+        ...Array.from(document.querySelectorAll('.lead-3nd-news')),
+        ...Array.from(document.querySelectorAll('.category-area')),
       ]
 
-      const articlesData = newsBox.map((news) => getNews(news));
+      const articlesData = newsBox.map((news) => news && getNews(news));
 
       return articlesData;
     });
 
     return articles;
   } catch (error) {
-    console.error("banglaNews24CatLeading", error)
+    console.error("\nbanglaNews24Cat\t:", error)
   }
 }

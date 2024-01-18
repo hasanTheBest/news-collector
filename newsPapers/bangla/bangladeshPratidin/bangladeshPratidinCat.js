@@ -14,7 +14,7 @@ module.exports = async function bangladeshPratidinCat(page) {
           : node.querySelector("a").innerText.trim();
 
       const imgSrc = node.querySelector("img")?.src;
-      const excerpt = node.querySelector(" a + p")?.innerText.trim();
+      const excerpt = node.querySelector("a + p") ? node.querySelector("a + p").innerText.trim() : node.querySelector("strong + p")?.innerText.trim();
 
       return {
         title,

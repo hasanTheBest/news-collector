@@ -21,7 +21,7 @@ module.exports = async function bbcBanglaCatLeading(page) {
 
       const newsBox = [
         ...Array.from(document.querySelectorAll('.bbc-bjn8wh')).splice(1, 19),
-        ...document.querySelectorAll('#অন্যান্য-খবর + div ul li')
+        ...Array.from(document.querySelectorAll('#অন্যান্য-খবর + div ul li'))
       ]
 
       const articlesData = newsBox.map((news) => getNews(news));
