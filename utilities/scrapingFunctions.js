@@ -3,6 +3,7 @@ const { alokitobangladesh } = require("../newsPapers/bangla/alokitobangladesh");
 const { amadersomoy } = require("../newsPapers/bangla/amadersomoy");
 const { amarbarta } = require("../newsPapers/bangla/amarbarta");
 const banglaNews24 = require("../newsPapers/bangla/banglaNews24");
+const banglaTribune = require("../newsPapers/bangla/banglaTribune");
 const {
   bangladeshPratidin,
 } = require("../newsPapers/bangla/bangladeshPratidin");
@@ -231,6 +232,9 @@ exports.scrapingFunctions = function (newsCat) {
 
     async jagoNews24(page) {
       return await jagoNews24(page, newsCat);
+    },
+    async banglaTribune(page) {
+      return await banglaTribune(page, newsCat);
     },
   };
 };
