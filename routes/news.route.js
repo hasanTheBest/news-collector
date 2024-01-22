@@ -7,8 +7,8 @@ const newspaperNames = Object.keys(newspaperConfig);
 
 // News categories
 // const newsCat = "leading";
-// const newsCat = "international";
-const newsCat = "national";
+const newsCat = "international";
+// const newsCat = "national";
 // const newsCat = "business";
 // const newsCat = "politics";
 // const newsCat = "entertainment";

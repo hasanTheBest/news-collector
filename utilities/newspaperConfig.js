@@ -1,7 +1,7 @@
 exports.newspaperConfig = {
-  /** -------------------------
-   * ENGLISH DAILY NEWSPAPER
-   * ------------------------- */
+  // /** -------------------------
+  //  * ENGLISH DAILY NEWSPAPER
+  //  * ------------------------- */
 
   // theBangladeshToday: {
   //   leading: "https://thebangladeshtoday.com/",
@@ -122,9 +122,9 @@ exports.newspaperConfig = {
   //   trade: "https://thefinancialexpress.com.bd/trade",
   // },
 
-  /** ------------------------
-   * BANGLA DAILY NEWSPAPERS
-   * ------------------------*/
+  // /** ------------------------
+  //  * BANGLA DAILY NEWSPAPERS
+  //  * ------------------------*/
 
   // ajkerPatrika: {
   //   leading: "https://www.ajkerpatrika.com/",
@@ -142,7 +142,7 @@ exports.newspaperConfig = {
   //   countryside: "https://www.ajkerpatrika.com/bangladesh",
   //   job: "https://www.ajkerpatrika.com/job",
   //   editorial: "https://www.ajkerpatrika.com/editorial",
-  //   corporate: "https://www.ajkerpatrika.com/corporate"
+  //   corporate: "https://www.ajkerpatrika.com/corporate",
   // },
 
   // alokitoBangladesh: {
@@ -217,7 +217,7 @@ exports.newspaperConfig = {
   //   religion: "https://www.bhorerkagoj.com/religion",
   //   politics: "https://www.bhorerkagoj.com/politics",
   //   literature: "https://www.bhorerkagoj.com/literature",
-  //   health: "https://www.bhorerkagoj.com/health"
+  //   health: "https://www.bhorerkagoj.com/health",
   // },
 
   // bonikBarta: "https://bonikbarta.net/",
@@ -272,16 +272,18 @@ exports.newspaperConfig = {
   //   countryside: "https://www.jaijaidinbd.com/wholecountry",
   //   health: "https://www.jaijaidinbd.com/health-",
   //   literature: "https://www.jaijaidinbd.com/art-and-literature",
-  //   religion: "https://www.jaijaidinbd.com/islam-and-religion"
+  //   religion: "https://www.jaijaidinbd.com/islam-and-religion",
   // },
 
   // dainikAzadi: {
   //   leading: "https://dainikazadi.net/",
   //   national: "https://dainikazadi.net/category/nation/",
-  //   international: "https://dainikazadi.net/category/today-newspaper/international/",
+  //   international:
+  //     "https://dainikazadi.net/category/today-newspaper/international/",
   //   business: "https://dainikazadi.net/category/today-newspaper/echonomy/",
   //   sports: "https://dainikazadi.net/category/sports/",
-  //   entertainment: "https://dainikazadi.net/category/today-newspaper/%e0%a6%ac%e0%a6%bf%e0%a6%a8%e0%a7%8b%e0%a6%a6%e0%a6%a8/",
+  //   entertainment:
+  //     "https://dainikazadi.net/category/today-newspaper/%e0%a6%ac%e0%a6%bf%e0%a6%a8%e0%a7%8b%e0%a6%a6%e0%a6%a8/",
   //   opinion: "https://dainikazadi.net/sub-editorial/",
   //   education: "https://dainikazadi.net/category/education/",
   //   health: "https://dainikazadi.net/category/feature/health/",
@@ -411,7 +413,8 @@ exports.newspaperConfig = {
   //   crime: "https://www.protidinersangbad.com/crime",
   // },
 
-  // samakal: { // samakal is not working. showing- Timeouterror
+  // samakal: {
+  //   // samakal is not working. showing- Timeouterror
   //   leading: "https://samakal.com/",
   //   national: "https://samakal.com/bangladesh",
   //   international: "https://samakal.com/international",
@@ -426,7 +429,7 @@ exports.newspaperConfig = {
   //   crime: "https://samakal.com/crime",
   //   literature: "https://samakal.com/sahitto-o-sangskriti",
   //   education: "https://samakal.com/sub/education",
-  //   job: "https://samakal.com/chakri"
+  //   job: "https://samakal.com/chakri",
   // },
 
   // dailySangram: {
@@ -462,9 +465,9 @@ exports.newspaperConfig = {
   //   countryside: "https://sangbad.net.bd/news/bangladesh/",
   // },
 
-  /** --------------
-   * ONLINE NEWSPAPERS
-   * --------------- */
+  // /** --------------
+  //  * ONLINE NEWSPAPERS
+  //  * --------------- */
   // bbcBangla: {
   //   leading: "https://www.bbc.com/bengali",
   //   national: "https://www.bbc.com/bengali/topics/c2dwq2nd40xt",
@@ -478,24 +481,39 @@ exports.newspaperConfig = {
   // },
   // banglaNews24: {
   //   leading: "https://www.banglanews24.com/",
-  //   national: "https://www.banglanews24.com/category/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A7%9F/1",
-  //   international: "https://www.banglanews24.com/category/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95/4",
-  //   business: "https://www.banglanews24.com/category/%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE/3",
-  //   sports: "https://www.banglanews24.com/category/%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE/5",
+  //   national:
+  //     "https://www.banglanews24.com/category/%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A7%80%E0%A7%9F/1",
+  //   international:
+  //     "https://www.banglanews24.com/category/%E0%A6%86%E0%A6%A8%E0%A7%8D%E0%A6%A4%E0%A6%B0%E0%A7%8D%E0%A6%9C%E0%A6%BE%E0%A6%A4%E0%A6%BF%E0%A6%95/4",
+  //   business:
+  //     "https://www.banglanews24.com/category/%E0%A6%85%E0%A6%B0%E0%A7%8D%E0%A6%A5%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A6%BF-%E0%A6%AC%E0%A7%8D%E0%A6%AF%E0%A6%AC%E0%A6%B8%E0%A6%BE/3",
+  //   sports:
+  //     "https://www.banglanews24.com/category/%E0%A6%96%E0%A7%87%E0%A6%B2%E0%A6%BE/5",
   //   tech: "https://www.banglanews24.com/category/%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%AF%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF/7",
-  //   politics: "https://www.banglanews24.com/category/%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A6%BF/2",
-  //   health: "https://www.banglanews24.com/category/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A7%8D%E0%A6%AF/19",
+  //   politics:
+  //     "https://www.banglanews24.com/category/%E0%A6%B0%E0%A6%BE%E0%A6%9C%E0%A6%A8%E0%A7%80%E0%A6%A4%E0%A6%BF/2",
+  //   health:
+  //     "https://www.banglanews24.com/category/%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%BE%E0%A6%B8%E0%A7%8D%E0%A6%A5%E0%A7%8D%E0%A6%AF/19",
   //   countryside: "https://www.banglanews24.com/district",
-  //   lifestyle: "https://www.banglanews24.com/category/%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%AB%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%87%E0%A6%B2/12",
-  //   entertainment: "https://www.banglanews24.com/category/%E0%A6%AC%E0%A6%BF%E0%A6%A8%E0%A7%8B%E0%A6%A6%E0%A6%A8/6",
-  //   literature: "https://www.banglanews24.com/category/%E0%A6%B6%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%AA-%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%AF/11",
-  //   education: "https://www.banglanews24.com/category/%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE/20",
-  //   religion: "https://www.banglanews24.com/category/%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE/15",
+  //   lifestyle:
+  //     "https://www.banglanews24.com/category/%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%AB%E0%A6%B8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%87%E0%A6%B2/12",
+  //   entertainment:
+  //     "https://www.banglanews24.com/category/%E0%A6%AC%E0%A6%BF%E0%A6%A8%E0%A7%8B%E0%A6%A6%E0%A6%A8/6",
+  //   literature:
+  //     "https://www.banglanews24.com/category/%E0%A6%B6%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%AA-%E0%A6%B8%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%A4%E0%A7%8D%E0%A6%AF/11",
+  //   education:
+  //     "https://www.banglanews24.com/category/%E0%A6%B6%E0%A6%BF%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%BE/20",
+  //   religion:
+  //     "https://www.banglanews24.com/category/%E0%A6%87%E0%A6%B8%E0%A6%B2%E0%A6%BE%E0%A6%AE/15",
   //   job: "https://www.banglanews24.com/category/%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B0%E0%A6%BF%E0%A7%9F%E0%A6%BE%E0%A6%B0/32",
-  //   feature: "https://www.banglanews24.com/category/%E0%A6%AB%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B0/9",
-  //   corporate: "https://www.banglanews24.com/category/%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%87%E0%A6%9F%20%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%B0/1259",
-  //   opinion: "https://www.banglanews24.com/category/%E0%A6%AE%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%AE%E0%A6%A4/16",
-  //   stock: "https://www.banglanews24.com/category/%E0%A6%B6%E0%A7%87%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0/1208"
+  //   feature:
+  //     "https://www.banglanews24.com/category/%E0%A6%AB%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B0/9",
+  //   corporate:
+  //     "https://www.banglanews24.com/category/%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%AA%E0%A7%8B%E0%A6%B0%E0%A7%87%E0%A6%9F%20%E0%A6%95%E0%A6%B0%E0%A7%8D%E0%A6%A8%E0%A6%BE%E0%A6%B0/1259",
+  //   opinion:
+  //     "https://www.banglanews24.com/category/%E0%A6%AE%E0%A7%81%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%AE%E0%A6%A4/16",
+  //   stock:
+  //     "https://www.banglanews24.com/category/%E0%A6%B6%E0%A7%87%E0%A7%9F%E0%A6%BE%E0%A6%B0%E0%A6%AC%E0%A6%BE%E0%A6%9C%E0%A6%BE%E0%A6%B0/1208",
   // },
   // jagoNews24: {
   //   leading: "https://www.jagonews24.com/",
@@ -520,23 +538,44 @@ exports.newspaperConfig = {
   //   video: "https://www.jagonews24.com/video",
   // },
 
-  banglaTribune: {
-    leading: "https://www.banglatribune.com/",
-    national: "https://www.banglatribune.com/national",
-    politics: "https://www.banglatribune.com/politics",
-    countryside: "https://www.banglatribune.com/country",
-    international: "https://www.banglatribune.com/foreign",
-    opinion: "https://www.banglatribune.com/columns",
-    business: "https://www.banglatribune.com/business",
-    entertainment: "https://www.banglatribune.com/entertainment",
-    sports: "https://www.banglatribune.com/sport",
-    health: "https://www.banglatribune.com/health",
-    education: "https://www.banglatribune.com/educations",
-    campus: "https://www.banglatribune.com/my-campus",
-    lifestyle: "https://www.banglatribune.com/lifestyle",
-    tech: "https://www.banglatribune.com/tech-and-gadget",
-    job: "https://www.banglatribune.com/jobs",
-    crime: "https://www.banglatribune.com/law-and-crime",
-    literature: "https://www.banglatribune.com/literature",
+  // banglaTribune: {
+  //   leading: "https://www.banglatribune.com/",
+  //   national: "https://www.banglatribune.com/national",
+  //   politics: "https://www.banglatribune.com/politics",
+  //   countryside: "https://www.banglatribune.com/country",
+  //   international: "https://www.banglatribune.com/foreign",
+  //   opinion: "https://www.banglatribune.com/columns",
+  //   business: "https://www.banglatribune.com/business",
+  //   entertainment: "https://www.banglatribune.com/entertainment",
+  //   sports: "https://www.banglatribune.com/sport",
+  //   health: "https://www.banglatribune.com/health",
+  //   education: "https://www.banglatribune.com/educations",
+  //   campus: "https://www.banglatribune.com/my-campus",
+  //   lifestyle: "https://www.banglatribune.com/lifestyle",
+  //   tech: "https://www.banglatribune.com/tech-and-gadget",
+  //   job: "https://www.banglatribune.com/jobs",
+  //   crime: "https://www.banglatribune.com/law-and-crime",
+  //   literature: "https://www.banglatribune.com/literature",
+  // },
+
+  dhakaPost: {
+    leading: "https://www.dhakapost.com",
+    national: "https://www.dhakapost.com/national",
+    politics: "https://www.dhakapost.com/politics",
+    business: "https://www.dhakapost.com/economy",
+    countryside: "https://www.dhakapost.com/country",
+    international: "https://www.dhakapost.com/international",
+    sports: "https://www.dhakapost.com/sports",
+    entertainment: "https://www.dhakapost.com/entertainment",
+    health: "https://www.dhakapost.com/health",
+    lifestyle: "https://www.dhakapost.com/lifestyle",
+    tech: "https://www.dhakapost.com/technology",
+    education: "https://www.dhakapost.com/education",
+    job: "https://www.dhakapost.com/jobs-career",
+    opinion: "https://www.dhakapost.com/opinion",
+    religion: "https://www.dhakapost.com/religion",
+    campus: "https://www.dhakapost.com/campus",
+    crime: "https://www.dhakapost.com/law-courts",
+    environment: "https://www.dhakapost.com/agriculture-and-nature",
   },
 };

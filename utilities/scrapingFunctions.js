@@ -12,6 +12,7 @@ const { bhorerkagoj } = require("../newsPapers/bangla/bhorerkagoj");
 const { bonikbarta } = require("../newsPapers/bangla/bonikbarta");
 const dainikAzadi = require("../newsPapers/bangla/dainikAzadi");
 const { deshrupantor } = require("../newsPapers/bangla/deshrupantor");
+const dhakaPost = require("../newsPapers/bangla/dhakaPost");
 const { dhakatimes24 } = require("../newsPapers/bangla/dhakatimes24");
 const { inqilab } = require("../newsPapers/bangla/inqilab");
 const { ittefaq } = require("../newsPapers/bangla/ittefaq");
@@ -235,6 +236,9 @@ exports.scrapingFunctions = function (newsCat) {
     },
     async banglaTribune(page) {
       return await banglaTribune(page, newsCat);
+    },
+    async dhakaPost(page) {
+      return await dhakaPost(page, newsCat);
     },
   };
 };
