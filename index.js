@@ -1,8 +1,9 @@
 const express = require("express");
-const puppeteer = require("puppeteer");
 const cors = require("cors");
-const { getNews } = require("./utilities/getNews");
-const { news, newsRoute } = require("./routes/news.route");
+const { newsRoute } = require("./routes/news.route");
+const logErrors = require("./ErrorHandlers/logErrors");
+const clientErrorHandler = require("./ErrorHandlers/clientErrorHandler");
+const errorHandler = require("./ErrorHandlers/errorHandler");
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -19,62 +20,20 @@ app.use(
   })
 );
 
-// scraping here
-app.get("/news", newsRoute);
+// News route for scrapping
+app.use("/", newsRoute);
+// app.get("/user", userRoute);
 
 // default response from the api
 app.get("/", (req, res) => {
   res.send("app is running smooth.");
 });
 
+// Error handlers
+app.use(logErrors);
+app.use(clientErrorHandler);
+app.use(errorHandler);
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
-/**
- * app.post("/news", async (req, res) => {
-  // try {
-  // const { urls } = req.body; // Assuming URLs are sent in the request body
-  const urls = [
-    // "https://www.thedailystar.net/",
-    "https://www.ittefaq.com.bd/",
-    "https://www.dhakatribune.com/",
-    // "https://www.dailynayadiganta.com/",
-    "https://www.prothomalo.com/"
-  ];
-
-  const browser = await puppeteer.launch({
-    defaultViewport: {
-      width: 1920,
-      height: 1080,
-    },
-    headless: false,
-  });
-  const page = await browser.newPage();
-
-  const scrapedData = [];
-
-  for (const url of urls) {
-    await page.goto(url, {
-      waitUntil: "domcontentloaded",
-    });
-    // Perform scraping logic here and push the scraped data to the array
-    
-    // Example:
-    const title = await page.title()
-    // const icon = await page.evaluate((page) => page.querySelector('link[rel="icon"]')?.href, page)
-    const news = await getNews(url, page);
-    scrapedData.push({ title, url, news });
-  }
-
-  await browser.close();
-
-  res.status(200).json({
-    message: "Scraping 'and saving to MongoDB' successful",
-    data: scrapedData,
-  });
-  // } catch (error) {
-  //   res.status(500).json({ error: "Internal Server Error", message: error });
-  // }
-});
- * */
