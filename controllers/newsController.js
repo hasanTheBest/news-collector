@@ -31,7 +31,8 @@ const newsCat = "international";
 // const newsCat = "stock";
 // const newsCat = "trade";
 
-module.exports = async function newsController(req, res) {
+// Get all tours
+exports.getAllNews = async (req, res, next) => {
   try {
     const browser = await puppeteer.launch({
       defaultViewport: {
@@ -74,11 +75,16 @@ module.exports = async function newsController(req, res) {
     await browser.close();
 
     res.status(200).json({
-      message: "Scraping 'and saving to MongoDB' successful",
+      status: "successful",
       data: scrapedData,
       error: errorData,
     });
   } catch (error) {
-    res.status(500).json({ error: "Internal Server Error", message: error });
+    res.status(400).json({
+      status: "fail",
+      message: "Unable to find data",
+      error: error.message,
+    });
   }
 };
+

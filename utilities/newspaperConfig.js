@@ -468,17 +468,17 @@ exports.newspaperConfig = {
   // /** --------------
   //  * ONLINE NEWSPAPERS
   //  * --------------- */
-  // bbcBangla: {
-  //   leading: "https://www.bbc.com/bengali",
-  //   national: "https://www.bbc.com/bengali/topics/c2dwq2nd40xt",
-  //   international: "https://www.bbc.com/bengali/topics/c907347rezkt",
-  //   business: "https://www.bbc.com/bengali/topics/cjgn7233zk5t",
-  //   sports: "https://www.bbc.com/bengali/topics/cdr56g57y01t",
-  //   tech: "https://www.bbc.com/bengali/topics/c8y94k95v52t",
-  //   politics: "https://www.bbc.com/bengali/topics/cqywj91rkg6t",
-  //   health: "https://www.bbc.com/bengali/topics/cg7265yyxn1t",
-  //   video: "https://www.bbc.com/bengali/topics/cxy7jg418e7t",
-  // },
+  bbcBangla: {
+    leading: "https://www.bbc.com/bengali",
+    national: "https://www.bbc.com/bengali/topics/c2dwq2nd40xt",
+    // international: "https://www.bbc.com/bengali/topics/c907347rezkt",
+    business: "https://www.bbc.com/bengali/topics/cjgn7233zk5t",
+    sports: "https://www.bbc.com/bengali/topics/cdr56g57y01t",
+    tech: "https://www.bbc.com/bengali/topics/c8y94k95v52t",
+    politics: "https://www.bbc.com/bengali/topics/cqywj91rkg6t",
+    health: "https://www.bbc.com/bengali/topics/cg7265yyxn1t",
+    video: "https://www.bbc.com/bengali/topics/cxy7jg418e7t",
+  },
   // banglaNews24: {
   //   leading: "https://www.banglanews24.com/",
   //   national:
@@ -538,25 +538,25 @@ exports.newspaperConfig = {
   //   video: "https://www.jagonews24.com/video",
   // },
 
-  // banglaTribune: {
-  //   leading: "https://www.banglatribune.com/",
-  //   national: "https://www.banglatribune.com/national",
-  //   politics: "https://www.banglatribune.com/politics",
-  //   countryside: "https://www.banglatribune.com/country",
-  //   international: "https://www.banglatribune.com/foreign",
-  //   opinion: "https://www.banglatribune.com/columns",
-  //   business: "https://www.banglatribune.com/business",
-  //   entertainment: "https://www.banglatribune.com/entertainment",
-  //   sports: "https://www.banglatribune.com/sport",
-  //   health: "https://www.banglatribune.com/health",
-  //   education: "https://www.banglatribune.com/educations",
-  //   campus: "https://www.banglatribune.com/my-campus",
-  //   lifestyle: "https://www.banglatribune.com/lifestyle",
-  //   tech: "https://www.banglatribune.com/tech-and-gadget",
-  //   job: "https://www.banglatribune.com/jobs",
-  //   crime: "https://www.banglatribune.com/law-and-crime",
-  //   literature: "https://www.banglatribune.com/literature",
-  // },
+  banglaTribune: {
+    leading: "https://www.banglatribune.com/",
+    national: "https://www.banglatribune.com/national",
+    politics: "https://www.banglatribune.com/politics",
+    countryside: "https://www.banglatribune.com/country",
+    international: "https://www.banglatribune.com/foreign",
+    opinion: "https://www.banglatribune.com/columns",
+    business: "https://www.banglatribune.com/business",
+    entertainment: "https://www.banglatribune.com/entertainment",
+    sports: "https://www.banglatribune.com/sport",
+    health: "https://www.banglatribune.com/health",
+    education: "https://www.banglatribune.com/educations",
+    campus: "https://www.banglatribune.com/my-campus",
+    lifestyle: "https://www.banglatribune.com/lifestyle",
+    tech: "https://www.banglatribune.com/tech-and-gadget",
+    job: "https://www.banglatribune.com/jobs",
+    crime: "https://www.banglatribune.com/law-and-crime",
+    literature: "https://www.banglatribune.com/literature",
+  },
 
   dhakaPost: {
     leading: "https://www.dhakapost.com",

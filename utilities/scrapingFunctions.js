@@ -46,7 +46,6 @@ const { thedailystar } = require("../newsPapers/english/thedailystar");
 exports.scrapingFunctions = function (newsCat) {
   return {
     async theBangladeshToday(page) {
-      // Scraping logic for The Bangladesh Today
       return await bangladeshToday[newsCat](page);
     },
 
@@ -55,28 +54,23 @@ exports.scrapingFunctions = function (newsCat) {
     },
 
     async observerBD(page) {
-      // Scraping logic for Observer BD
       return await dailyObserver[newsCat](page);
     },
 
     async dailySun(page) {
-      // Scraping logic for Daily Sun
       return await dailysun[newsCat](page);
     },
 
     async dhakaTribune(page) {
-      // Scraping logic for Dhaka Tribune
       // return await dhakaTribune[newsCat](page);
       return await dhakaTribune(page, newsCat);
     },
 
     async newAgeBD(page) {
-      // Scraping logic for New Age BD
       return await newage(page, newsCat);
     },
 
     async newNation(page) {
-      // Scraping logic for New Nation
       return await newnation(page, newsCat);
     },
 
@@ -85,7 +79,6 @@ exports.scrapingFunctions = function (newsCat) {
     },
 
     async theDailyStar(page) {
-      // Scraping logic for The Daily Star
       return await thedailystar(page, newsCat);
     },
 
@@ -93,36 +86,29 @@ exports.scrapingFunctions = function (newsCat) {
      *  BANGLA NEWSPAPERS
      * */
     async ajkerPatrika(page) {
-      // Scraping logic for Alokito Bangladesh
       return await ajkerPatrika(page, newsCat);
     },
 
     async alokitoBangladesh(page) {
-      // Scraping logic for Alokito Bangladesh
       return await alokitobangladesh(page, newsCat);
     },
 
     async amadershomoy(page) {
-      // Scraping logic for Amader Shomoy
       return await amadersomoy(page, newsCat);
     },
 
     async amarBarta(page) {
-      // Scraping logic for Amar Barta
       return await amarbarta(page, newsCat);
     },
     async bdPratidin(page) {
-      // Scraping logic for BD Pratidin
       return await bangladeshPratidin(page, newsCat);
     },
 
     async bhorerKagoj(page) {
-      // Scraping logic for Bhorer Kagoj
       return await bhorerkagoj(page, newsCat);
     },
 
     async bonikBarta(page) {
-      // Scraping logic for Bonik Barta
       return await bonikbarta(page, newsCat);
     },
 
@@ -131,92 +117,74 @@ exports.scrapingFunctions = function (newsCat) {
     },
 
     async dhakaTimes24(page) {
-      // Scraping logic for Dhaka Times 24
       return await dhakatimes24(page, newsCat);
     },
 
     async deshRupantor(page) {
-      // Scraping logic for Desh Rupantor
       return await deshrupantor(page, newsCat);
     },
 
     async dailyInqilab(page) {
-      // Scraping logic for Daily Inqilab
       return await inqilab(page, newsCat);
     },
 
     async ittefaq(page) {
-      // Scraping logic for Ittefaq
       return await ittefaq(page, newsCat);
     },
 
     async jaiJaiDin(page) {
-      // Scraping logic for Jai Jai Din
       return await jaijaidin(page, newsCat);
     },
 
     async dailyJanakantha(page) {
-      // Scraping logic for Daily Janakantha
       return await janakantha(page, newsCat);
     },
 
     async jugantor(page) {
-      // Scraping logic for Jugantor
       return await jugantor(page, newsCat);
     },
 
     async kalbela(page) {
-      // Scraping logic for Kalbela
       return await kalbela(page, newsCat);
     },
 
     async kalerKantho(page) {
-      // Scraping logic for Kaler Kantho
       return await kalerkantha(page, newsCat);
     },
 
     async manabZamin(page) {
-      // Scraping logic for Manab Zamin
       return await manabzamin(page, newsCat);
     },
 
     async manobKantha(page) {
-      // Scraping logic for Manob Kantha
       return await manobkantha(page, newsCat);
     },
 
     async dailyNayaDiganta(page) {
-      // Scraping logic for Daily Naya Diganta
       return await nayaDiganta(page, newsCat);
     },
 
     async prothomAlo(page) {
-      // Scraping logic for Prothom Alo
       return await prothomAlo(page, newsCat);
     },
 
     async protidinerSangbad(page) {
-      // Scraping logic for Protidiner Sangbad
       return await protidinersangbad(page, newsCat);
     },
 
     async samakal(page) {
-      // Scraping logic for Samakal
       return await samakal(page, newsCat);
     },
 
     async dailySangram(page) {
-      // Scraping logic for Daily Sangram
       return await sangram(page, newsCat);
     },
 
     async shomoyEralo(page) {
-      // Scraping logic for Shomoy Eralo
       return await shomoyeralo(page, newsCat);
     },
 
     async sangbad(page) {
-      // Scraping logic for Sangbad
       return await songbad(page, newsCat);
     },
 
