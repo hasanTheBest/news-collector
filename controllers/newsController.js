@@ -4,11 +4,11 @@ const { default: puppeteer } = require("puppeteer");
 const { getNews } = require("../utilities/getNews");
 const { newspaperConfig } = require("../utilities/newspaperConfig");
 
-const newspaperNames = Object.keys(newspaperConfig);
+// const newspaperNames = Object.keys(newspaperConfig);
 
 // News categories
 // const newsCat = "leading";
-const newsCat = "international";
+// const newsCat = "international";
 // const newsCat = "national";
 // const newsCat = "business";
 // const newsCat = "politics";
@@ -48,7 +48,12 @@ exports.getAllNews = async (req, res, next) => {
     const scrapedData = [],
       errorData = [];
 
-    for (const name of newspaperNames) {
+      // Grab data from client request- names and category of news
+    const {newspaperNames, newsCat} = req.query;
+    console.log("newspaperName", newspaperNames.split(","))
+    console.log("newsCat", newsCat)
+
+    for (const name of newspaperNames.split(",")) {
       // Log the current active scrapping url
       const url = newspaperConfig[name][newsCat];
       console.log("\nActive\t", name + ": " + url);
