@@ -50,8 +50,6 @@ exports.getAllNews = async (req, res, next) => {
 
       // Grab data from client request- names and category of news
     const {newspaperNames, newsCat} = req.query;
-    console.log("newspaperName", newspaperNames.split(","))
-    console.log("newsCat", newsCat)
 
     for (const name of newspaperNames.split(",")) {
       // Log the current active scrapping url
