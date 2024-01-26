@@ -4,15 +4,15 @@ const { default: puppeteer } = require("puppeteer");
 const { getNews } = require("../utilities/getNews");
 const { newspaperConfig } = require("../utilities/newspaperConfig");
 
-const newspaperNames = [
-  // "dailyInqilab",
-  // 'theDailyStar',
-  "dhakaTribune",
-  "tbsNews",
-];
+// const newspaperNames = [
+//   // "dailyInqilab",
+//   // 'theDailyStar',
+//   "dhakaTribune",
+//   "tbsNews",
+// ];
 
 // News categories
-const newsCat = "leading";
+// const newsCat = "leading";
 // const newsCat = "international";
 // const newsCat = "national";
 // const newsCat = "business";
@@ -46,42 +46,42 @@ exports.getAllNews = async (req, res, next) => {
   // next();
 
   // An asynchronous function to initiate scraping sequentially
-  async function scrapeSequentially() {
-    const results = [];
+  // async function scrapeSequentially() {
+  //   const results = [];
 
-    for (const name of newspaperNames) {
-      try {
-        // Scraping each news URL one by one
-        const newsData = await scrapeNews(name, newsCat);
+  const { newspaperNames, newsCat } = req.query;
 
-        // Push the result to the array
-        results.push(newsData);
-        res.write(JSON.stringify(newsData, null, 2));
+  for (const name of newspaperNames.split(",")) {
+    try {
+      // Scraping each news URL one by one
+      const newsData = await scrapeNews(name, newsCat);
 
-        // You can emit the result here or handle it as needed
-        // console.log("Scraping result for", url, ":", newsData);
-      } catch (error) {
-        // Handle errors for each individual task
-        console.error("Error scraping", name, ":", error.message);
-      }
+      // Push the result to the array
+      // results.push(newsData);
+      res.write(JSON.stringify(newsData, null, 2));
+
+      // You can emit the result here or handle it as needed
+      // console.log("Scraping result for", url, ":", newsData);
+    } catch (error) {
+      // Handle errors for each individual task
+      console.error("Error scraping", name, ":", error.message);
     }
-
-    // Return the final results array
-    return results;
   }
 
-  // Call the function and handle the results
-  scrapeSequentially();
-  // .then((allResults) => {
-  //   console.log("All scraping tasks completed.");
-  //   res.status(200).json({
-  //     data: allResults,
-  //   });
-  // })
-  // .catch((error) => {
-  //   console.error("Error in scraping:", error.message);
-  // });
+  // Return the final results array
+  // return results;
+  // }
 
+  // // Call the function and handle the results
+  // scrapeSequentially();
+
+  // Send an initial message
+  res.write(`data: ${JSON.stringify({ message: "Connected to SSE" })}\n\n`);
+
+  // Close the SSE connection when the client disconnects
+  // req.on("close", () => {
+  //   res.end();
+  // });
   // Close the SSE connection when all tasks are done
   res.end();
 
