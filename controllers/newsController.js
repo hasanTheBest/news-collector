@@ -12,8 +12,8 @@ exports.getAllNews = async (req, res, next) => {
       const news = await scrapeNews(name, newsCat);
       res.write(`data: ${JSON.stringify(news)}\n\n`);
     } catch (error) {
-      console.error("event source error", error);
-      res.end();
+      console.error(`Event source failed for ${name} of ${newsCat}:`, error);
+      // res.end();
     }
   }
 

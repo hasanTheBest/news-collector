@@ -32,7 +32,7 @@ async function scrapeNews(name, newsCat) {
     await browser.close();
     return { title, url, news };
   } catch (error) {
-    throw new Error(`Error for ${name} of ${newsCat}: ${error}`);
+    throw new Error(`Scrapping Error for ${name} of ${newsCat}: ${error}`);
   }
 }
 
