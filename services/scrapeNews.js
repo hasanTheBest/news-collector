@@ -5,11 +5,21 @@ const { newspaperConfig } = require("../utilities/newspaperConfig");
 async function scrapeNews(name, newsCat) {
   try {
     const browser = await puppeteer.launch({
+      args: [
+        "--disable-setuid-sandbox",
+        "--no-sandbox",
+        "--single-process",
+        "--no-zygote",
+      ],
+      executablePath:
+        process.env.NODE_ENV === "production"
+          ? process.env.PUPPETEER_EXECUTABLE_PATH
+          : puppeteer.executablePath(),
       defaultViewport: {
         width: 1920,
         height: 1080,
       },
-      headless: "new",
+      headless: true,
       // headless: false,
     });
 
