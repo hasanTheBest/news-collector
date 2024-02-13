@@ -42,6 +42,7 @@ const { newage } = require("../newsPapers/english/newage");
 const { newnation } = require("../newsPapers/english/newnation");
 const theFinancialExpress = require("../newsPapers/english/theFinancialExpress");
 const { thedailystar } = require("../newsPapers/english/thedailystar");
+const { ErrorResponse } = require("./ErrorResponse");
 
 exports.scrapingFunctions = function (newsCat) {
   return {
@@ -200,6 +201,11 @@ exports.scrapingFunctions = function (newsCat) {
     },
 
     async jagoNews24(page) {
+      /* try {
+        return await jagoNews24(page, newsCat);
+      } catch (error) {
+        return ErrorResponse("timeout err", error);
+      } */
       return await jagoNews24(page, newsCat);
     },
     async banglaTribune(page) {

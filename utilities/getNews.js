@@ -16,6 +16,11 @@ exports.getNews = async function (name, page, newsCat) {
     // ErrorResponse()
     // return { error: "Error occurred during scraping", message: error.message };
     // console.error("Error during scraping:", error);
-    throw new Error(error);
+    // return ErrorResponse(
+    //   `Error during scraping of "${name}" for category of "${newsCat}"`,
+    //   error
+    // );
+
+    throw new Error("getNews: " + error.message);
   }
 };

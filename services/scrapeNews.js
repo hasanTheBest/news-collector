@@ -20,7 +20,7 @@ async function scrapeNews(name, newsCat) {
         width: 1920,
         height: 1080,
       },
-      headless: true,
+      headless: "new",
       // headless: false,
     });
 
@@ -31,9 +31,9 @@ async function scrapeNews(name, newsCat) {
 
     if (!url) {
       // throw new Error(`Url is not defined for ${newsCat} of ${name}`);
-      ErrorResponse(
+      return ErrorResponse(
         `Url is not defined for ${newsCat} of ${name}`,
-        "The requested url is not valid or something went wrong."
+        "The requested url is not valid."
       );
     }
 
@@ -49,11 +49,14 @@ async function scrapeNews(name, newsCat) {
     return {
       type: "success",
       url,
-      data: news,
+      news,
     };
   } catch (error) {
     // throw new Error(`: ${error}`);
-    ErrorResponse(`Scrapping Error for ${name} of ${newsCat}`, error);
+    return ErrorResponse(
+      `Scrapping Error for ${name} of ${newsCat}`,
+      error.message
+    );
   }
 }
 

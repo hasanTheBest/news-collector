@@ -1,3 +1,5 @@
+const { ErrorResponse } = require("../../../utilities/ErrorResponse");
+
 module.exports = async function jagoNews24Cat(page) {
   try {
     await page.waitForSelector(".single-block");
@@ -36,6 +38,7 @@ module.exports = async function jagoNews24Cat(page) {
 
     return articles;
   } catch (error) {
-    console.error("\njagoNews24Cat\t:", error);
+    throw new Error(`jagoNews24 page is not loaded correctly.` + error.message);
+    // console.error("\njagoNews24Cat\t:", error);
   }
 };

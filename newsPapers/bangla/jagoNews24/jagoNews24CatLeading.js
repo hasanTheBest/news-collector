@@ -37,6 +37,9 @@ module.exports = async function jagoNews24CatLeading(page) {
 
     return articles;
   } catch (error) {
-    console.error("\njagoNews24Cat\t:", error);
+    throw new Error(
+      `jagoNews24 page is not loaded correctly.\n ${error.message}`
+    );
+    // console.error("\njagoNews24Cat\t:", error);
   }
 };
