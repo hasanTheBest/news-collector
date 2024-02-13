@@ -1,6 +1,7 @@
 const { default: puppeteer } = require("puppeteer");
 const { getNews } = require("../utilities/getNews");
 const { newspaperConfig } = require("../utilities/newspaperConfig");
+const { ErrorResponse } = require("../utilities/ErrorResponse");
 
 async function scrapeNews(name, newsCat) {
   try {
@@ -29,7 +30,11 @@ async function scrapeNews(name, newsCat) {
     console.log("\nActive\t", name + ": " + url);
 
     if (!url) {
-      throw new Error(`Url is not defined for ${newsCat} of ${name}`);
+      // throw new Error(`Url is not defined for ${newsCat} of ${name}`);
+      ErrorResponse(
+        `Url is not defined for ${newsCat} of ${name}`,
+        "The requested url is not valid or something went wrong."
+      );
     }
 
     await page.goto(url, {
@@ -40,9 +45,15 @@ async function scrapeNews(name, newsCat) {
     const news = await getNews(name, page, newsCat);
 
     await browser.close();
-    return { title, url, news };
+    // return { title, url, news };
+    return {
+      type: "success",
+      url,
+      data: news,
+    };
   } catch (error) {
-    throw new Error(`Scrapping Error for ${name} of ${newsCat}: ${error}`);
+    // throw new Error(`: ${error}`);
+    ErrorResponse(`Scrapping Error for ${name} of ${newsCat}`, error);
   }
 }
 
