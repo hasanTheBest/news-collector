@@ -46,86 +46,86 @@ const { ErrorResponse } = require("./ErrorResponse");
 
 exports.scrapingFunctions = function (newsCat) {
   return {
-    async theBangladeshToday(page) {
+    async thebangladeshtoday(page) {
       return await bangladeshToday[newsCat](page);
     },
 
-    async tbsNews(page) {
+    async tbsnews(page) {
       return await businessStandard[newsCat](page);
     },
 
-    async observerBD(page) {
+    async observerbd(page) {
       return await dailyObserver[newsCat](page);
     },
 
-    async dailySun(page) {
+    async dailysun(page) {
       return await dailysun[newsCat](page);
     },
 
-    async dhakaTribune(page) {
+    async dhakatribune(page) {
       // return await dhakaTribune[newsCat](page);
       return await dhakaTribune(page, newsCat);
     },
 
-    async newAgeBD(page) {
+    async newagebd(page) {
       return await newage(page, newsCat);
     },
 
-    async newNation(page) {
+    async newnation(page) {
       return await newnation(page, newsCat);
     },
 
-    async theFinancialExpress(page) {
+    async thefinancialexpress(page) {
       return await theFinancialExpress(page, newsCat);
     },
 
-    async theDailyStar(page) {
+    async thedailystar(page) {
       return await thedailystar(page, newsCat);
     },
 
     /**
      *  BANGLA NEWSPAPERS
      * */
-    async ajkerPatrika(page) {
+    async ajkerpatrika(page) {
       return await ajkerPatrika(page, newsCat);
     },
 
-    async alokitoBangladesh(page) {
+    async alokitobangladesh(page) {
       return await alokitobangladesh(page, newsCat);
     },
 
-    async amadershomoy(page) {
+    async dainikamadershomoy(page) {
       return await amadersomoy(page, newsCat);
     },
 
-    async amarBarta(page) {
+    async amarbarta(page) {
       return await amarbarta(page, newsCat);
     },
-    async bdPratidin(page) {
+    async bdpratidin(page) {
       return await bangladeshPratidin(page, newsCat);
     },
 
-    async bhorerKagoj(page) {
+    async bhorerkagoj(page) {
       return await bhorerkagoj(page, newsCat);
     },
 
-    async bonikBarta(page) {
+    async bonikbarta(page) {
       return await bonikbarta(page, newsCat);
     },
 
-    async dainikAzadi(page) {
+    async dainikazadi(page) {
       return await dainikAzadi(page, newsCat);
     },
 
-    async dhakaTimes24(page) {
+    async dhakatimes24(page) {
       return await dhakatimes24(page, newsCat);
     },
 
-    async deshRupantor(page) {
+    async deshrupantor(page) {
       return await deshrupantor(page, newsCat);
     },
 
-    async dailyInqilab(page) {
+    async dailyinqilab(page) {
       return await inqilab(page, newsCat);
     },
 
@@ -133,11 +133,11 @@ exports.scrapingFunctions = function (newsCat) {
       return await ittefaq(page, newsCat);
     },
 
-    async jaiJaiDin(page) {
+    async jaijaidinbd(page) {
       return await jaijaidin(page, newsCat);
     },
 
-    async dailyJanakantha(page) {
+    async dailyjanakantha(page) {
       return await janakantha(page, newsCat);
     },
 
@@ -149,27 +149,27 @@ exports.scrapingFunctions = function (newsCat) {
       return await kalbela(page, newsCat);
     },
 
-    async kalerKantho(page) {
+    async kalerkantho(page) {
       return await kalerkantha(page, newsCat);
     },
 
-    async manabZamin(page) {
+    async mzamin(page) {
       return await manabzamin(page, newsCat);
     },
 
-    async manobKantha(page) {
+    async manobkantha(page) {
       return await manobkantha(page, newsCat);
     },
 
-    async dailyNayaDiganta(page) {
+    async dailynayadiganta(page) {
       return await nayaDiganta(page, newsCat);
     },
 
-    async prothomAlo(page) {
+    async prothomalo(page) {
       return await prothomAlo(page, newsCat);
     },
 
-    async protidinerSangbad(page) {
+    async protidinersangbad(page) {
       return await protidinersangbad(page, newsCat);
     },
 
@@ -177,11 +177,11 @@ exports.scrapingFunctions = function (newsCat) {
       return await samakal(page, newsCat);
     },
 
-    async dailySangram(page) {
+    async dailysangram(page) {
       return await sangram(page, newsCat);
     },
 
-    async shomoyEralo(page) {
+    async shomoyeralo(page) {
       return await shomoyeralo(page, newsCat);
     },
 
@@ -192,15 +192,15 @@ exports.scrapingFunctions = function (newsCat) {
     /** ------------------
      * ONLINE NEWSPAPERS
      * ------------------- */
-    async bbcBangla(page) {
+    async bbc(page) {
       return await bbcBangla(page, newsCat);
     },
 
-    async banglaNews24(page) {
+    async banglanews24(page) {
       return await banglaNews24(page, newsCat);
     },
 
-    async jagoNews24(page) {
+    async jagonews24(page) {
       /* try {
         return await jagoNews24(page, newsCat);
       } catch (error) {
@@ -208,10 +208,10 @@ exports.scrapingFunctions = function (newsCat) {
       } */
       return await jagoNews24(page, newsCat);
     },
-    async banglaTribune(page) {
+    async banglatribune(page) {
       return await banglaTribune(page, newsCat);
     },
-    async dhakaPost(page) {
+    async dhakapost(page) {
       return await dhakaPost(page, newsCat);
     },
   };

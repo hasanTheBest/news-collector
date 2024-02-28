@@ -36,7 +36,7 @@ exports.newspaperConfig =  {
       "job": "https://www.alokitobangladesh.com/job-news",
       "feature": "https://www.alokitobangladesh.com/feature"
   },
-  "amadershomoy": {
+  "dainikamadershomoy": {
       "leading": "https://www.dainikamadershomoy.com/",
       "national": "https://www.dainikamadershomoy.com/category/national",
       "international": "https://www.dainikamadershomoy.com/category/international",
@@ -96,7 +96,7 @@ exports.newspaperConfig =  {
       "crime": "https://www.banglatribune.com/law-and-crime",
       "literature": "https://www.banglatribune.com/literature"
   },
-  "bbcbangla": {
+  "bbc": {
       "leading": "https://www.bbc.com/bengali",
       "national": "https://www.bbc.com/bengali/topics/c2dwq2nd40xt",
       "business": "https://www.bbc.com/bengali/topics/cjgn7233zk5t",
@@ -355,7 +355,7 @@ exports.newspaperConfig =  {
       "countryside": "https://www.kalerkantho.com/online/country-news",
       "religion": "https://www.kalerkantho.com/online/Islamic-lifestylie"
   },
-  "manabzamin": {
+  "mzamin": {
       "leading": "https://mzamin.com/",
       "national": "https://mzamin.com/category.php?cat=8",
       "international": "https://mzamin.com/category.php?cat=5",
