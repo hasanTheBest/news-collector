@@ -99,6 +99,7 @@ exports.newspaperConfig =  {
   "bbc": {
       "leading": "https://www.bbc.com/bengali",
       "national": "https://www.bbc.com/bengali/topics/c2dwq2nd40xt",
+      "international": "https://www.bbc.com/bengali/topics/c907347rezkt",
       "business": "https://www.bbc.com/bengali/topics/cjgn7233zk5t",
       "sports": "https://www.bbc.com/bengali/topics/cdr56g57y01t",
       "tech": "https://www.bbc.com/bengali/topics/c8y94k95v52t",
