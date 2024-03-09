@@ -6,9 +6,8 @@ exports.getNews = async function (name, page, newsCat) {
     const scrapeFunction = scrapingFunctions(newsCat)[name];
 
     if (!scrapeFunction) {
-      ErrorResponse(
-        `Scrapping function is not defined for the ${newsCat} of ${name}`,
-        'You are requested to provide valid "news category" or "newspaper name"'
+      throw new Error(
+        `Scrapping function is not defined for the ${newsCat} of ${name}`
       );
     }
     return await scrapeFunction(page);

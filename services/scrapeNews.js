@@ -33,7 +33,8 @@ async function scrapeNews(name, newsCat) {
       // throw new Error(`Url is not defined for ${newsCat} of ${name}`);
       return ErrorResponse(
         `Url is not defined for ${newsCat} of ${name}`,
-        "The requested url is not valid."
+        "The requested url is not valid.",
+        url
       );
     }
 
@@ -55,7 +56,8 @@ async function scrapeNews(name, newsCat) {
     // throw new Error(`: ${error}`);
     return ErrorResponse(
       `Scrapping Error for ${name} of ${newsCat}`,
-      error.message
+      error.message,
+      url
     );
   }
 }

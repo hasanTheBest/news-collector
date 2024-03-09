@@ -1,5 +1,6 @@
 const scrapeNews = require("../services/scrapeNews");
 const { ErrorResponse } = require("../utilities/ErrorResponse");
+const { newspaperConfig } = require("../utilities/newspaperConfig");
 
 exports.getAllNews = async (req, res, next) => {
   res.setHeader("Content-Type", "text/event-stream");
@@ -9,6 +10,7 @@ exports.getAllNews = async (req, res, next) => {
   const { newspaperNames, newsCat } = req.query;
 
   for (const name of newspaperNames.split(",")) {
+    const newspaperUrl = newspaperConfig[name][newsCat];
     try {
       const news = await scrapeNews(name, newsCat);
       res.write(`data: ${JSON.stringify(news)}\n\n`);
@@ -16,7 +18,7 @@ exports.getAllNews = async (req, res, next) => {
       // console.error(`Event source failed for ${name} of ${newsCat}:`, error);
       res.write(
         `data: ${JSON.stringify(
-          ErrorResponse(`Error at Eventsource`, error)
+          ErrorResponse(`Error at Eventsource`, error.message, newspaperUrl)
         )}\n\n`
       );
       // res.end();
